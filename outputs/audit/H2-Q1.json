@@ -1,0 +1,319 @@
+{
+ "question": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+ "started": "2026-11-03T22:55:31",
+ "route": {
+  "type": "new_research",
+  "standalone_query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+  "complexity": "complex"
+ },
+ "sub_queries": {
+  "static": [
+   "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+   "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism"
+  ],
+  "refinements": [
+   []
+  ]
+ },
+ "tool_calls": [
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.8621024000003672,
+   "output_size": 3257,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.42788519999976415,
+   "output_size": 5372,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.7801175999993575,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.9806091000000379,
+   "output_size": 3265,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.6170941999998831,
+   "output_size": 5391,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.6093127000003733,
+   "output_size": 2814,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?"
+   },
+   "timestamp": "22:55:32",
+   "latency_s": 0.5189484000002267,
+   "output_size": 4075,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-global-health-metrics/h2-a1"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.13398439999946277,
+   "output_size": 165,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.1498910000000251,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.13875610000013694,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://globalhealthwire.example.com/2024-09-26/world-leaders-pledge-to-cut-superbug-deaths"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.2384183000003759,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.1690110999998069,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.21171830000002956,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-british-journal-of-medicine/h10-a2"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.10364709999976185,
+   "output_size": 165,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://globalhealthwire.example.com/2022-03-18/a-third-of-adults-don-t-get-enough-sleep"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.16931160000058298,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H2-A1"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.059222699999736506,
+   "output_size": 276,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H2-A2"
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.042158500000368804,
+   "output_size": 265,
+   "ok": true,
+   "error": ""
+  }
+ ],
+ "sources": [
+  {
+   "sid": "S1",
+   "doc_id": "H2-A1",
+   "title": "Global burden of bacterial antimicrobial resistance in 2019",
+   "url": "https://journals.example.org/synthetic-global-health-metrics/h2-a1",
+   "credibility": 0.825,
+   "source": "academic"
+  },
+  {
+   "sid": "S2",
+   "doc_id": "H2-A2",
+   "title": "How bacteria become resistant: mechanisms and drivers",
+   "url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2",
+   "credibility": 0.829,
+   "source": "academic"
+  },
+  {
+   "sid": "S3",
+   "doc_id": "WIKI-Antimicrobial_resistance",
+   "title": "Antimicrobial resistance",
+   "url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
+   "sid": "S4",
+   "doc_id": "H2-N1",
+   "title": "World leaders pledge to cut superbug deaths",
+   "url": "https://globalhealthwire.example.com/2024-09-26/world-leaders-pledge-to-cut-superbug-deaths",
+   "credibility": 0.542,
+   "source": "web"
+  },
+  {
+   "sid": "S5",
+   "doc_id": "WIKI-NQ-0039",
+   "title": "Wikipedia passage: Antibiotics Ernst Chain, Howard Florey and...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
+   "source": "web"
+  },
+  {
+   "sid": "S6",
+   "doc_id": "WIKI-NQ-0511",
+   "title": "Wikipedia passage: What the Health What the Health...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
+   "source": "web"
+  },
+  {
+   "sid": "S7",
+   "doc_id": "H10-A2",
+   "title": "Vitamin D and multiple health outcomes: umbrella review",
+   "url": "https://journals.example.org/synthetic-british-journal-of-medicine/h10-a2",
+   "credibility": 0.907,
+   "source": "academic"
+  },
+  {
+   "sid": "S8",
+   "doc_id": "H6-N1",
+   "title": "A third of adults don't get enough sleep",
+   "url": "https://globalhealthwire.example.com/2022-03-18/a-third-of-adults-don-t-get-enough-sleep",
+   "credibility": 0.524,
+   "source": "news"
+  }
+ ],
+ "conflicts": [],
+ "claims": [
+  {
+   "text": "Thought: mock reasoning step one because the question asks something.",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Therefore step two follows [S1].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "However, sources may disagree [S2].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Final Answer: mock answer (16) based on: Evidence: [S1] (academic/journal, Synthetic Global Health Metrics, 2022) Global burden of bacterial antimicrobial resistance in 2019 We estimate that 1.27 million deaths in 2019 were directly attributable to bacterial antimicrobial resistance and 4.95 million deaths were associated with it, making A",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  }
+ ],
+ "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (16) based on: Evidence: [S1] (academic/journal, Synthetic Global Health Metrics, 2022) Global burden of bacterial antimicrobial resistance in 2019 We estimate that 1.27 million deaths in 2019 were directly attributable to bacterial antimicrobial resistance and 4.95 million deaths were associated with it, making A",
+ "overall_confidence": 0.05,
+ "metrics": {
+  "latency_s": 2.029935700000351,
+  "llm_calls": 7,
+  "input_tokens": 6464,
+  "output_tokens": 214,
+  "cost_usd": 0.03553,
+  "n_tool_calls": 17,
+  "pii_redacted": [],
+  "halluc_before": 1.0,
+  "halluc_after": 1.0
+ }
+}

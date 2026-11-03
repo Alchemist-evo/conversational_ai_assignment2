@@ -1,0 +1,1066 @@
+[
+ {
+  "session_id": "EP-001",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-08",
+  "topic_id": "D1",
+  "user_query": "Background reading on intermittent fasting",
+  "sub_queries": [
+   "What is known about intermittent fasting?",
+   "What evidence supports: A preliminary, non-peer-reviewed observational study linked ?"
+  ],
+  "sources_consulted": [
+   "D1-A2",
+   "D1-N1"
+  ],
+  "key_findings": [
+   "A preliminary, non-peer-reviewed observational study linked <8-hour eating windows to higher cardiovascular death risk, but it cannot show causation.",
+   "Adding an 8-hour time-restricted eating window to calorie restriction gave no significant extra benefit over 12 months."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-002",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-17",
+  "topic_id": "D2",
+  "user_query": "Background reading on vaccines and boosters",
+  "sub_queries": [
+   "What is known about vaccines and boosters?",
+   "What evidence supports: Protection against severe disease wanes more slowly than pro?"
+  ],
+  "sources_consulted": [
+   "D2-A1",
+   "D2-A2"
+  ],
+  "key_findings": [
+   "Protection against severe disease wanes more slowly than protection against infection.",
+   "Memory B and T cells make later responses faster and stronger."
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-003",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-10-09",
+  "topic_id": "D3",
+  "user_query": "Background reading on c4 vs c3 photosynthesis",
+  "sub_queries": [
+   "What is known about c4 vs c3 photosynthesis?",
+   "What evidence supports: C4 plants first fix CO2 with PEP carboxylase into a 4-carbon?"
+  ],
+  "sources_consulted": [
+   "D3-A1"
+  ],
+  "key_findings": [
+   "C4 plants first fix CO2 with PEP carboxylase into a 4-carbon compound in mesophyll cells.",
+   "RuBisCO also reacts with O2 (photorespiration), wasting energy, worse at high temperature."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-004",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-25",
+  "topic_id": "D4",
+  "user_query": "Background reading on machine learning vs deep learning",
+  "sub_queries": [
+   "What is known about machine learning vs deep learning?",
+   "What evidence supports: Classical methods such as gradient-boosted trees still often?"
+  ],
+  "sources_consulted": [
+   "D4-A1",
+   "D4-A3",
+   "D4-N1"
+  ],
+  "key_findings": [
+   "Classical methods such as gradient-boosted trees still often win on tabular/smaller data and are more interpretable.",
+   "Deep learning is a subset of machine learning."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-005",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-01-24",
+  "topic_id": "D5",
+  "user_query": "Background reading on 2008 financial crisis",
+  "sub_queries": [
+   "What is known about 2008 financial crisis?",
+   "What evidence supports: The crisis spread globally through foreign banks' MBS holdin?"
+  ],
+  "sources_consulted": [
+   "D5-A2",
+   "D5-A3"
+  ],
+  "key_findings": [
+   "The crisis spread globally through foreign banks' MBS holdings and frozen interbank funding markets.",
+   "The official inquiry majority blamed regulatory/supervisory failures, while dissenters emphasised other factors."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "partially answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-006",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-10-07",
+  "topic_id": "D6",
+  "user_query": "Background reading on inflation",
+  "sub_queries": [
+   "What is known about inflation?",
+   "What evidence supports: Post-pandemic inflation was driven by supply/energy shocks f?"
+  ],
+  "sources_consulted": [
+   "D6-A3",
+   "D6-N1"
+  ],
+  "key_findings": [
+   "Post-pandemic inflation was driven by supply/energy shocks first and then demand and tight labour markets.",
+   "Inflation is commonly measured with the consumer price index (CPI)."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-007",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-02-13",
+  "topic_id": "D7",
+  "user_query": "Background reading on artificial sweeteners",
+  "sub_queries": [
+   "What is known about artificial sweeteners?",
+   "What evidence supports: Non-sugar sweeteners show no long-term weight-control benefi?"
+  ],
+  "sources_consulted": [
+   "D7-A2",
+   "D7-A3"
+  ],
+  "key_findings": [
+   "Non-sugar sweeteners show no long-term weight-control benefit; WHO advises against using them for weight control.",
+   "An observational cohort found a modest association with cancer risk (HR 1.13), but causality is not established."
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-008",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-22",
+  "topic_id": "D8",
+  "user_query": "Background reading on sea-level rise",
+  "sub_queries": [
+   "What is known about sea-level rise?",
+   "What evidence supports: Global mean sea level rose about 0.20 m between 1901 and 201?"
+  ],
+  "sources_consulted": [
+   "D8-A1",
+   "D8-N1"
+  ],
+  "key_findings": [
+   "Global mean sea level rose about 0.20 m between 1901 and 2018.",
+   "2100 projections range from ~0.28-0.55 m (very low emissions) to ~0.63-1.01 m (very high emissions)."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-009",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-03-15",
+  "topic_id": "D1",
+  "user_query": "Key findings about intermittent fasting",
+  "sub_queries": [
+   "What is known about intermittent fasting?",
+   "What evidence supports: A preliminary, non-peer-reviewed observational study linked ?"
+  ],
+  "sources_consulted": [
+   "D1-A1",
+   "D1-A2",
+   "D1-N1"
+  ],
+  "key_findings": [
+   "A preliminary, non-peer-reviewed observational study linked <8-hour eating windows to higher cardiovascular death risk, but it cannot show causation.",
+   "Intermittent fasting produces weight loss similar to continuous calorie restriction; it is not superior."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "partially answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-010",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-07-09",
+  "topic_id": "D2",
+  "user_query": "Key findings about vaccines and boosters",
+  "sub_queries": [
+   "What is known about vaccines and boosters?",
+   "What evidence supports: mRNA vaccines make cells produce the antigen; the mRNA degra?"
+  ],
+  "sources_consulted": [
+   "D2-A2",
+   "D2-A3"
+  ],
+  "key_findings": [
+   "mRNA vaccines make cells produce the antigen; the mRNA degrades and does not alter DNA, unlike conventional vaccines which deliver the antigen or weakened pathogen.",
+   "Protection against severe disease wanes more slowly than protection against infection."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-011",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-03-09",
+  "topic_id": "D3",
+  "user_query": "Key findings about c4 vs c3 photosynthesis",
+  "sub_queries": [
+   "What is known about c4 vs c3 photosynthesis?",
+   "What evidence supports: C3 plants fix CO2 directly with RuBisCO, producing a 3-carbo?"
+  ],
+  "sources_consulted": [
+   "D3-A1",
+   "D3-A2"
+  ],
+  "key_findings": [
+   "C3 plants fix CO2 directly with RuBisCO, producing a 3-carbon compound (3-PGA).",
+   "Maize, sugarcane and sorghum are C4 crops."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-012",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-10-13",
+  "topic_id": "D4",
+  "user_query": "Key findings about machine learning vs deep learning",
+  "sub_queries": [
+   "What is known about machine learning vs deep learning?",
+   "What evidence supports: Deep learning is a subset of machine learning.?"
+  ],
+  "sources_consulted": [
+   "D4-A1",
+   "D4-N1"
+  ],
+  "key_findings": [
+   "Deep learning is a subset of machine learning.",
+   "Deep learning learns hierarchical features from raw data; classical ML relies on hand-engineered features."
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-013",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-03-21",
+  "topic_id": "D5",
+  "user_query": "Key findings about 2008 financial crisis",
+  "sub_queries": [
+   "What is known about 2008 financial crisis?",
+   "What evidence supports: The role of the Glass-Steagall repeal/deregulation is disput?"
+  ],
+  "sources_consulted": [
+   "D5-A1",
+   "D5-A2",
+   "D5-N1"
+  ],
+  "key_findings": [
+   "The role of the Glass-Steagall repeal/deregulation is disputed and often considered minor.",
+   "High leverage and reliance on short-term funding made institutions fragile."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-014",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-09-28",
+  "topic_id": "D6",
+  "user_query": "Key findings about inflation",
+  "sub_queries": [
+   "What is known about inflation?",
+   "What evidence supports: Demand-pull inflation: aggregate demand exceeds productive c?"
+  ],
+  "sources_consulted": [
+   "D6-A1",
+   "D6-N1"
+  ],
+  "key_findings": [
+   "Demand-pull inflation: aggregate demand exceeds productive capacity.",
+   "Inflation is commonly measured with the consumer price index (CPI)."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-015",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-02-10",
+  "topic_id": "D7",
+  "user_query": "Key findings about artificial sweeteners",
+  "sub_queries": [
+   "What is known about artificial sweeteners?",
+   "What evidence supports: In 2023 IARC classified aspartame as possibly carcinogenic (?"
+  ],
+  "sources_consulted": [
+   "D7-A1",
+   "D7-N1"
+  ],
+  "key_findings": [
+   "In 2023 IARC classified aspartame as possibly carcinogenic (Group 2B) based on limited evidence.",
+   "JECFA kept the acceptable daily intake at 40 mg/kg body weight."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "partially answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-016",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-09-04",
+  "topic_id": "D8",
+  "user_query": "Key findings about sea-level rise",
+  "sub_queries": [
+   "What is known about sea-level rise?",
+   "What evidence supports: The rate of rise has accelerated (to ~3.7 mm/yr in 2006-2018?"
+  ],
+  "sources_consulted": [
+   "D8-A1",
+   "D8-A2",
+   "D8-N1"
+  ],
+  "key_findings": [
+   "The rate of rise has accelerated (to ~3.7 mm/yr in 2006-2018).",
+   "2100 projections range from ~0.28-0.55 m (very low emissions) to ~0.63-1.01 m (very high emissions)."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-017",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-03-18",
+  "topic_id": "D1",
+  "user_query": "Controversies around intermittent fasting",
+  "sub_queries": [
+   "What is known about intermittent fasting?",
+   "What evidence supports: Intermittent fasting modestly improves insulin sensitivity /?"
+  ],
+  "sources_consulted": [
+   "D1-A1",
+   "D1-N1"
+  ],
+  "key_findings": [
+   "Intermittent fasting modestly improves insulin sensitivity / fasting glucose.",
+   "A preliminary, non-peer-reviewed observational study linked <8-hour eating windows to higher cardiovascular death risk, but it cannot show causation."
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-018",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-01-08",
+  "topic_id": "D2",
+  "user_query": "Controversies around vaccines and boosters",
+  "sub_queries": [
+   "What is known about vaccines and boosters?",
+   "What evidence supports: mRNA vaccines make cells produce the antigen; the mRNA degra?"
+  ],
+  "sources_consulted": [
+   "D2-A2",
+   "D2-A3",
+   "D2-N1"
+  ],
+  "key_findings": [
+   "mRNA vaccines make cells produce the antigen; the mRNA degrades and does not alter DNA, unlike conventional vaccines which deliver the antigen or weakened pathogen.",
+   "Boosters restore antibody levels and protection."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-019",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-09-06",
+  "topic_id": "D3",
+  "user_query": "Controversies around c4 vs c3 photosynthesis",
+  "sub_queries": [
+   "What is known about c4 vs c3 photosynthesis?",
+   "What evidence supports: C4 plants first fix CO2 with PEP carboxylase into a 4-carbon?"
+  ],
+  "sources_consulted": [
+   "D3-A1"
+  ],
+  "key_findings": [
+   "C4 plants first fix CO2 with PEP carboxylase into a 4-carbon compound in mesophyll cells.",
+   "Kranz anatomy concentrates CO2 around RuBisCO in bundle-sheath cells, suppressing photorespiration."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-020",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-05-13",
+  "topic_id": "D4",
+  "user_query": "Controversies around machine learning vs deep learning",
+  "sub_queries": [
+   "What is known about machine learning vs deep learning?",
+   "What evidence supports: Deep learning learns hierarchical features from raw data; cl?"
+  ],
+  "sources_consulted": [
+   "D4-A1",
+   "D4-A2",
+   "D4-A3"
+  ],
+  "key_findings": [
+   "Deep learning learns hierarchical features from raw data; classical ML relies on hand-engineered features.",
+   "Deep learning needs large datasets and substantial compute (GPUs)."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-021",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-09-15",
+  "topic_id": null,
+  "user_query": "Who played organ on like a rolling stone?",
+  "sub_queries": [
+   "who played organ on like a rolling stone"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0005"
+  ],
+  "key_findings": [
+   "Answer: Al Kooper. Evidence: Al Kooper Al Kooper (born Alan Peter Kuperschmidt, February 5, 1944) is an American songwriter, record producer and musician, known for organizing Blood, Sweat & Tears (although he did not stay with the group long enough to share its popularity), providing studio support for Bob Dylan when he went e"
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-022",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-08",
+  "topic_id": null,
+  "user_query": "Don go breaking my heart who sings it?",
+  "sub_queries": [
+   "don go breaking my heart who sings it"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0006"
+  ],
+  "key_findings": [
+   "Answer: Kiki Dee. Evidence: Don't Go Breaking My Heart \"Don't Go Breaking My Heart\" is a duet by Elton John and Kiki Dee."
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-023",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-06-01",
+  "topic_id": null,
+  "user_query": "When was the first heart transplant performed in the world?",
+  "sub_queries": [
+   "when was the first heart transplant performed in the world"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0007"
+  ],
+  "key_findings": [
+   "Answer: December 3, 1967. Evidence: Christiaan Barnard Christiaan Neethling Barnard (8 November 1922 – 2 September 2001) was a South African cardiac surgeon who performed the world's first human-to-human heart transplant on December 3, 1967,[1][2] and the second overall heart transplant (James Hardy did a xenotransplant in 1964[3])."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-024",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-09-08",
+  "topic_id": null,
+  "user_query": "Who played sully on dr quinn medicine woman?",
+  "sub_queries": [
+   "who played sully on dr quinn medicine woman"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0008"
+  ],
+  "key_findings": [
+   "Answer: Joseph John Lando. Evidence: Joe Lando Joseph John Lando (born December 9, 1961) is an American actor, most recognizable for playing Byron Sully on the TV series Dr."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-025",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-01",
+  "topic_id": null,
+  "user_query": "Where is the planet saturn located in the solar system?",
+  "sub_queries": [
+   "where is the planet saturn located in the solar system"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0009"
+  ],
+  "key_findings": [
+   "Answer: sixth planet from the Sun. Evidence: Saturn Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-026",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-01-08",
+  "topic_id": null,
+  "user_query": "When was the first nuclear power plant built in canada?",
+  "sub_queries": [
+   "when was the first nuclear power plant built in canada"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0010"
+  ],
+  "key_findings": [
+   "Answer: 1962. Evidence: The 20 MWe NPD started operation in June 1962 and demonstrated the unique concepts of on-power refueling using natural uranium fuel, and heavy water moderator and coolant."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-027",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-01-28",
+  "topic_id": null,
+  "user_query": "When did the nuclear stockpile of the united states peak?",
+  "sub_queries": [
+   "when did the nuclear stockpile of the united states peak"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0011"
+  ],
+  "key_findings": [
+   "Answer: 1967. Evidence: As of 2017, the US has an estimated 4,018 nuclear weapons in either deployment or storage.[40] This figure compares to a peak of 31,225 total warheads in 1967 and 22,217 in 1989, and does not include \"several thousand\" warheads that have been retired and scheduled for dismantlement."
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-028",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-02-17",
+  "topic_id": null,
+  "user_query": "When did the north korean nuclear program start?",
+  "sub_queries": [
+   "when did the north korean nuclear program start"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0012"
+  ],
+  "key_findings": [
+   "Answer: 1956. Evidence: Phase I (1956–80) dealt primarily with training and gaining basic knowledge."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-029",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-05-22",
+  "topic_id": null,
+  "user_query": "How do they test for drugs at the olympics?",
+  "sub_queries": [
+   "how do they test for drugs at the olympics"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0013"
+  ],
+  "key_findings": [
+   "Answer: urine and blood testing. Evidence: Both urine and blood testing was used in a coordinated effort to detect banned substances and recent blood transfusions."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-030",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-18",
+  "topic_id": null,
+  "user_query": "Who were the scientists who developed the cell theory?",
+  "sub_queries": [
+   "who were the scientists who developed the cell theory"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0014"
+  ],
+  "key_findings": [
+   "Answer: Matthias Jakob Schleiden. Evidence: Cell theory Credit for developing cell theory is usually given to two scientists: Theodor Schwann and Matthias Jakob Schleiden.[13] While Rudolf Virchow contributed to the theory, he is not as credited for his attributions toward it."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-031",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-10-19",
+  "topic_id": null,
+  "user_query": "Specific gravity is a comparison of the weight of a substance to the weight of an equal volume of?",
+  "sub_queries": [
+   "specific gravity is a comparison of the weight of a substance to the weight of an equal volume of"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0015"
+  ],
+  "key_findings": [
+   "Answer: a reference substance. Evidence: Specific gravity Specific gravity is the ratio of the density of a substance to the density of a reference substance; equivalently, it is the ratio of the mass of a substance to the mass of a reference substance for the same given volume."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-032",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-26",
+  "topic_id": null,
+  "user_query": "Acquired immunodeficiency syndrome (aids) was identified as a disease in the?",
+  "sub_queries": [
+   "acquired immunodeficiency syndrome (aids) was identified as a disease in the"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0016"
+  ],
+  "key_findings": [
+   "Answer: early 1980s. Evidence: HIV/AIDS In 2016, about 36.7 million people were living with HIV and it resulted in 1 million deaths.[16] There were 300,000 fewer new HIV cases in 2016 than in 2015.[17] Most of those infected live in sub-Saharan Africa.[5] From the time AIDS was identified in the early 1980s to 2017, the disease h"
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-033",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-07-07",
+  "topic_id": null,
+  "user_query": "How many different species of arachnids are there?",
+  "sub_queries": [
+   "how many different species of arachnids are there"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0017"
+  ],
+  "key_findings": [
+   "Answer: over 100,000. Evidence: They comprise over 100,000 named species."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-034",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-02-22",
+  "topic_id": null,
+  "user_query": "What part of a cow does a t-bone steak come from?",
+  "sub_queries": [
+   "what part of a cow does a t-bone steak come from"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0018"
+  ],
+  "key_findings": [
+   "Answer: short loin. Evidence: T-bone steak The T-bone and porterhouse are steaks of beef cut from the short loin (called the sirloin in Commonwealth countries)."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-035",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-06-14",
+  "topic_id": null,
+  "user_query": "Who is in cake by the ocean video?",
+  "sub_queries": [
+   "who is in cake by the ocean video"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0019"
+  ],
+  "key_findings": [
+   "Answer: DNCE. Evidence: It depicts DNCE performing \"in front of a giant piece of cake on the beach\" while a cake-throwing battle ensues between The Fat Jew and \"a bunch of bikini clad women who are 'Team DNCE'\"."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-036",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-08-28",
+  "topic_id": null,
+  "user_query": "What is the medical term for neck pain?",
+  "sub_queries": [
+   "what is the medical term for neck pain"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0020"
+  ],
+  "key_findings": [
+   "Answer: cervicalgia. Evidence: Neck pain Neck pain (or cervicalgia) is a common problem, with two-thirds of the population having neck pain at some point in their lives.[1]"
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-037",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-01-22",
+  "topic_id": null,
+  "user_query": "Where does language come from in the brain?",
+  "sub_queries": [
+   "where does language come from in the brain"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0021"
+  ],
+  "key_findings": [
+   "Answer: cerebral cortex. Evidence: Language processing in the brain Studies have shown that most of the language processing functions are carried out in the cerebral cortex."
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-038",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-02-02",
+  "topic_id": null,
+  "user_query": "Is the process of transferring blood from one person to another?",
+  "sub_queries": [
+   "is the process of transferring blood from one person to another"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0022"
+  ],
+  "key_findings": [
+   "Answer: Blood transfusion. Evidence: Blood transfusion Blood transfusion is generally the process of receiving blood or blood products into one's circulation intravenously."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-039",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-06-26",
+  "topic_id": null,
+  "user_query": "Blood is pumped from which part of the heart to the lungs?",
+  "sub_queries": [
+   "blood is pumped from which part of the heart to the lungs"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0023"
+  ],
+  "key_findings": [
+   "Answer: right ventricle. Evidence: Pulmonary circulation The pulmonary circulation is the portion of the circulatory system which carries deoxygenated blood away from the right ventricle of the heart, to the lungs, and returns oxygenated blood to the left atrium and ventricle of the heart.[1] The term pulmonary circulation is readily"
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-040",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-04-07",
+  "topic_id": null,
+  "user_query": "Who wrote the song take another piece of my heart?",
+  "sub_queries": [
+   "who wrote the song take another piece of my heart"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0024"
+  ],
+  "key_findings": [
+   "Answer: Bert Berns. Evidence: Piece of My Heart \"Piece of My Heart\" is a romantic funk/soul love song written by Jerry Ragovoy and Bert Berns, originally recorded by Erma Franklin in 1967."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-041",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-09-15",
+  "topic_id": null,
+  "user_query": "The bacterium e. coli swims in a straight line called a?",
+  "sub_queries": [
+   "the bacterium e. coli swims in a straight line called a"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0025"
+  ],
+  "key_findings": [
+   "Answer: Chemotaxis. Evidence: Chemotaxis Chemotaxis (from chemo- + taxis) is the movement of an organism in response to a chemical stimulus.[1] Somatic cells, bacteria, and other single-cell or multicellular organisms direct their movements according to certain chemicals in their environment."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-042",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-07-06",
+  "topic_id": null,
+  "user_query": "What type of economy does the united states have?",
+  "sub_queries": [
+   "what type of economy does the united states have"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0026"
+  ],
+  "key_findings": [
+   "Answer: highly developed mixed economy. Evidence: Economy of the United States The economy of the United States is a highly developed mixed economy.[27][28] It is the world's largest economy by nominal GDP and the second-largest by purchasing power parity (PPP).[29] It has the world's seventh-highest per capita GDP (nominal) and eleventh-highest pe"
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-043",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-08-08",
+  "topic_id": null,
+  "user_query": "Substance that causes destruction of red blood cells?",
+  "sub_queries": [
+   "substance that causes destruction of red blood cells"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0027"
+  ],
+  "key_findings": [
+   "Answer: Hemolysins. Evidence: Hemolysis Hemolysins damage the host cytoplasmic membrane, causing cell lysis and death."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-044",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-08-26",
+  "topic_id": null,
+  "user_query": "What is the medial bone of the forearm?",
+  "sub_queries": [
+   "what is the medial bone of the forearm"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0028"
+  ],
+  "key_findings": [
+   "Answer: ulna. Evidence: Ulna The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger, and when in anatomical position, is found on the medial side of the forearm."
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-045",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-02-02",
+  "topic_id": null,
+  "user_query": "What are the hormones produced by the kidney?",
+  "sub_queries": [
+   "what are the hormones produced by the kidney"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0029"
+  ],
+  "key_findings": [
+   "Answer: erythropoietin. Evidence: Kidney The kidneys secrete a variety of hormones, including erythropoietin, and the enzyme renin."
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 5
+ },
+ {
+  "session_id": "EP-046",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-09-27",
+  "topic_id": null,
+  "user_query": "What is produced in the intermembrane space of mitochondria?",
+  "sub_queries": [
+   "what is produced in the intermembrane space of mitochondria"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0030"
+  ],
+  "key_findings": [
+   "Answer: ATP. Evidence: As a concentration gradient of hydrogen ions forms, a protein called ATP synthase harnesses the potential energy of these ions and starts chemiosmosis, where the H+ ions reenter the matrix via this enzyme bound to the cristae (folds of the inner membrane)."
+  ],
+  "user_preference": "Prefers concise bullet-point summaries with APA citations.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-047",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-02-25",
+  "topic_id": null,
+  "user_query": "When were health warnings put on cigarette packets?",
+  "sub_queries": [
+   "when were health warnings put on cigarette packets"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0031"
+  ],
+  "key_findings": [
+   "Answer: 2003. Evidence: Tobacco packaging warning messages The WHO Framework Convention on Tobacco Control, adopted in 2003, requires such package warning messages to promote awareness against smoking.[1]"
+  ],
+  "user_preference": "Wants both sides of contested evidence presented explicitly.",
+  "outcome": "answered",
+  "user_rating": 3
+ },
+ {
+  "session_id": "EP-048",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-03-14",
+  "topic_id": null,
+  "user_query": "Where does the right ventrical pump blood to?",
+  "sub_queries": [
+   "where does the right ventrical pump blood to"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0032"
+  ],
+  "key_findings": [
+   "Answer: the lungs. Evidence: Further, the left ventricle has thicker walls than the right because it needs to pump blood to most of the body while the right ventricle fills only the lungs."
+  ],
+  "user_preference": "Asks for peer-reviewed sources over news where possible.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-049",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-08-07",
+  "topic_id": null,
+  "user_query": "A medical term that means decrease in blood pressure is?",
+  "sub_queries": [
+   "a medical term that means decrease in blood pressure is"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0033"
+  ],
+  "key_findings": [
+   "Answer: orthostatic hypotension. Evidence: This is known as orthostatic hypotension (postural hypotension); gravity reduces the rate of blood return from the body veins below the heart back to the heart, thus reducing stroke volume and cardiac output.[citation needed]"
+  ],
+  "user_preference": "Prefers plain-language explanations for a non-expert audience.",
+  "outcome": "answered",
+  "user_rating": 4
+ },
+ {
+  "session_id": "EP-050",
+  "synthetic": true,
+  "record_type": "SYNTHETIC research session",
+  "date": "2026-01-06",
+  "topic_id": null,
+  "user_query": "When did hand foot and mouth disease begin?",
+  "sub_queries": [
+   "when did hand foot and mouth disease begin"
+  ],
+  "sources_consulted": [
+   "WIKI-NQ-0034"
+  ],
+  "key_findings": [
+   "Answer: 1957. Evidence: Hand, foot, and mouth disease HFMD cases were first described clinically in Canada and New Zealand in 1957.[17] The disease was termed \"Hand Foot and Mouth Disease\", by Thomas Henry Flewett, after a similar outbreak in 1960.[45] [46]"
+  ],
+  "user_preference": "Wants numbers and effect sizes quoted precisely.",
+  "outcome": "answered",
+  "user_rating": 4
+ }
+]

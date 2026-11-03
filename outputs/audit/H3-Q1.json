@@ -1,0 +1,314 @@
+{
+ "question": "What do we know about the effects of microplastics on human health?",
+ "started": "2026-11-03T22:55:33",
+ "route": {
+  "type": "new_research",
+  "standalone_query": "What do we know about the effects of microplastics on human health?",
+  "complexity": "complex"
+ },
+ "sub_queries": {
+  "static": [
+   "What do we know about the effects of microplastics on human health?",
+   "What do we know about the effects of microplastics on human health? evidence limitations criticism"
+  ],
+  "refinements": [
+   []
+  ]
+ },
+ "tool_calls": [
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What do we know about the effects of microplastics on human health?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 1.1265997999998945,
+   "output_size": 3160,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What do we know about the effects of microplastics on human health?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.31191370000033203,
+   "output_size": 5038,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What do we know about the effects of microplastics on human health?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.7428032000007079,
+   "output_size": 2760,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What do we know about the effects of microplastics on human health? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 1.1529344000000492,
+   "output_size": 3279,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What do we know about the effects of microplastics on human health? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.6848149999996167,
+   "output_size": 4879,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What do we know about the effects of microplastics on human health? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:33",
+   "latency_s": 0.7036083000002691,
+   "output_size": 2760,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://dailyscience.example.com/2024-08-30/microplastics-found-in-blood--placenta-and-brain-tissue"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.16859169999952428,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://en.wikipedia.org/wiki/Microplastics"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.11842630000046483,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-environmental-health-reports/h3-a2"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.1444022000005134,
+   "output_size": 166,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-journal-of-medicine/h3-a1"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.12582639999982348,
+   "output_size": 182,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://viralhealthdaily.example.net/2023-04-11/the-microplastic-detox-everyone-needs"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.1300267000005988,
+   "output_size": 169,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.1612807999999859,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.2469991999996637,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-british-journal-of-medicine/h1-a1"
+   },
+   "timestamp": "22:55:34",
+   "latency_s": 0.1097527000001719,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H3-N1"
+   },
+   "timestamp": "22:55:35",
+   "latency_s": 0.03013849999933882,
+   "output_size": 297,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "WIKI-Microplastics"
+   },
+   "timestamp": "22:55:35",
+   "latency_s": 0.04001779999998689,
+   "output_size": 194,
+   "ok": true,
+   "error": ""
+  }
+ ],
+ "sources": [
+  {
+   "sid": "S1",
+   "doc_id": "H3-N1",
+   "title": "Microplastics found in blood, placenta and brain tissue",
+   "url": "https://dailyscience.example.com/2024-08-30/microplastics-found-in-blood--placenta-and-brain-tissue",
+   "credibility": 0.541,
+   "source": "news"
+  },
+  {
+   "sid": "S2",
+   "doc_id": "WIKI-Microplastics",
+   "title": "Microplastics",
+   "url": "https://en.wikipedia.org/wiki/Microplastics",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
+   "sid": "S3",
+   "doc_id": "H3-A2",
+   "title": "Microplastics in drinking water: a health risk assessment",
+   "url": "https://journals.example.org/synthetic-environmental-health-reports/h3-a2",
+   "credibility": 0.93,
+   "source": "academic"
+  },
+  {
+   "sid": "S4",
+   "doc_id": "H3-A1",
+   "title": "Microplastics and nanoplastics in carotid plaque and cardiovascular events",
+   "url": "https://journals.example.org/synthetic-journal-of-medicine/h3-a1",
+   "credibility": 0.816,
+   "source": "academic"
+  },
+  {
+   "sid": "S5",
+   "doc_id": "H3-N2",
+   "title": "The microplastic detox everyone needs",
+   "url": "https://viralhealthdaily.example.net/2023-04-11/the-microplastic-detox-everyone-needs",
+   "credibility": 0.243,
+   "source": "news"
+  },
+  {
+   "sid": "S6",
+   "doc_id": "H2-A2",
+   "title": "How bacteria become resistant: mechanisms and drivers",
+   "url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2",
+   "credibility": 0.829,
+   "source": "academic"
+  },
+  {
+   "sid": "S7",
+   "doc_id": "D7-A1",
+   "title": "Hazard versus risk: the 2023 aspartame evaluations",
+   "url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1",
+   "credibility": 0.847,
+   "source": "academic"
+  },
+  {
+   "sid": "S8",
+   "doc_id": "H1-A1",
+   "title": "Coffee consumption and health: an umbrella review of meta-analyses",
+   "url": "https://journals.example.org/synthetic-british-journal-of-medicine/h1-a1",
+   "credibility": 0.914,
+   "source": "academic"
+  }
+ ],
+ "conflicts": [],
+ "claims": [
+  {
+   "text": "Thought: mock reasoning step one because the question asks something.",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Therefore step two follows [S1].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "However, sources may disagree [S2].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Final Answer: mock answer (38) based on: Evidence: [S1] (news/reputable, Daily Science Report, 2024) Microplastics found in blood, placenta and brain tissue Researchers have detected microplastics in human blood, placenta and brain tissue samples.",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Scientists caution that contamination during laboratory measurement is a serious challenge an",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  }
+ ],
+ "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (38) based on: Evidence: [S1] (news/reputable, Daily Science Report, 2024) Microplastics found in blood, placenta and brain tissue Researchers have detected microplastics in human blood, placenta and brain tissue samples. Scientists caution that contamination during laboratory measurement is a serious challenge an",
+ "overall_confidence": 0.05,
+ "metrics": {
+  "latency_s": 1.6703047999999399,
+  "llm_calls": 7,
+  "input_tokens": 6370,
+  "output_tokens": 205,
+  "cost_usd": 0.034925,
+  "n_tool_calls": 16,
+  "pii_redacted": [],
+  "halluc_before": 1.0,
+  "halluc_after": 1.0
+ }
+}

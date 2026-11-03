@@ -1,0 +1,319 @@
+{
+ "question": "What does current evidence say about the health benefits and risks of drinking coffee?",
+ "started": "2026-11-03T22:55:29",
+ "route": {
+  "type": "new_research",
+  "standalone_query": "What does current evidence say about the health benefits and risks of drinking coffee?",
+  "complexity": "complex"
+ },
+ "sub_queries": {
+  "static": [
+   "What does current evidence say about the health benefits and risks of drinking coffee?",
+   "What does current evidence say about the health benefits and risks of drinking coffee? evidence limitations criticism"
+  ],
+  "refinements": [
+   []
+  ]
+ },
+ "tool_calls": [
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What does current evidence say about the health benefits and risks of drinking coffee?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:29",
+   "latency_s": 1.0206139000001713,
+   "output_size": 3319,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What does current evidence say about the health benefits and risks of drinking coffee?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:29",
+   "latency_s": 0.35973330000069836,
+   "output_size": 4858,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What does current evidence say about the health benefits and risks of drinking coffee?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:29",
+   "latency_s": 0.4527133000001413,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What does current evidence say about the health benefits and risks of drinking coffee? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:29",
+   "latency_s": 1.1412921000001006,
+   "output_size": 3319,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What does current evidence say about the health benefits and risks of drinking coffee? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:29",
+   "latency_s": 0.5529425000004267,
+   "output_size": 5210,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What does current evidence say about the health benefits and risks of drinking coffee? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:29",
+   "latency_s": 0.7636253999999099,
+   "output_size": 2805,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "What does current evidence say about the health benefits and risks of drinking coffee?"
+   },
+   "timestamp": "22:55:30",
+   "latency_s": 0.8407531000002564,
+   "output_size": 3412,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-british-journal-of-medicine/h1-a1"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.14737500000046566,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://en.wikipedia.org/wiki/Health_effects_of_coffee"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.228522399999747,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-journal-of-cardiology/h1-a2"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.19974980000006326,
+   "output_size": 177,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://healthbuzz.example.net/2018-11-21/coffee-causes-heart-attacks---stop-drinking-it-now"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.13966760000039358,
+   "output_size": 170,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.18054620000020805,
+   "output_size": 169,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://globalhealthwire.example.com/2021-05-10/how-much-caffeine-is-safe-during-pregnancy"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.19314349999967817,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.2060231000004933,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.18011420000038925,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H1-A1"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.04689050000069983,
+   "output_size": 284,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "WIKI-Health_effects_of_coffee"
+   },
+   "timestamp": "22:55:31",
+   "latency_s": 0.021771300000182237,
+   "output_size": 227,
+   "ok": true,
+   "error": ""
+  }
+ ],
+ "sources": [
+  {
+   "sid": "S1",
+   "doc_id": "H1-A1",
+   "title": "Coffee consumption and health: an umbrella review of meta-analyses",
+   "url": "https://journals.example.org/synthetic-british-journal-of-medicine/h1-a1",
+   "credibility": 0.914,
+   "source": "academic"
+  },
+  {
+   "sid": "S2",
+   "doc_id": "WIKI-Health_effects_of_coffee",
+   "title": "Health effects of coffee",
+   "url": "https://en.wikipedia.org/wiki/Health_effects_of_coffee",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
+   "sid": "S3",
+   "doc_id": "H1-A2",
+   "title": "Acute effects of coffee on cardiac ectopy, activity and sleep: a randomised crossover trial",
+   "url": "https://journals.example.org/synthetic-journal-of-cardiology/h1-a2",
+   "credibility": 0.899,
+   "source": "academic"
+  },
+  {
+   "sid": "S4",
+   "doc_id": "H1-N2",
+   "title": "Coffee causes heart attacks - stop drinking it now!",
+   "url": "https://healthbuzz.example.net/2018-11-21/coffee-causes-heart-attacks---stop-drinking-it-now",
+   "credibility": 0.221,
+   "source": "news"
+  },
+  {
+   "sid": "S5",
+   "doc_id": "H5-A2",
+   "title": "Unprocessed red and processed meat consumption: a guideline recommendation",
+   "url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2",
+   "credibility": 0.832,
+   "source": "academic"
+  },
+  {
+   "sid": "S6",
+   "doc_id": "H1-N1",
+   "title": "How much caffeine is safe during pregnancy?",
+   "url": "https://globalhealthwire.example.com/2021-05-10/how-much-caffeine-is-safe-during-pregnancy",
+   "credibility": 0.519,
+   "source": "news"
+  },
+  {
+   "sid": "S7",
+   "doc_id": "D7-A1",
+   "title": "Hazard versus risk: the 2023 aspartame evaluations",
+   "url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1",
+   "credibility": 0.847,
+   "source": "academic"
+  },
+  {
+   "sid": "S8",
+   "doc_id": "D1-N1",
+   "title": "Eating within an 8-hour window linked to higher cardiovascular death risk in preliminary study",
+   "url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul",
+   "credibility": 0.538,
+   "source": "news"
+  }
+ ],
+ "conflicts": [],
+ "claims": [
+  {
+   "text": "Thought: mock reasoning step one because the question asks something.",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Therefore step two follows [S1].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "However, sources may disagree [S2].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Final Answer: mock answer (54) based on: Evidence: [S1] (academic/journal, Synthetic British Journal of Medicine, 2017) Coffee consumption and health: an umbrella review of meta-analyses Drinking three to four cups of coffee a day was associated with about 17% lower all-cause mortality compared with no coffee, and with lower risks of type",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  }
+ ],
+ "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (54) based on: Evidence: [S1] (academic/journal, Synthetic British Journal of Medicine, 2017) Coffee consumption and health: an umbrella review of meta-analyses Drinking three to four cups of coffee a day was associated with about 17% lower all-cause mortality compared with no coffee, and with lower risks of type",
+ "overall_confidence": 0.05,
+ "metrics": {
+  "latency_s": 2.475492999999915,
+  "llm_calls": 7,
+  "input_tokens": 6112,
+  "output_tokens": 221,
+  "cost_usd": 0.033875,
+  "n_tool_calls": 17,
+  "pii_redacted": [],
+  "halluc_before": 1.0,
+  "halluc_after": 1.0
+ }
+}

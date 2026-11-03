@@ -1,0 +1,17 @@
+openai>=1.40
+pydantic>=2.6
+python-dotenv
+tiktoken
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+networkx
+sentence-transformers
+faiss-cpu
+rank-bm25
+datasets
+nbformat
+nbconvert
+ipykernel

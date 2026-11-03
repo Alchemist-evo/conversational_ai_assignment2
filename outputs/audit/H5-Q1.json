@@ -1,0 +1,308 @@
+{
+ "question": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+ "started": "2026-11-03T22:55:37",
+ "route": {
+  "type": "new_research",
+  "standalone_query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+  "complexity": "complex"
+ },
+ "sub_queries": {
+  "static": [
+   "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+   "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism"
+  ],
+  "refinements": [
+   []
+  ]
+ },
+ "tool_calls": [
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:37",
+   "latency_s": 0.6501058000003468,
+   "output_size": 3286,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:37",
+   "latency_s": 0.3573209999995015,
+   "output_size": 5030,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:37",
+   "latency_s": 0.6844304999995074,
+   "output_size": 2679,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:37",
+   "latency_s": 0.8583667000002606,
+   "output_size": 3286,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:37",
+   "latency_s": 0.4887095000003683,
+   "output_size": 4385,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:37",
+   "latency_s": 0.6573591000005763,
+   "output_size": 2679,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.14342069999929663,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.21041879999938828,
+   "output_size": 169,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://en.wikipedia.org/wiki/Red_meat"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.2382238000000143,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.18685119999918243,
+   "output_size": 168,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://wellnesswave.example.net/2020-01-15/meat-is-perfectly-healthy---the-cancer-link-is-a-myth"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.24113190000025497,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.24594150000029913,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.12698879999970814,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-journal-of-population-health/d7-a2"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.16900509999959468,
+   "output_size": 162,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H5-N1"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.059333199999855424,
+   "output_size": 285,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H5-A2"
+   },
+   "timestamp": "22:55:38",
+   "latency_s": 0.03612100000009377,
+   "output_size": 298,
+   "ok": true,
+   "error": ""
+  }
+ ],
+ "sources": [
+  {
+   "sid": "S1",
+   "doc_id": "H5-N1",
+   "title": "Meat guidelines spark backlash from health bodies",
+   "url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies",
+   "credibility": 0.512,
+   "source": "news"
+  },
+  {
+   "sid": "S2",
+   "doc_id": "H5-A2",
+   "title": "Unprocessed red and processed meat consumption: a guideline recommendation",
+   "url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2",
+   "credibility": 0.832,
+   "source": "academic"
+  },
+  {
+   "sid": "S3",
+   "doc_id": "WIKI-Red_meat",
+   "title": "Red meat",
+   "url": "https://en.wikipedia.org/wiki/Red_meat",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
+   "sid": "S4",
+   "doc_id": "H5-A1",
+   "title": "Carcinogenicity of red and processed meat: evaluation summary",
+   "url": "https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1",
+   "credibility": 0.856,
+   "source": "academic"
+  },
+  {
+   "sid": "S5",
+   "doc_id": "H5-N2",
+   "title": "Meat is perfectly healthy - the cancer link is a myth",
+   "url": "https://wellnesswave.example.net/2020-01-15/meat-is-perfectly-healthy---the-cancer-link-is-a-myth",
+   "credibility": 0.226,
+   "source": "news"
+  },
+  {
+   "sid": "S6",
+   "doc_id": "D7-A1",
+   "title": "Hazard versus risk: the 2023 aspartame evaluations",
+   "url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1",
+   "credibility": 0.847,
+   "source": "academic"
+  },
+  {
+   "sid": "S7",
+   "doc_id": "D1-N1",
+   "title": "Eating within an 8-hour window linked to higher cardiovascular death risk in preliminary study",
+   "url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul",
+   "credibility": 0.538,
+   "source": "news"
+  },
+  {
+   "sid": "S8",
+   "doc_id": "D7-A2",
+   "title": "Artificial sweeteners and cancer risk: a prospective cohort study",
+   "url": "https://journals.example.org/synthetic-journal-of-population-health/d7-a2",
+   "credibility": 0.825,
+   "source": "academic"
+  }
+ ],
+ "conflicts": [],
+ "claims": [
+  {
+   "text": "Thought: mock reasoning step one because the question asks something.",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Therefore step two follows [S1].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "However, sources may disagree [S2].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Final Answer: mock answer (36) based on: Evidence: [S1] (news/reputable, Global Health Wire, 2019) Meat guidelines spark backlash from health bodies A guideline suggesting people need not cut back on red and processed meat drew strong criticism from cancer and nutrition organisations, which say relative risk increases matter at population",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  }
+ ],
+ "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (36) based on: Evidence: [S1] (news/reputable, Global Health Wire, 2019) Meat guidelines spark backlash from health bodies A guideline suggesting people need not cut back on red and processed meat drew strong criticism from cancer and nutrition organisations, which say relative risk increases matter at population",
+ "overall_confidence": 0.05,
+ "metrics": {
+  "latency_s": 1.3789948000003278,
+  "llm_calls": 7,
+  "input_tokens": 6834,
+  "output_tokens": 202,
+  "cost_usd": 0.0372,
+  "n_tool_calls": 16,
+  "pii_redacted": [],
+  "halluc_before": 1.0,
+  "halluc_after": 1.0
+ }
+}

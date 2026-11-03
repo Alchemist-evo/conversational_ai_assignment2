@@ -1,0 +1,325 @@
+{
+ "question": "What caused the ozone hole, and is the ozone layer recovering?",
+ "started": "2026-11-03T22:55:41",
+ "route": {
+  "type": "new_research",
+  "standalone_query": "What caused the ozone hole, and is the ozone layer recovering?",
+  "complexity": "complex"
+ },
+ "sub_queries": {
+  "static": [
+   "What caused the ozone hole, and is the ozone layer recovering?",
+   "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism"
+  ],
+  "refinements": [
+   []
+  ]
+ },
+ "tool_calls": [
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What caused the ozone hole, and is the ozone layer recovering?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:41",
+   "latency_s": 1.0636874000001626,
+   "output_size": 3761,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What caused the ozone hole, and is the ozone layer recovering?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:41",
+   "latency_s": 0.581992899999932,
+   "output_size": 4913,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What caused the ozone hole, and is the ozone layer recovering?",
+    "max_results": 5
+   },
+   "timestamp": "22:55:41",
+   "latency_s": 0.614898799999537,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:41",
+   "latency_s": 0.7753970000003392,
+   "output_size": 3151,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:41",
+   "latency_s": 0.6799786000001404,
+   "output_size": 5002,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism",
+    "max_results": 5
+   },
+   "timestamp": "22:55:41",
+   "latency_s": 0.7918486999997185,
+   "output_size": 2785,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "What caused the ozone hole, and is the ozone layer recovering?"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.5940170000003491,
+   "output_size": 4318,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://en.wikipedia.org/wiki/Ozone_depletion"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.19194810000044527,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-reviews-of-atmospheric-chemistry/h8-a2"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.12453069999992294,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-atmospheric-assessment-reports/h8-a1"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.21344970000063768,
+   "output_size": 168,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://dailyscience.example.com/2023-01-10/rogue-cfc-emissions-slowed-ozone-progress"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.23772350000035658,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-government-inquiry-reports/d5-a3"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.20999200000005658,
+   "output_size": 166,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-review-of-financial-economics/d5-a1"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.13940240000010817,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-geophysical-research-letters/d8-a2"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.1446155000003273,
+   "output_size": 172,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
+   },
+   "timestamp": "22:55:43",
+   "latency_s": 0.10595949999969889,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "WIKI-Ozone_depletion"
+   },
+   "timestamp": "22:55:44",
+   "latency_s": 0.028841999999713153,
+   "output_size": 200,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H8-A2"
+   },
+   "timestamp": "22:55:44",
+   "latency_s": 0.04265510000004724,
+   "output_size": 290,
+   "ok": true,
+   "error": ""
+  }
+ ],
+ "sources": [
+  {
+   "sid": "S1",
+   "doc_id": "WIKI-Ozone_depletion",
+   "title": "Ozone depletion",
+   "url": "https://en.wikipedia.org/wiki/Ozone_depletion",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
+   "sid": "S2",
+   "doc_id": "H8-A2",
+   "title": "Stratospheric chlorine chemistry and the Antarctic ozone hole",
+   "url": "https://journals.example.org/synthetic-reviews-of-atmospheric-chemistry/h8-a2",
+   "credibility": 0.832,
+   "source": "academic"
+  },
+  {
+   "sid": "S3",
+   "doc_id": "H8-A1",
+   "title": "Scientific assessment of ozone depletion: 2022 summary",
+   "url": "https://journals.example.org/synthetic-atmospheric-assessment-reports/h8-a1",
+   "credibility": 0.917,
+   "source": "academic"
+  },
+  {
+   "sid": "S4",
+   "doc_id": "H8-N1",
+   "title": "Rogue CFC emissions slowed ozone progress",
+   "url": "https://dailyscience.example.com/2023-01-10/rogue-cfc-emissions-slowed-ozone-progress",
+   "credibility": 0.529,
+   "source": "news"
+  },
+  {
+   "sid": "S5",
+   "doc_id": "D5-A3",
+   "title": "Report of the national inquiry into the causes of the financial crisis (summary)",
+   "url": "https://journals.example.org/synthetic-government-inquiry-reports/d5-a3",
+   "credibility": 0.831,
+   "source": "academic"
+  },
+  {
+   "sid": "S6",
+   "doc_id": "D5-A1",
+   "title": "Anatomy of the 2007-2009 financial crisis",
+   "url": "https://journals.example.org/synthetic-review-of-financial-economics/d5-a1",
+   "credibility": 0.813,
+   "source": "academic"
+  },
+  {
+   "sid": "S7",
+   "doc_id": "D8-A2",
+   "title": "Satellite evidence for accelerating sea-level rise",
+   "url": "https://journals.example.org/synthetic-geophysical-research-letters/d8-a2",
+   "credibility": 0.829,
+   "source": "academic"
+  },
+  {
+   "sid": "S8",
+   "doc_id": "WIKI-NQ-0631",
+   "title": "Wikipedia passage: Placenta The placenta begins to develop...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
+   "source": "web"
+  }
+ ],
+ "conflicts": [],
+ "claims": [
+  {
+   "text": "Thought: mock reasoning step one because the question asks something.",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Therefore step two follows [S1].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "However, sources may disagree [S2].",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "Final Answer: mock answer (67) based on: Evidence: [S1] (wikipedia/encyclopedia, Wikipedia, The Free Encyclopedia, 2026) Ozone depletion Recovery was projected to continue over the next century, with the ozone hole expected to reach pre-1980 levels by around 2075.",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  },
+  {
+   "text": "In 2019, NASA reported that the ozone hole was the smallest ever since it wa",
+   "verdict": "UNSUPPORTED",
+   "confidence": 0.05,
+   "sources": []
+  }
+ ],
+ "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (67) based on: Evidence: [S1] (wikipedia/encyclopedia, Wikipedia, The Free Encyclopedia, 2026) Ozone depletion Recovery was projected to continue over the next century, with the ozone hole expected to reach pre-1980 levels by around 2075. In 2019, NASA reported that the ozone hole was the smallest ever since it wa",
+ "overall_confidence": 0.05,
+ "metrics": {
+  "latency_s": 2.1378869000000122,
+  "llm_calls": 7,
+  "input_tokens": 7697,
+  "output_tokens": 234,
+  "cost_usd": 0.041995,
+  "n_tool_calls": 17,
+  "pii_redacted": [],
+  "halluc_before": 1.0,
+  "halluc_after": 1.0
+ }
+}
