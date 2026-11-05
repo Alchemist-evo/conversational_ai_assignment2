@@ -87,7 +87,7 @@ figure {{ margin: 8px 0 14px; text-align: center; page-break-inside: avoid; }} f
 </style></head><body>
 <h1>End-to-End Research Assistant with Multi-Source Synthesis and Alignment Analysis</h1>
 <p><b>AIMLCZG521 Conversational AI — Assignment 2, Problem Statement 1 · Final Report</b><br>
-Team: <i>(names, IDs and contribution areas as listed in the notebook)</i></p>
+Team: Prajwal Shetty K P (2025AE05434) · Poornima Prakash Patil (2025AE05411) · Prasanth C (2025AE05388) · Jay Kumar Patel (2025AE05473) <i>— contribution areas as listed in the notebook</i></p>
 <div class="box"><b>Summary.</b> We built a research assistant that decomposes questions, calls academic, encyclopedia and news sources in parallel through a ReAct agent with six safety mechanisms, fuses evidence with credibility-weighted RRF and cross-encoder re-ranking, resolves conflicting claims by source credibility, writes cited syntheses, verifies and self-corrects its claims, attaches calibrated confidence, and records a full audit trail. It was evaluated on 10 complex held-out questions and 50 held-out Natural Questions with an LLM judge and a 1–5 rubric. The generator is Google gemini-3.1-flash-lite and the judge is gpt-oss-120b on Groq (both free tiers). Costs are reported at GPT-4o prices, as the brief requires.</div>
 <h2>1. Headline results</h2>{table(headline)}
 <h2>2. Architecture & workflow</h2>{img('fig0_1_pipeline', 'Figure 1 – Pipeline: Research Question → Decomposition → Multi-Source Function Calling → Evidence → Conflict Resolution → Synthesis → Citation → Memory Update', 92)}

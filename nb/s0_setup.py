@@ -12,11 +12,10 @@ md(r"""
 
 | # | Name | BITS ID | Contribution areas (≥ 2) | Evidence (notebook sections) |
 |---|------|---------|--------------------------|------------------------------|
-| 1 | _Name_ | _ID_ | Prompt Engineering & Multi-Step Reasoning; Paradigm Differentiation | Task 1; Task 5 Part C |
-| 2 | _Name_ | _ID_ | Multi-Source Function Calling & Security; Integration, Multi-Turn, Audit Trail & Evaluation | Task 2; Task 6 |
-| 3 | _Name_ | _ID_ | Memory, Query Decomposition, Retrieval & Advanced RAG; RAG Architecture Decisions & Cost Engineering | Task 3; Task 7 |
-| 4 | _Name_ | _ID_ | Multi-Source Synthesis, Calibration & RAG Triad; Instruction Tuning, RLHF, PEFT & Alignment | Task 4; Task 5 Parts A–B |
-| 5 | _Name_ | _ID_ | Visualization & Reporting; Integration, Multi-Turn, Audit Trail & Evaluation | All figures; Final report |
+| 1 | Prajwal Shetty K P | 2025AE05434 | Integration, Multi-Turn, Audit Trail & Evaluation; RAG Architecture Decisions & Cost Engineering; Final Report | Task 6; Task 7; Final report |
+| 2 | Poornima Prakash Patil | 2025AE05411 | Prompt Engineering & Multi-Step Reasoning; Instruction Tuning, RLHF, PEFT & Alignment; Paradigm Differentiation | Task 1; Task 5 Parts A–C |
+| 3 | Prasanth C | 2025AE05388 | Multi-Source Function Calling & Security; Multi-Source Synthesis, Calibration & RAG Triad | Task 2; Task 4 |
+| 4 | Jay Kumar Patel | 2025AE05473 | Memory, Query Decomposition, Retrieval & Advanced RAG; Visualization | Task 3; All figures |
 
 ### Problem statement
 Build and evaluate an **end-to-end research assistant**. It synthesises information from multiple sources, reasons about conflicting evidence, remembers past research sessions, and aligns with user preferences:
@@ -60,6 +59,40 @@ md(r"""
 * **LLM response cache.** Every LLM call is cached in SQLite, keyed on (model, messages, temperature, max_tokens, json-mode, seed). The cache stores the *original* latency and token usage. Re-running the notebook replays identical outputs and reports the latencies that were measured live.
 * **Role-based model selection with fallback.** If a free-tier daily limit is exhausted, the next model in the role's list is used. Every call logs which model served it (see the usage table at the end).
 * All hyper-parameters live in `ra/config.py` and are printed below.
+"""),
+code(r"""
+# --- Google Colab bootstrap (skipped automatically when running locally / in the Virtual Lab) ---
+# Colab starts empty: fetch the repo (data/ files), install the packages Colab lacks, and read the API keys
+# from Colab Secrets (key icon in the left sidebar: add GEMINI_API_KEY and GROQ_API_KEY, enable "Notebook access").
+import os, sys, subprocess
+try:                       # works in the Colab web UI *and* VS Code connected to a Colab kernel
+    import google.colab  # noqa: F401
+    IN_COLAB = True
+except ImportError:
+    IN_COLAB = os.path.isdir("/content")
+if IN_COLAB:
+    REPO = "https://github.com/Alchemist-evo/conversational_ai_assignment2.git"
+    WORKDIR = "/content/conversational_ai_assignment2"
+    if not os.path.exists(WORKDIR):
+        subprocess.run(["git", "clone", "--depth", "1", REPO, WORKDIR], check=True)
+    os.chdir(WORKDIR)
+    if WORKDIR not in sys.path:
+        sys.path.insert(0, WORKDIR)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "faiss-cpu", "rank-bm25", "python-dotenv",
+                    "tiktoken", "sentence-transformers", "datasets", "openai>=1.40", "pydantic>=2.6"], check=True)
+    from getpass import getpass
+    for k in ("GEMINI_API_KEY", "GROQ_API_KEY"):
+        if os.environ.get(k):
+            continue
+        try:                       # 1) Colab Secrets (web UI)
+            from google.colab import userdata
+            os.environ[k] = userdata.get(k)
+        except Exception:          # 2) otherwise ask (VS Code shows an input box); key is not saved in the notebook
+            os.environ[k] = getpass(f"Paste {k} (leave empty to skip): ").strip()
+    os.environ.setdefault("LLM_BACKEND", "mixed")
+    print("Colab ready | working dir:", os.getcwd())
+else:
+    print("Not running in Colab - bootstrap skipped")
 """),
 code(r"""
 import os, sys, json, time, random, warnings, textwrap, re
