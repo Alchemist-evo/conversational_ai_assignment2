@@ -69,6 +69,12 @@ The project workspace is set up in the prescribed **BITS Virtual Lab (Prayogshal
 ![Virtual Lab screenshot: project workspace in BITS Prayogshala](outputs/figures/screenshot_virtual_lab_1.png)
 
 *Figure 0.0 – The project workspace in the BITS Virtual Lab (Prayogshala), 6 Nov 2026.*
+
+The second screenshot shows the submission notebook `Assignment2_PS1_ResearchAssistant.ipynb` open in **JupyterLab** in the same Virtual Lab, on the **Python 3 (ipykernel)** kernel. The file browser on the left shows the full workspace: `data/`, `nb/`, `outputs/`, `ra/`, `report/`, the notebook and its HTML and PDF exports.
+
+![Virtual Lab screenshot: submission notebook open in JupyterLab](outputs/figures/screenshot_virtual_lab_2.png)
+
+*Figure 0.0b – The submission notebook open in JupyterLab in the BITS Virtual Lab (Prayogshala), 6 Nov 2026.*
 """),
 code(r"""
 # --- Google Colab bootstrap (skipped automatically when running locally / in the Virtual Lab) ---

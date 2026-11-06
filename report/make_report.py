@@ -120,6 +120,8 @@ Team: Prajwal Shetty K P (2025AE05434) · Poornima Prakash Patil (2025AE05411) �
 <h2>Appendix A. Virtual Lab environment</h2>
 <p>The project workspace is set up in the prescribed BITS Virtual Lab (Prayogshala) under student account <code>s2025ae05434</code>, at <code>~/workspace/conversational_ai_assignment2</code>. The terminal lists the repository tree. The editor window shows <code>ra/agent.py</code> (the ReAct agent, Task 2) open in GVIM. The session path and access token in the address bar are redacted.</p>
 {img('screenshot_virtual_lab_1', 'Figure A1 – The project workspace in the BITS Virtual Lab (Prayogshala), 6 Nov 2026', 100)}
+<p>The second screenshot shows the submission notebook open in JupyterLab in the same Virtual Lab, on the Python 3 (ipykernel) kernel, with the full workspace in the file browser.</p>
+{img('screenshot_virtual_lab_2', 'Figure A2 – The submission notebook open in JupyterLab in the BITS Virtual Lab (Prayogshala), 6 Nov 2026', 100)}
 </body></html>"""
     out = ROOT / "report" / "Final_Report.html"
     out.write_text(html, encoding="utf-8")
