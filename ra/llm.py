@@ -136,10 +136,12 @@ class LLM:
         if self.backend == "mock":
             self.roles = {r: [f"mock-{r}"] for r in config.MODEL_ROLES}
             return
-        self.roles = {"groq": config.MODEL_ROLES, "openai": config.OPENAI_MODEL_ROLES, "gemini": config.GEMINI_MODEL_ROLES,
-                      "mixed": config.MIXED_MODEL_ROLES}.get(self.backend)
-        if self.roles is None:
+        roles = {"groq": config.MODEL_ROLES, "openai": config.OPENAI_MODEL_ROLES, "gemini": config.GEMINI_MODEL_ROLES,
+                 "mixed": config.MIXED_MODEL_ROLES, "local": config.LOCAL_MODEL_ROLES,
+                 "hybrid": config.HYBRID_MODEL_ROLES}.get(self.backend)
+        if roles is None:
             raise ValueError(f"Unknown backend {self.backend}")
+        self.roles = {r: list(c) for r, c in roles.items()}  # copy: "local:auto" is rewritten below
         providers = sorted({self._split(c)[0] for cands in self.roles.values() for c in cands})
         from openai import OpenAI
 
@@ -152,20 +154,39 @@ class LLM:
             elif prov == "gemini":
                 key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
                 cl = OpenAI(api_key=key, base_url=config.GEMINI_BASE_URL, max_retries=0, timeout=180)
+            elif prov == "local":  # LM Studio / Ollama / llama.cpp on this PC; any key is accepted
+                cl = OpenAI(api_key=os.environ.get("LOCAL_API_KEY", "local"), base_url=config.LOCAL_BASE_URL,
+                            max_retries=0, timeout=config.LOCAL_TIMEOUT_S)
             else:
                 cl = OpenAI(max_retries=0, timeout=120)
-            self.clients[prov] = cl
             try:
-                avail |= {prov + ":" + m.id.replace("models/", "") for m in cl.models.list().data}
+                ids = [m.id.replace("models/", "") for m in cl.models.list().data]
             except Exception as e:  # offline / bad key: rely on cache only
                 if verbose:
                     print(f"[llm] could not list {prov} models:", e)
+                if prov == "local":  # local server not running: skip it so calls fall back to the cloud models
+                    continue
+                ids = []
+            if prov == "local":
+                self._resolve_local_model(ids)
+            self.clients[prov] = cl
+            avail |= {prov + ":" + i for i in ids}
         self.available_models = avail or None
 
     # ------------------------------------------------------------------ utils
+    def _resolve_local_model(self, ids: list[str]) -> None:
+        """Replace 'local:auto' with the first chat model the local server reports (embedding models are skipped)."""
+        chat_ids = [i for i in ids if "embed" not in i.lower()]
+        if config.LOCAL_MODEL != "auto" or not chat_ids:
+            return
+        for r, cands in self.roles.items():
+            self.roles[r] = [f"local:{chat_ids[0]}" if c == "local:auto" else c for c in cands]
+        if self.verbose:
+            print(f"[llm] local server model: {chat_ids[0]}")
+
     def _split(self, cand: str) -> tuple[str, str]:
         """'groq:llama-3.3-70b' -> ('groq', 'llama-3.3-70b'); bare names belong to the single backend."""
-        if ":" in cand and cand.split(":", 1)[0] in ("groq", "gemini", "openai"):
+        if ":" in cand and cand.split(":", 1)[0] in ("groq", "gemini", "openai", "local"):
             p, m = cand.split(":", 1)
             return p, m
         return self.backend, cand
@@ -173,6 +194,8 @@ class LLM:
     @staticmethod
     def _has_key(provider: str) -> bool:
         env = {"groq": ["GROQ_API_KEY"], "openai": ["OPENAI_API_KEY"], "gemini": ["GEMINI_API_KEY", "GOOGLE_API_KEY"]}
+        if provider == "local":
+            return True  # no key needed; reachability is checked when the client is created
         return any(os.environ.get(k) for k in env.get(provider, []))
 
     def models_for(self, role: str) -> list[str]:
@@ -257,8 +280,8 @@ class LLM:
 
         if not self.clients:
             raise RuntimeError(
-                "No API key found and response not cached. Set GROQ_API_KEY / GEMINI_API_KEY in .env "
-                "(or LLM_BACKEND=mock for an offline smoke test)."
+                "No API key / local server found and response not cached. Set GROQ_API_KEY / GEMINI_API_KEY in .env, "
+                "start your local LLM server (LLM_BACKEND=local|hybrid), or use LLM_BACKEND=mock for an offline smoke test."
             )
 
         # 2) live call with fallback across candidate models
@@ -284,7 +307,11 @@ class LLM:
                         kwargs["reasoning_effort"] = config.GEMINI_REASONING_EFFORT.get(model, "low")
                         kwargs["max_tokens"] = max_tokens + config.GEMINI_THINKING_HEADROOM
                     if json_mode:
-                        kwargs["response_format"] = {"type": "json_object"}
+                        if provider == "local":  # LM Studio accepts only json_schema; grammar-constrain to an object
+                            kwargs["response_format"] = {"type": "json_schema", "json_schema": {
+                                "name": "response", "schema": {"type": "object"}}}
+                        else:
+                            kwargs["response_format"] = {"type": "json_object"}
                     if "gpt-oss" in model or "qwen3" in model:
                         kwargs["max_tokens"] = max_tokens + 1024  # room for hidden reasoning
                     t0 = time.perf_counter()
@@ -351,6 +378,8 @@ class LLM:
                         continue
                     if status in (404,) or "model_not_found" in msg or "decommissioned" in msg:
                         break
+                    if status is None and provider == "local":
+                        break  # local server stopped or timed out: fall back to the next model instead of retrying
                     if status is None or status >= 500:
                         time.sleep(2 * (attempt + 1))
                         continue
@@ -359,7 +388,12 @@ class LLM:
 
     def chat_json(self, messages, default=None, **kw) -> tuple[Any, LLMResponse]:
         resp = self.chat(messages, json_mode=True, **kw)
-        return parse_json(resp.text, default), resp
+        data = parse_json(resp.text, default)
+        if isinstance(default, dict) and not isinstance(data, dict):
+            # The caller expects an object but the model answered with prose (the parser then found an inner array)
+            # or a bare list: use the first object in the list if there is one, else the caller's default.
+            data = next((x for x in data if isinstance(x, dict)), default) if isinstance(data, list) else default
+        return data, resp
 
     # --------------------------------------------------------------- tracking
     def _record(self, resp: LLMResponse, role: str) -> None:

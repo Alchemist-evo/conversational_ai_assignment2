@@ -1,6 +1,6 @@
 {
  "question": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
- "started": "2026-11-03T22:55:37",
+ "started": "2026-11-06T02:38:06",
  "route": {
   "type": "new_research",
   "standalone_query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
@@ -8,22 +8,116 @@
  },
  "sub_queries": {
   "static": [
-   "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
-   "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism"
+   "Does consumption of red and processed meat increase cancer risk evidence",
+   "Why do expert guidelines differ on the link between red and processed meat and cancer"
   ],
   "refinements": [
-   []
+   [
+    "Mechanisms by which red and processed meat increase cancer risk",
+    "Reasons for discrepancies among expert guidelines on red and processed meat consumption"
+   ],
+   [
+    "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis",
+    "Studies refuting the association between red and processed meat consumption and increased cancer risk"
+   ],
+   [
+    "Mechanisms refuting the link between red and processed meat consumption and increased cancer risk",
+    "Impact of cooking methods on the carcinogenicity of red and processed meats"
+   ]
   ]
  },
  "tool_calls": [
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+    "query": "Does consumption of red and processed meat increase cancer risk evidence",
     "max_results": 5
    },
-   "timestamp": "22:55:37",
-   "latency_s": 0.6501058000003468,
+   "timestamp": "02:38:06",
+   "latency_s": 1.0957794000023569,
+   "output_size": 3404,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Does consumption of red and processed meat increase cancer risk evidence",
+    "max_results": 5
+   },
+   "timestamp": "02:38:06",
+   "latency_s": 0.6530438999980106,
+   "output_size": 4660,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Does consumption of red and processed meat increase cancer risk evidence",
+    "max_results": 5
+   },
+   "timestamp": "02:38:06",
+   "latency_s": 0.6044130000009318,
+   "output_size": 2679,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Why do expert guidelines differ on the link between red and processed meat and cancer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:06",
+   "latency_s": 0.9929354999985662,
+   "output_size": 3289,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Why do expert guidelines differ on the link between red and processed meat and cancer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:06",
+   "latency_s": 0.5076844000031997,
+   "output_size": 5071,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Why do expert guidelines differ on the link between red and processed meat and cancer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:06",
+   "latency_s": 0.4810832000002847,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "Why do expert guidelines differ on the link between red and processed meat and cancer"
+   },
+   "timestamp": "02:38:07",
+   "latency_s": 0.5443467000004603,
+   "output_size": 2824,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Mechanisms by which red and processed meat increase cancer risk",
+    "max_results": 5
+   },
+   "timestamp": "02:38:07",
+   "latency_s": 0.7223216999991564,
    "output_size": 3286,
    "ok": true,
    "error": ""
@@ -31,11 +125,166 @@
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+    "topic": "Mechanisms by which red and processed meat increase cancer risk",
     "max_results": 5
    },
-   "timestamp": "22:55:37",
-   "latency_s": 0.3573209999995015,
+   "timestamp": "02:38:07",
+   "latency_s": 0.6401312000016333,
+   "output_size": 4677,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Mechanisms by which red and processed meat increase cancer risk",
+    "max_results": 5
+   },
+   "timestamp": "02:38:07",
+   "latency_s": 0.5567236000024423,
+   "output_size": 2679,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Reasons for discrepancies among expert guidelines on red and processed meat consumption",
+    "max_results": 5
+   },
+   "timestamp": "02:38:07",
+   "latency_s": 1.0728264999997918,
+   "output_size": 3885,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Reasons for discrepancies among expert guidelines on red and processed meat consumption",
+    "max_results": 5
+   },
+   "timestamp": "02:38:07",
+   "latency_s": 0.448123599999235,
+   "output_size": 4713,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Reasons for discrepancies among expert guidelines on red and processed meat consumption",
+    "max_results": 5
+   },
+   "timestamp": "02:38:07",
+   "latency_s": 0.44439860000056797,
+   "output_size": 2973,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis",
+    "max_results": 5
+   },
+   "timestamp": "02:38:08",
+   "latency_s": 0.792957400000887,
+   "output_size": 3328,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis",
+    "max_results": 5
+   },
+   "timestamp": "02:38:08",
+   "latency_s": 0.4323648999998113,
+   "output_size": 5079,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis",
+    "max_results": 5
+   },
+   "timestamp": "02:38:08",
+   "latency_s": 0.5711488999986614,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Studies refuting the association between red and processed meat consumption and increased cancer risk",
+    "max_results": 5
+   },
+   "timestamp": "02:38:08",
+   "latency_s": 1.1020336000001407,
+   "output_size": 3404,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Studies refuting the association between red and processed meat consumption and increased cancer risk",
+    "max_results": 5
+   },
+   "timestamp": "02:38:08",
+   "latency_s": 0.45993450000241864,
+   "output_size": 5075,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Studies refuting the association between red and processed meat consumption and increased cancer risk",
+    "max_results": 5
+   },
+   "timestamp": "02:38:08",
+   "latency_s": 0.4271800999995321,
+   "output_size": 2679,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis"
+   },
+   "timestamp": "02:38:10",
+   "latency_s": 0.5689970000021276,
+   "output_size": 4061,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Mechanisms refuting the link between red and processed meat consumption and increased cancer risk",
+    "max_results": 5
+   },
+   "timestamp": "02:38:10",
+   "latency_s": 0.8630573000009463,
+   "output_size": 3404,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Mechanisms refuting the link between red and processed meat consumption and increased cancer risk",
+    "max_results": 5
+   },
+   "timestamp": "02:38:10",
+   "latency_s": 0.46638249999887194,
    "output_size": 5030,
    "ok": true,
    "error": ""
@@ -43,11 +292,11 @@
   {
    "tool": "search_news",
    "args": {
-    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
+    "query": "Mechanisms refuting the link between red and processed meat consumption and increased cancer risk",
     "max_results": 5
    },
-   "timestamp": "22:55:37",
-   "latency_s": 0.6844304999995074,
+   "timestamp": "02:38:10",
+   "latency_s": 0.5893299000017578,
    "output_size": 2679,
    "ok": true,
    "error": ""
@@ -55,36 +304,47 @@
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism",
+    "query": "Impact of cooking methods on the carcinogenicity of red and processed meats",
     "max_results": 5
    },
-   "timestamp": "22:55:37",
-   "latency_s": 0.8583667000002606,
-   "output_size": 3286,
+   "timestamp": "02:38:10",
+   "latency_s": 0.7934219000017038,
+   "output_size": 3826,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism",
+    "topic": "Impact of cooking methods on the carcinogenicity of red and processed meats",
     "max_results": 5
    },
-   "timestamp": "22:55:37",
-   "latency_s": 0.4887095000003683,
-   "output_size": 4385,
+   "timestamp": "02:38:10",
+   "latency_s": 0.3352008999972895,
+   "output_size": 5184,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree? evidence limitations criticism",
+    "query": "Impact of cooking methods on the carcinogenicity of red and processed meats",
     "max_results": 5
    },
-   "timestamp": "22:55:37",
-   "latency_s": 0.6573591000005763,
-   "output_size": 2679,
+   "timestamp": "02:38:10",
+   "latency_s": 0.4703403999992588,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "Impact of cooking methods on the carcinogenicity of red and processed meats"
+   },
+   "timestamp": "02:38:11",
+   "latency_s": 0.7251428999989002,
+   "output_size": 4166,
    "ok": true,
    "error": ""
   },
@@ -93,8 +353,8 @@
    "args": {
     "source_url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.14342069999929663,
+   "timestamp": "02:38:12",
+   "latency_s": 0.14323570000124164,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -104,8 +364,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.21041879999938828,
+   "timestamp": "02:38:12",
+   "latency_s": 0.2105228000000352,
    "output_size": 169,
    "ok": true,
    "error": ""
@@ -115,8 +375,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Red_meat"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.2382238000000143,
+   "timestamp": "02:38:12",
+   "latency_s": 0.23866569999881904,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -126,8 +386,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.18685119999918243,
+   "timestamp": "02:38:12",
+   "latency_s": 0.18693200000052457,
    "output_size": 168,
    "ok": true,
    "error": ""
@@ -135,10 +395,10 @@
   {
    "tool": "check_source_credibility",
    "args": {
-    "source_url": "https://wellnesswave.example.net/2020-01-15/meat-is-perfectly-healthy---the-cancer-link-is-a-myth"
+    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.24113190000025497,
+   "timestamp": "02:38:12",
+   "latency_s": 0.1058249000016076,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -148,8 +408,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.24594150000029913,
+   "timestamp": "02:38:12",
+   "latency_s": 0.24621539999861852,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -159,8 +419,8 @@
    "args": {
     "source_url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.12698879999970814,
+   "timestamp": "02:38:12",
+   "latency_s": 0.18024289999812027,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -170,8 +430,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-population-health/d7-a2"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.16900509999959468,
+   "timestamp": "02:38:12",
+   "latency_s": 0.16929030000028433,
    "output_size": 162,
    "ok": true,
    "error": ""
@@ -181,8 +441,8 @@
    "args": {
     "source_id": "H5-N1"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.059333199999855424,
+   "timestamp": "02:38:12",
+   "latency_s": 0.05961899999965681,
    "output_size": 285,
    "ok": true,
    "error": ""
@@ -192,9 +452,31 @@
    "args": {
     "source_id": "H5-A2"
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.03612100000009377,
+   "timestamp": "02:38:12",
+   "latency_s": 0.036491999999270774,
    "output_size": 298,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "WIKI-Red_meat"
+   },
+   "timestamp": "02:38:12",
+   "latency_s": 0.04093560000183061,
+   "output_size": 179,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H5-A1"
+   },
+   "timestamp": "02:38:12",
+   "latency_s": 0.05896219999704044,
+   "output_size": 293,
    "ok": true,
    "error": ""
   }
@@ -234,11 +516,11 @@
   },
   {
    "sid": "S5",
-   "doc_id": "H5-N2",
-   "title": "Meat is perfectly healthy - the cancer link is a myth",
-   "url": "https://wellnesswave.example.net/2020-01-15/meat-is-perfectly-healthy---the-cancer-link-is-a-myth",
-   "credibility": 0.226,
-   "source": "news"
+   "doc_id": "WIKI-NQ-0860",
+   "title": "Wikipedia passage: Junk food When junk food is...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
+   "source": "web"
   },
   {
    "sid": "S6",
@@ -265,44 +547,124 @@
    "source": "academic"
   }
  ],
- "conflicts": [],
- "claims": [
+ "conflicts": [
   {
-   "text": "Thought: mock reasoning step one because the question asks something.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "Therefore step two follows [S1].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "However, sources may disagree [S2].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "Final Answer: mock answer (36) based on: Evidence: [S1] (news/reputable, Global Health Wire, 2019) Meat guidelines spark backlash from health bodies A guideline suggesting people need not cut back on red and processed meat drew strong criticism from cancer and nutrition organisations, which say relative risk increases matter at population",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "issue": "Does eating red and processed meat increase cancer risk?",
+   "decision": "Yes, it does increase the risk of cancer.",
+   "share": 0.6530442035029191
   }
  ],
- "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (36) based on: Evidence: [S1] (news/reputable, Global Health Wire, 2019) Meat guidelines spark backlash from health bodies A guideline suggesting people need not cut back on red and processed meat drew strong criticism from cancer and nutrition organisations, which say relative risk increases matter at population",
- "overall_confidence": 0.05,
+ "claims": [
+  {
+   "text": "Current evidence suggests that consuming red and processed meats does increase the risk of certain cancers.",
+   "verdict": "SUPPORTED",
+   "confidence": 0.7920065388516403,
+   "sources": [
+    {
+     "sid": "S3",
+     "title": "Red meat",
+     "url": "https://en.wikipedia.org/wiki/Red_meat",
+     "evidence_snippet": "It found an 18% higher risk of colorectal cancer for every 50 g of processed red meat consumed daily. A 2021 umbrella review reported an increase of 11–51% risk of multiple cancer per 100g/d increment of red meat, and an increase of 8–72% r",
+     "citation": "Wikipedia contributors. (2026). Red meat. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Red_meat"
+    },
+    {
+     "sid": "S4",
+     "title": "Carcinogenicity of red and processed meat: evaluation summary",
+     "url": "https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1",
+     "evidence_snippet": "Processed meat was classified as carcinogenic to humans (Group 1), based on sufficient evidence for colorectal cancer, and red meat as probably carcinogenic (Group 2A). Each 50 g portion of processed meat eaten daily increases the risk of c",
+     "citation": "International Cancer Evaluation Working Group (2015). Carcinogenicity of red and processed meat: evaluation summary. Synthetic Lancet Oncology Reports. https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1 [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "Processed meat is classified as carcinogenic to humans, with each 50g portion eaten daily increasing colorectal cancer risk by about 18% [S4].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.7075029191611747,
+   "sources": [
+    {
+     "sid": "S4",
+     "title": "Carcinogenicity of red and processed meat: evaluation summary",
+     "url": "https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1",
+     "evidence_snippet": "Processed meat was classified as carcinogenic to humans (Group 1), based on sufficient evidence for colorectal cancer, and red meat as probably carcinogenic (Group 2A). Each 50 g portion of processed meat eaten daily increases the risk of c",
+     "citation": "International Cancer Evaluation Working Group (2015). Carcinogenicity of red and processed meat: evaluation summary. Synthetic Lancet Oncology Reports. https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1 [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "Unprocessed red meat also shows a link to increased cancer risks, though these are generally lower than those for processed meats [S3][S4].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.5868306922948996,
+   "sources": [
+    {
+     "sid": "S3",
+     "title": "Red meat",
+     "url": "https://en.wikipedia.org/wiki/Red_meat",
+     "evidence_snippet": "It found an 18% higher risk of colorectal cancer for every 50 g of processed red meat consumed daily. A 2021 umbrella review reported an increase of 11–51% risk of multiple cancer per 100g/d increment of red meat, and an increase of 8–72% r",
+     "citation": "Wikipedia contributors. (2026). Red meat. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Red_meat"
+    }
+   ]
+  },
+  {
+   "text": "However, the certainty of evidence linking red and processed meat to cancer is rated as low to very low by some panels [S2], leading them to suggest adults continue their current consumption levels.",
+   "verdict": "SUPPORTED",
+   "confidence": 0.5603336114560743,
+   "sources": [
+    {
+     "sid": "S2",
+     "title": "Unprocessed red and processed meat consumption: a guideline recommendation",
+     "url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2",
+     "evidence_snippet": "Our panel rated the certainty of evidence linking red and processed meat to cancer and mortality as low to very low. Because absolute risk reductions from eating less meat are very small, the panel suggested adults continue their current co",
+     "citation": "Johnston, B., & Zeraatkar, D. (2019). Unprocessed red and processed meat consumption: a guideline recommendation. Synthetic Annals of Internal Medicine. https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2 [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "This contrasts with guidance from cancer organizations that emphasize relative risk increases at population scales [S1].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.512,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "Meat guidelines spark backlash from health bodies",
+     "url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies",
+     "evidence_snippet": "A guideline suggesting people need not cut back on red and processed meat drew strong criticism from cancer and nutrition organisations, which say relative risk increases matter at population scale. The disagreement centres on how evidence ",
+     "citation": "Global Health Wire staff (2019, October 1). Meat guidelines spark backlash from health bodies. Global Health Wire. https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "The disagreement centers on how evidence is graded and whether small absolute risk reductions justify dietary changes, highlighting the complexity in translating scientific findings into public health recommendations.",
+   "verdict": "SUPPORTED",
+   "confidence": 0.618263486363533,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "Meat guidelines spark backlash from health bodies",
+     "url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies",
+     "evidence_snippet": "A guideline suggesting people need not cut back on red and processed meat drew strong criticism from cancer and nutrition organisations, which say relative risk increases matter at population scale. The disagreement centres on how evidence ",
+     "citation": "Global Health Wire staff (2019, October 1). Meat guidelines spark backlash from health bodies. Global Health Wire. https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies [Synthetic source]"
+    },
+    {
+     "sid": "S2",
+     "title": "Unprocessed red and processed meat consumption: a guideline recommendation",
+     "url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2",
+     "evidence_snippet": "Our panel rated the certainty of evidence linking red and processed meat to cancer and mortality as low to very low. Because absolute risk reductions from eating less meat are very small, the panel suggested adults continue their current co",
+     "citation": "Johnston, B., & Zeraatkar, D. (2019). Unprocessed red and processed meat consumption: a guideline recommendation. Synthetic Annals of Internal Medicine. https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2 [Synthetic source]"
+    }
+   ]
+  }
+ ],
+ "final_synthesis": "Current evidence suggests that consuming red and processed meats does increase the risk of certain cancers. Processed meat is classified as carcinogenic to humans, with each 50g portion eaten daily increasing colorectal cancer risk by about 18% [S4]. Unprocessed red meat also shows a link to increased cancer risks, though these are generally lower than those for processed meats [S3][S4]. However, the certainty of evidence linking red and processed meat to cancer is rated as low to very low by some panels [S2], leading them to suggest adults continue their current consumption levels. This contrasts with guidance from cancer organizations that emphasize relative risk increases at population scales [S1]. The disagreement centers on how evidence is graded and whether small absolute risk reductions justify dietary changes, highlighting the complexity in translating scientific findings into public health recommendations.",
+ "overall_confidence": 0.6294895413545536,
  "metrics": {
-  "latency_s": 1.3789948000003278,
+  "latency_s": 60.3364799999963,
   "llm_calls": 7,
-  "input_tokens": 6834,
-  "output_tokens": 202,
-  "cost_usd": 0.0372,
-  "n_tool_calls": 16,
+  "input_tokens": 7501,
+  "output_tokens": 857,
+  "cost_usd": 0.050359999999999995,
+  "n_tool_calls": 39,
   "pii_redacted": [],
-  "halluc_before": 1.0,
-  "halluc_after": 1.0
+  "halluc_before": 0.0,
+  "halluc_after": 0.0
  }
 }

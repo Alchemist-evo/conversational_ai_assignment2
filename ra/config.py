@@ -122,6 +122,47 @@ MIXED_MODEL_ROLES: dict[str, list[str]] = {
     "tier_moe": ["gemini:gemini-3.1-flash-lite"],
     "tier_dense": ["groq:openai/gpt-oss-120b", "groq:qwen/qwen3.8-27b"],
 }
+# Local model served on this PC (Intel Arc A770, 16 GB) by LM Studio / Ollama / llama.cpp through an
+# OpenAI-compatible endpoint. LOCAL_MODEL="auto" picks the first chat model the server reports as available.
+#   LM Studio : LOCAL_BASE_URL=http://localhost:1234/v1   (default)
+#   Ollama    : LOCAL_BASE_URL=http://localhost:11434/v1
+#   llama.cpp : LOCAL_BASE_URL=http://localhost:8080/v1
+LOCAL_BASE_URL = os.environ.get("LOCAL_BASE_URL", "http://localhost:1234/v1")
+LOCAL_MODEL = os.environ.get("LOCAL_MODEL", "auto")
+LOCAL_TIMEOUT_S = float(os.environ.get("LOCAL_TIMEOUT_S", "600"))  # local generation of long prompts can be slow
+LOCAL_MODEL_ROLES: dict[str, list[str]] = {r: [f"local:{LOCAL_MODEL}"] for r in
+                                           ("generator", "judge", "long_context", "tier_small", "tier_moe", "tier_dense")}
+# Hybrid (recommended with a local GPU): the local model does the bulk generation work with no rate limits; the judge
+# stays a large model of a *different* family on Groq (less self-preference bias, credible RAG-Triad scores); the
+# 10K+ token lost-in-the-middle test goes to Gemini (1M context window) because local context is usually 8-32K.
+HYBRID_MODEL_ROLES: dict[str, list[str]] = {
+    "generator": [f"local:{LOCAL_MODEL}", "gemini:gemini-3.1-flash-lite", "groq:openai/gpt-oss-20b"],
+    "judge": ["groq:openai/gpt-oss-120b", "groq:qwen/qwen3.8-27b", "gemini:gemini-3.5-flash-lite"],
+    "long_context": ["gemini:gemini-3.1-flash-lite", "gemini:gemini-3.5-flash-lite", f"local:{LOCAL_MODEL}"],
+    "tier_small": [f"local:{LOCAL_MODEL}", "groq:openai/gpt-oss-20b"],
+    "tier_moe": ["gemini:gemini-3.1-flash-lite", "groq:openai/gpt-oss-20b"],
+    "tier_dense": ["groq:openai/gpt-oss-120b", "groq:qwen/qwen3.8-27b", "gemini:gemini-3.5-flash"],
+}
+# Device for the embedding model + cross-encoder: "cpu" (default, bit-identical to the cached run), "xpu" (Intel Arc
+# with a PyTorch XPU build), "cuda", or "auto". Both models are tiny, so CPU is fast enough.
+EMBED_DEVICE = os.environ.get("EMBED_DEVICE", "cpu")
+
+
+def torch_device() -> str:
+    if EMBED_DEVICE != "auto":
+        return EMBED_DEVICE
+    try:
+        import torch
+
+        if hasattr(torch, "xpu") and torch.xpu.is_available():
+            return "xpu"
+        if torch.cuda.is_available():
+            return "cuda"
+    except Exception:
+        pass
+    return "cpu"
+
+
 # "none" disables thinking where the model allows it; Pro models cannot disable thinking, so use "low".
 GEMINI_REASONING_EFFORT: dict[str, str] = {}  # default "low" (minimum accepted by Gemini 3.x)
 GEMINI_THINKING_HEADROOM = 1024
@@ -180,7 +221,10 @@ def describe() -> dict:
     return {
         "SEED": SEED,
         "BACKEND": BACKEND,
-        "MODEL_ROLES": {"groq": MODEL_ROLES, "openai": OPENAI_MODEL_ROLES, "gemini": GEMINI_MODEL_ROLES, "mixed": MIXED_MODEL_ROLES}.get(BACKEND, MODEL_ROLES),
+        "MODEL_ROLES": {"groq": MODEL_ROLES, "openai": OPENAI_MODEL_ROLES, "gemini": GEMINI_MODEL_ROLES, "mixed": MIXED_MODEL_ROLES,
+                        "local": LOCAL_MODEL_ROLES, "hybrid": HYBRID_MODEL_ROLES}.get(BACKEND, MODEL_ROLES),
+        "LOCAL_BASE_URL": LOCAL_BASE_URL if BACKEND in ("local", "hybrid") else None,
+        "EMBED_DEVICE": EMBED_DEVICE,
         "EMBED_MODEL": EMBED_MODEL,
         "CROSS_ENCODER_MODEL": CROSS_ENCODER_MODEL,
         "TOKENIZER_ENCODING": TOKENIZER_ENCODING,

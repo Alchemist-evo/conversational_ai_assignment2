@@ -1,6 +1,6 @@
 {
  "question": "What is the evidence on how minimum wage increases affect employment?",
- "started": "2026-11-03T22:55:40",
+ "started": "2026-11-06T02:38:19",
  "route": {
   "type": "new_research",
   "standalone_query": "What is the evidence on how minimum wage increases affect employment?",
@@ -8,22 +8,34 @@
  },
  "sub_queries": {
   "static": [
-   "What is the evidence on how minimum wage increases affect employment?",
-   "What is the evidence on how minimum wage increases affect employment? evidence limitations criticism"
+   "empirical evidence minimum wage increase employment",
+   "studies impact of minimum wage on job creation",
+   "recent research minimum wage employment relationship"
   ],
   "refinements": [
-   []
+   [
+    "long term impacts minimum wage increases employment various industries",
+    "five year plus studies minimum wage increase employment"
+   ],
+   [
+    "impact of minimum wage increase on employment in international contexts",
+    "short term vs long term effects of minimum wage changes on employment"
+   ],
+   [
+    "impact of minimum wage increase on employment by sector",
+    "comparative analysis of short term and long term effects of minimum wage changes"
+   ]
   ]
  },
  "tool_calls": [
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "What is the evidence on how minimum wage increases affect employment?",
+    "query": "empirical evidence minimum wage increase employment",
     "max_results": 5
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.7445061999997051,
+   "timestamp": "02:38:19",
+   "latency_s": 0.8695339000005333,
    "output_size": 3064,
    "ok": true,
    "error": ""
@@ -31,60 +43,312 @@
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What is the evidence on how minimum wage increases affect employment?",
+    "topic": "empirical evidence minimum wage increase employment",
     "max_results": 5
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.5815872000002855,
-   "output_size": 4977,
+   "timestamp": "02:38:19",
+   "latency_s": 0.6121483000024455,
+   "output_size": 4971,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "What is the evidence on how minimum wage increases affect employment?",
+    "query": "empirical evidence minimum wage increase employment",
     "max_results": 5
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.8147856999994474,
-   "output_size": 2806,
+   "timestamp": "02:38:19",
+   "latency_s": 0.8919588999997359,
+   "output_size": 2810,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "What is the evidence on how minimum wage increases affect employment? evidence limitations criticism",
+    "query": "studies impact of minimum wage on job creation",
     "max_results": 5
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.9771802000004755,
-   "output_size": 3064,
+   "timestamp": "02:38:19",
+   "latency_s": 0.7374965000017255,
+   "output_size": 3177,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What is the evidence on how minimum wage increases affect employment? evidence limitations criticism",
+    "topic": "studies impact of minimum wage on job creation",
     "max_results": 5
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.6796806999991531,
-   "output_size": 4977,
+   "timestamp": "02:38:19",
+   "latency_s": 0.6109139000000141,
+   "output_size": 5091,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "What is the evidence on how minimum wage increases affect employment? evidence limitations criticism",
+    "query": "studies impact of minimum wage on job creation",
     "max_results": 5
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.4058230000000549,
-   "output_size": 2806,
+   "timestamp": "02:38:19",
+   "latency_s": 0.744204600003286,
+   "output_size": 3013,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "recent research minimum wage employment relationship",
+    "max_results": 5
+   },
+   "timestamp": "02:38:20",
+   "latency_s": 0.8746623000006366,
+   "output_size": 3314,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "recent research minimum wage employment relationship",
+    "max_results": 5
+   },
+   "timestamp": "02:38:20",
+   "latency_s": 0.6304970999990474,
+   "output_size": 4792,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "recent research minimum wage employment relationship",
+    "max_results": 5
+   },
+   "timestamp": "02:38:20",
+   "latency_s": 0.5436100999977498,
+   "output_size": 3013,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "long term impacts minimum wage increases employment various industries",
+    "max_results": 5
+   },
+   "timestamp": "02:38:21",
+   "latency_s": 1.0170882000020356,
+   "output_size": 3097,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "long term impacts minimum wage increases employment various industries",
+    "max_results": 5
+   },
+   "timestamp": "02:38:21",
+   "latency_s": 0.4338215999996464,
+   "output_size": 4873,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "long term impacts minimum wage increases employment various industries",
+    "max_results": 5
+   },
+   "timestamp": "02:38:21",
+   "latency_s": 0.48001210000074934,
+   "output_size": 2720,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "five year plus studies minimum wage increase employment",
+    "max_results": 5
+   },
+   "timestamp": "02:38:21",
+   "latency_s": 1.017476799999713,
+   "output_size": 3164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "five year plus studies minimum wage increase employment",
+    "max_results": 5
+   },
+   "timestamp": "02:38:21",
+   "latency_s": 0.46484240000063437,
+   "output_size": 4851,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "five year plus studies minimum wage increase employment",
+    "max_results": 5
+   },
+   "timestamp": "02:38:21",
+   "latency_s": 0.5832630000004428,
+   "output_size": 3013,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "impact of minimum wage increase on employment in international contexts",
+    "max_results": 5
+   },
+   "timestamp": "02:38:22",
+   "latency_s": 0.9498181999988446,
+   "output_size": 3299,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "impact of minimum wage increase on employment in international contexts",
+    "max_results": 5
+   },
+   "timestamp": "02:38:22",
+   "latency_s": 0.4216059000027599,
+   "output_size": 4969,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "impact of minimum wage increase on employment in international contexts",
+    "max_results": 5
+   },
+   "timestamp": "02:38:22",
+   "latency_s": 0.4814793000005011,
+   "output_size": 3013,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "short term vs long term effects of minimum wage changes on employment",
+    "max_results": 5
+   },
+   "timestamp": "02:38:22",
+   "latency_s": 0.689418800000567,
+   "output_size": 3097,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "short term vs long term effects of minimum wage changes on employment",
+    "max_results": 5
+   },
+   "timestamp": "02:38:22",
+   "latency_s": 0.6834539000010409,
+   "output_size": 4475,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "short term vs long term effects of minimum wage changes on employment",
+    "max_results": 5
+   },
+   "timestamp": "02:38:22",
+   "latency_s": 0.78394009999829,
+   "output_size": 3126,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "impact of minimum wage increase on employment by sector",
+    "max_results": 5
+   },
+   "timestamp": "02:38:23",
+   "latency_s": 1.1161673000024166,
+   "output_size": 3135,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "impact of minimum wage increase on employment by sector",
+    "max_results": 5
+   },
+   "timestamp": "02:38:23",
+   "latency_s": 0.6273360999985016,
+   "output_size": 4912,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "impact of minimum wage increase on employment by sector",
+    "max_results": 5
+   },
+   "timestamp": "02:38:23",
+   "latency_s": 0.8663802000010037,
+   "output_size": 2720,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "comparative analysis of short term and long term effects of minimum wage changes",
+    "max_results": 5
+   },
+   "timestamp": "02:38:23",
+   "latency_s": 0.6594437000021571,
+   "output_size": 3097,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "comparative analysis of short term and long term effects of minimum wage changes",
+    "max_results": 5
+   },
+   "timestamp": "02:38:23",
+   "latency_s": 0.5273328000002948,
+   "output_size": 5028,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "comparative analysis of short term and long term effects of minimum wage changes",
+    "max_results": 5
+   },
+   "timestamp": "02:38:23",
+   "latency_s": 0.755404900002759,
+   "output_size": 3031,
    "ok": true,
    "error": ""
   },
@@ -93,8 +357,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-quarterly-journal-of-economics/h7-a2"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.22014560000025085,
+   "timestamp": "02:38:24",
+   "latency_s": 0.22031539999807137,
    "output_size": 168,
    "ok": true,
    "error": ""
@@ -104,9 +368,20 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-working-papers-in-labour-economics/h7-a3"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.16601649999938672,
+   "timestamp": "02:38:24",
+   "latency_s": 0.1656833999986702,
    "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://en.wikipedia.org/wiki/Minimum_wage"
+   },
+   "timestamp": "02:38:24",
+   "latency_s": 0.22898549999808893,
+   "output_size": 164,
    "ok": true,
    "error": ""
   },
@@ -115,8 +390,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-american-economic-review/h7-a1"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.13098399999944377,
+   "timestamp": "02:38:24",
+   "latency_s": 0.13082980000035604,
    "output_size": 168,
    "ok": true,
    "error": ""
@@ -126,19 +401,8 @@
    "args": {
     "source_url": "https://financialledger.example.com/2019-07-08/budget-office---15-minimum-wage-would-raise-pay-for-millions"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.15219239999987622,
-   "output_size": 164,
-   "ok": true,
-   "error": ""
-  },
-  {
-   "tool": "check_source_credibility",
-   "args": {
-    "source_url": "https://en.wikipedia.org/wiki/Minimum_wage"
-   },
-   "timestamp": "22:55:41",
-   "latency_s": 0.22895549999975628,
+   "timestamp": "02:38:24",
+   "latency_s": 0.15192080000269925,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -148,8 +412,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-monetary-economics/d6-a1"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.12746799999968061,
+   "timestamp": "02:38:24",
+   "latency_s": 0.12754259999928763,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -159,8 +423,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-geophysical-research-letters/d8-a2"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.21591110000008484,
+   "timestamp": "02:38:24",
+   "latency_s": 0.21681050000188407,
    "output_size": 172,
    "ok": true,
    "error": ""
@@ -168,11 +432,11 @@
   {
    "tool": "check_source_credibility",
    "args": {
-    "source_url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies"
+    "source_url": "https://journals.example.org/synthetic-quarterly-review-of-economics/d6-a2"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.23996509999960836,
-   "output_size": 164,
+   "timestamp": "02:38:24",
+   "latency_s": 0.248731299998326,
+   "output_size": 168,
    "ok": true,
    "error": ""
   },
@@ -181,8 +445,8 @@
    "args": {
     "source_id": "H7-A2"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.04072400000040943,
+   "timestamp": "02:38:24",
+   "latency_s": 0.04110990000117454,
    "output_size": 315,
    "ok": true,
    "error": ""
@@ -192,9 +456,31 @@
    "args": {
     "source_id": "H7-A3"
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.04970270000012533,
+   "timestamp": "02:38:24",
+   "latency_s": 0.05028909999964526,
    "output_size": 307,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H7-A1"
+   },
+   "timestamp": "02:38:24",
+   "latency_s": 0.05221689999962109,
+   "output_size": 279,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H7-N1"
+   },
+   "timestamp": "02:38:24",
+   "latency_s": 0.05791529999987688,
+   "output_size": 315,
    "ok": true,
    "error": ""
   }
@@ -218,6 +504,14 @@
   },
   {
    "sid": "S3",
+   "doc_id": "WIKI-Minimum_wage",
+   "title": "Minimum wage",
+   "url": "https://en.wikipedia.org/wiki/Minimum_wage",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
+   "sid": "S4",
    "doc_id": "H7-A1",
    "title": "Minimum wages and employment: a case study of fast-food restaurants",
    "url": "https://journals.example.org/synthetic-american-economic-review/h7-a1",
@@ -225,20 +519,12 @@
    "source": "academic"
   },
   {
-   "sid": "S4",
+   "sid": "S5",
    "doc_id": "H7-N1",
    "title": "Budget office: $15 minimum wage would raise pay for millions, cost some jobs",
    "url": "https://financialledger.example.com/2019-07-08/budget-office---15-minimum-wage-would-raise-pay-for-millions",
    "credibility": 0.511,
    "source": "news"
-  },
-  {
-   "sid": "S5",
-   "doc_id": "WIKI-Minimum_wage",
-   "title": "Minimum wage",
-   "url": "https://en.wikipedia.org/wiki/Minimum_wage",
-   "credibility": 0.71,
-   "source": "wikipedia"
   },
   {
    "sid": "S6",
@@ -258,51 +544,117 @@
   },
   {
    "sid": "S8",
-   "doc_id": "H5-N1",
-   "title": "Meat guidelines spark backlash from health bodies",
-   "url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies",
-   "credibility": 0.512,
-   "source": "news"
+   "doc_id": "D6-A2",
+   "title": "Money growth and inflation: a century of cross-country evidence",
+   "url": "https://journals.example.org/synthetic-quarterly-review-of-economics/d6-a2",
+   "credibility": 0.806,
+   "source": "academic"
   }
  ],
- "conflicts": [],
+ "conflicts": [
+  {
+   "issue": "The impact of minimum wage increases on employment",
+   "decision": "Minimum wage increases do not significantly reduce employment or may even have no effect on it.",
+   "share": 0.6631973355537052
+  }
+ ],
  "claims": [
   {
-   "text": "Thought: mock reasoning step one because the question asks something.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Studies examining the impact of minimum wage increases on employment show mixed but generally supportive results for maintaining or slightly altering job numbers [S1][S4].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.7974449105584868,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "The effect of minimum wages on low-wage jobs: evidence from 138 state increases",
+     "url": "https://journals.example.org/synthetic-quarterly-journal-of-economics/h7-a2",
+     "evidence_snippet": "Across 138 state-level minimum wage increases between 1979 and 2016, the number of low-wage jobs remained essentially unchanged over five years, while wages rose. Effects depend on how high the minimum wage is relative to local median wages",
+     "citation": "Cengiz, D., Dube, A., & Lindner, A. (2019). The effect of minimum wages on low-wage jobs: evidence from 138 state increases. Synthetic Quarterly Journal of Economics. https://journals.example.org/synthetic-quarterly-journal-of-economics/h7-a2 [Synthetic source]"
+    },
+    {
+     "sid": "S4",
+     "title": "Minimum wages and employment: a case study of fast-food restaurants",
+     "url": "https://journals.example.org/synthetic-american-economic-review/h7-a1",
+     "evidence_snippet": "The standard competitive model predicts that a higher minimum wage reduces employment. Comparing fast-food restaurants in New Jersey, which raised its minimum wage, with neighbouring Pennsylvania, which did not, we find no reduction in empl",
+     "citation": "Carter, D., & Klein, A. (1994). Minimum wages and employment: a case study of fast-food restaurants. Synthetic American Economic Review. https://journals.example.org/synthetic-american-economic-review/h7-a1 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "Therefore step two follows [S1].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "A comprehensive analysis of 138 state-level increases between 1979 and 2016 found that while wages rose, the number of low-wage jobs remained stable over five years [S1].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.6777529142952735,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "The effect of minimum wages on low-wage jobs: evidence from 138 state increases",
+     "url": "https://journals.example.org/synthetic-quarterly-journal-of-economics/h7-a2",
+     "evidence_snippet": "Across 138 state-level minimum wage increases between 1979 and 2016, the number of low-wage jobs remained essentially unchanged over five years, while wages rose. Effects depend on how high the minimum wage is relative to local median wages",
+     "citation": "Cengiz, D., Dube, A., & Lindner, A. (2019). The effect of minimum wages on low-wage jobs: evidence from 138 state increases. Synthetic Quarterly Journal of Economics. https://journals.example.org/synthetic-quarterly-journal-of-economics/h7-a2 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "However, sources may disagree [S2].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Similarly, a case study comparing fast-food restaurants in New Jersey, which raised its minimum wage, with Pennsylvania, which did not, showed no reduction in employment in New Jersey [S4].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.646983763584936,
+   "sources": [
+    {
+     "sid": "S4",
+     "title": "Minimum wages and employment: a case study of fast-food restaurants",
+     "url": "https://journals.example.org/synthetic-american-economic-review/h7-a1",
+     "evidence_snippet": "The standard competitive model predicts that a higher minimum wage reduces employment. Comparing fast-food restaurants in New Jersey, which raised its minimum wage, with neighbouring Pennsylvania, which did not, we find no reduction in empl",
+     "citation": "Carter, D., & Klein, A. (1994). Minimum wages and employment: a case study of fast-food restaurants. Synthetic American Economic Review. https://journals.example.org/synthetic-american-economic-review/h7-a1 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "Final Answer: mock answer (60) based on: Evidence: [S1] (academic/journal, Synthetic Quarterly Journal of Economics, 2019) The effect of minimum wages on low-wage jobs: evidence from 138 state increases Across 138 state-level minimum wage increases between 1979 and 2016, the number of low-wage jobs remained essentially unchanged over five",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "However, Seattle's increase to $13 per hour reduced hours worked by low-wage employees by around 9%, lowering their total earnings despite the higher hourly wage [S2][S5].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.6059733163199948,
+   "sources": [
+    {
+     "sid": "S2",
+     "title": "Minimum wage increases, wages and low-wage employment: evidence from Seattle",
+     "url": "https://journals.example.org/synthetic-working-papers-in-labour-economics/h7-a3",
+     "evidence_snippet": "Seattle's increase of the minimum wage to $13 per hour reduced hours worked by low-wage employees by around 9%, lowering their total earnings despite the higher hourly wage.",
+     "citation": "Jardim, E., & Long, M. (2017). Minimum wage increases, wages and low-wage employment: evidence from Seattle. Synthetic Working Papers in Labour Economics. https://journals.example.org/synthetic-working-papers-in-labour-economics/h7-a3 [Synthetic source]"
+    },
+    {
+     "sid": "S5",
+     "title": "Budget office: $15 minimum wage would raise pay for millions, cost some jobs",
+     "url": "https://financialledger.example.com/2019-07-08/budget-office---15-minimum-wage-would-raise-pay-for-millions",
+     "evidence_snippet": "The budget office's median estimate is that raising the federal minimum wage to $15 by 2025 would raise pay for 17 million workers, lift 1.3 million people out of poverty and eliminate about 1.3 million jobs. The effects would depend on how",
+     "citation": "Financial Ledger staff (2019, July 8). Budget office: $15 minimum wage would raise pay for millions, cost some jobs. Financial Ledger. https://financialledger.example.com/2019-07-08/budget-office---15-minimum-wage-would-raise-pay-for-millions [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "The budget office estimates that raising the federal minimum wage to $15 by 2025 would lift millions out of poverty but also eliminate about 1.3 million jobs, highlighting the complexity and variability in outcomes based on local economic conditions [S5].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.511,
+   "sources": [
+    {
+     "sid": "S5",
+     "title": "Budget office: $15 minimum wage would raise pay for millions, cost some jobs",
+     "url": "https://financialledger.example.com/2019-07-08/budget-office---15-minimum-wage-would-raise-pay-for-millions",
+     "evidence_snippet": "The budget office's median estimate is that raising the federal minimum wage to $15 by 2025 would raise pay for 17 million workers, lift 1.3 million people out of poverty and eliminate about 1.3 million jobs. The effects would depend on how",
+     "citation": "Financial Ledger staff (2019, July 8). Budget office: $15 minimum wage would raise pay for millions, cost some jobs. Financial Ledger. https://financialledger.example.com/2019-07-08/budget-office---15-minimum-wage-would-raise-pay-for-millions [Synthetic source]"
+    }
+   ]
   }
  ],
- "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (60) based on: Evidence: [S1] (academic/journal, Synthetic Quarterly Journal of Economics, 2019) The effect of minimum wages on low-wage jobs: evidence from 138 state increases Across 138 state-level minimum wage increases between 1979 and 2016, the number of low-wage jobs remained essentially unchanged over five",
- "overall_confidence": 0.05,
+ "final_synthesis": "Studies examining the impact of minimum wage increases on employment show mixed but generally supportive results for maintaining or slightly altering job numbers [S1][S4]. A comprehensive analysis of 138 state-level increases between 1979 and 2016 found that while wages rose, the number of low-wage jobs remained stable over five years [S1]. Similarly, a case study comparing fast-food restaurants in New Jersey, which raised its minimum wage, with Pennsylvania, which did not, showed no reduction in employment in New Jersey [S4]. However, Seattle's increase to $13 per hour reduced hours worked by low-wage employees by around 9%, lowering their total earnings despite the higher hourly wage [S2][S5]. The budget office estimates that raising the federal minimum wage to $15 by 2025 would lift millions out of poverty but also eliminate about 1.3 million jobs, highlighting the complexity and variability in outcomes based on local economic conditions [S5].",
+ "overall_confidence": 0.6478309809517382,
  "metrics": {
-  "latency_s": 1.4846046000002389,
+  "latency_s": 64.18229360000441,
   "llm_calls": 8,
-  "input_tokens": 6822,
-  "output_tokens": 323,
-  "cost_usd": 0.038955000000000004,
-  "n_tool_calls": 16,
+  "input_tokens": 7549,
+  "output_tokens": 991,
+  "cost_usd": 0.05261,
+  "n_tool_calls": 39,
   "pii_redacted": [],
-  "halluc_before": 1.0,
-  "halluc_after": 1.0
+  "halluc_before": 0.0,
+  "halluc_after": 0.0
  }
 }

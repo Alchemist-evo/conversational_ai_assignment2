@@ -1,6 +1,6 @@
 {
  "question": "What caused the ozone hole, and is the ozone layer recovering?",
- "started": "2026-11-03T22:55:41",
+ "started": "2026-11-06T02:38:25",
  "route": {
   "type": "new_research",
   "standalone_query": "What caused the ozone hole, and is the ozone layer recovering?",
@@ -8,22 +8,33 @@
  },
  "sub_queries": {
   "static": [
-   "What caused the ozone hole, and is the ozone layer recovering?",
-   "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism"
+   "causes of the ozone hole",
+   "evidence for ozone layer recovery"
   ],
   "refinements": [
-   []
+   [
+    "Timeline and rate of ozone layer recovery since the implementation of the Montreal Protocol",
+    "Comparative analysis of ozone levels before and after the ban on CFCs"
+   ],
+   [
+    "Regional and altitude-specific recovery timelines of the ozone layer",
+    "Scientific debates and uncertainties about the long-term stability of the ozone layer"
+   ],
+   [
+    "Mechanisms influencing regional variability in ozone layer recovery rates",
+    "Quantitative analysis of regional disparities in ozone layer recovery"
+   ]
   ]
  },
  "tool_calls": [
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "What caused the ozone hole, and is the ozone layer recovering?",
+    "query": "causes of the ozone hole",
     "max_results": 5
    },
-   "timestamp": "22:55:41",
-   "latency_s": 1.0636874000001626,
+   "timestamp": "02:38:25",
+   "latency_s": 1.2034414000008837,
    "output_size": 3761,
    "ok": true,
    "error": ""
@@ -31,71 +42,287 @@
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What caused the ozone hole, and is the ozone layer recovering?",
+    "topic": "causes of the ozone hole",
     "max_results": 5
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.581992899999932,
-   "output_size": 4913,
+   "timestamp": "02:38:25",
+   "latency_s": 0.5307380000012927,
+   "output_size": 5075,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "What caused the ozone hole, and is the ozone layer recovering?",
+    "query": "causes of the ozone hole",
     "max_results": 5
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.614898799999537,
-   "output_size": 0,
-   "ok": false,
-   "error": "503 Service Unavailable (simulated upstream failure)"
+   "timestamp": "02:38:25",
+   "latency_s": 0.8894003999994311,
+   "output_size": 2747,
+   "ok": true,
+   "error": ""
   },
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism",
+    "query": "evidence for ozone layer recovery",
     "max_results": 5
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.7753970000003392,
-   "output_size": 3151,
+   "timestamp": "02:38:25",
+   "latency_s": 0.9196818000018538,
+   "output_size": 3157,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism",
+    "topic": "evidence for ozone layer recovery",
     "max_results": 5
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.6799786000001404,
-   "output_size": 5002,
+   "timestamp": "02:38:25",
+   "latency_s": 0.5591109000015422,
+   "output_size": 5044,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "What caused the ozone hole, and is the ozone layer recovering? evidence limitations criticism",
+    "query": "evidence for ozone layer recovery",
     "max_results": 5
    },
-   "timestamp": "22:55:41",
-   "latency_s": 0.7918486999997185,
-   "output_size": 2785,
+   "timestamp": "02:38:25",
+   "latency_s": 0.4489151999987371,
+   "output_size": 2897,
    "ok": true,
    "error": ""
   },
   {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Timeline and rate of ozone layer recovery since the implementation of the Montreal Protocol",
+    "max_results": 5
+   },
+   "timestamp": "02:38:26",
+   "latency_s": 0.854664499998762,
+   "output_size": 3582,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Timeline and rate of ozone layer recovery since the implementation of the Montreal Protocol",
+    "max_results": 5
+   },
+   "timestamp": "02:38:26",
+   "latency_s": 0.6242266000008385,
+   "output_size": 5050,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Timeline and rate of ozone layer recovery since the implementation of the Montreal Protocol",
+    "max_results": 5
+   },
+   "timestamp": "02:38:26",
+   "latency_s": 0.4929069999998319,
+   "output_size": 2609,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Comparative analysis of ozone levels before and after the ban on CFCs",
+    "max_results": 5
+   },
+   "timestamp": "02:38:26",
+   "latency_s": 0.6917905999980576,
+   "output_size": 3743,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Comparative analysis of ozone levels before and after the ban on CFCs",
+    "max_results": 5
+   },
+   "timestamp": "02:38:26",
+   "latency_s": 0.48370970000178204,
+   "output_size": 5027,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Comparative analysis of ozone levels before and after the ban on CFCs",
+    "max_results": 5
+   },
+   "timestamp": "02:38:26",
+   "latency_s": 0.5472195000002102,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
    "tool": "search_web",
    "args": {
-    "query": "What caused the ozone hole, and is the ozone layer recovering?"
+    "query": "Comparative analysis of ozone levels before and after the ban on CFCs"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.5940170000003491,
-   "output_size": 4318,
+   "timestamp": "02:38:27",
+   "latency_s": 0.882176499999332,
+   "output_size": 4107,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Regional and altitude-specific recovery timelines of the ozone layer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:27",
+   "latency_s": 0.6776050999978906,
+   "output_size": 3874,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Regional and altitude-specific recovery timelines of the ozone layer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:27",
+   "latency_s": 0.4172426000004634,
+   "output_size": 5007,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Regional and altitude-specific recovery timelines of the ozone layer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:27",
+   "latency_s": 0.7937461000001349,
+   "output_size": 2633,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Scientific debates and uncertainties about the long-term stability of the ozone layer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:27",
+   "latency_s": 1.010107699999935,
+   "output_size": 3582,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Scientific debates and uncertainties about the long-term stability of the ozone layer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:27",
+   "latency_s": 0.41571660000045085,
+   "output_size": 5355,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Scientific debates and uncertainties about the long-term stability of the ozone layer",
+    "max_results": 5
+   },
+   "timestamp": "02:38:27",
+   "latency_s": 0.5023084999993443,
+   "output_size": 2397,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Mechanisms influencing regional variability in ozone layer recovery rates",
+    "max_results": 5
+   },
+   "timestamp": "02:38:28",
+   "latency_s": 1.0643786000000546,
+   "output_size": 3876,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Mechanisms influencing regional variability in ozone layer recovery rates",
+    "max_results": 5
+   },
+   "timestamp": "02:38:28",
+   "latency_s": 0.49893109999902663,
+   "output_size": 5044,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Mechanisms influencing regional variability in ozone layer recovery rates",
+    "max_results": 5
+   },
+   "timestamp": "02:38:28",
+   "latency_s": 0.42022949999955017,
+   "output_size": 2777,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Quantitative analysis of regional disparities in ozone layer recovery",
+    "max_results": 5
+   },
+   "timestamp": "02:38:28",
+   "latency_s": 1.021465800000442,
+   "output_size": 3582,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Quantitative analysis of regional disparities in ozone layer recovery",
+    "max_results": 5
+   },
+   "timestamp": "02:38:28",
+   "latency_s": 0.32119710000188206,
+   "output_size": 5044,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Quantitative analysis of regional disparities in ozone layer recovery",
+    "max_results": 5
+   },
+   "timestamp": "02:38:28",
+   "latency_s": 0.8903473999998823,
+   "output_size": 2787,
    "ok": true,
    "error": ""
   },
@@ -104,8 +331,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Ozone_depletion"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.19194810000044527,
+   "timestamp": "02:38:30",
+   "latency_s": 0.11122719999912078,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -115,8 +342,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-reviews-of-atmospheric-chemistry/h8-a2"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.12453069999992294,
+   "timestamp": "02:38:30",
+   "latency_s": 0.12477559999751975,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -126,8 +353,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-atmospheric-assessment-reports/h8-a1"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.21344970000063768,
+   "timestamp": "02:38:30",
+   "latency_s": 0.21363470000142115,
    "output_size": 168,
    "ok": true,
    "error": ""
@@ -137,8 +364,8 @@
    "args": {
     "source_url": "https://dailyscience.example.com/2023-01-10/rogue-cfc-emissions-slowed-ozone-progress"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.23772350000035658,
+   "timestamp": "02:38:30",
+   "latency_s": 0.23746830000163754,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -148,8 +375,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-government-inquiry-reports/d5-a3"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.20999200000005658,
+   "timestamp": "02:38:30",
+   "latency_s": 0.21014850000210572,
    "output_size": 166,
    "ok": true,
    "error": ""
@@ -159,9 +386,20 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-review-of-financial-economics/d5-a1"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.13940240000010817,
+   "timestamp": "02:38:30",
+   "latency_s": 0.13937360000272747,
    "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-climate-assessment-reports/d8-a1"
+   },
+   "timestamp": "02:38:30",
+   "latency_s": 0.17837819999840576,
+   "output_size": 168,
    "ok": true,
    "error": ""
   },
@@ -170,20 +408,9 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-geophysical-research-letters/d8-a2"
    },
-   "timestamp": "22:55:43",
-   "latency_s": 0.1446155000003273,
+   "timestamp": "02:38:30",
+   "latency_s": 0.1446390999990399,
    "output_size": 172,
-   "ok": true,
-   "error": ""
-  },
-  {
-   "tool": "check_source_credibility",
-   "args": {
-    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
-   },
-   "timestamp": "22:55:43",
-   "latency_s": 0.10595949999969889,
-   "output_size": 167,
    "ok": true,
    "error": ""
   },
@@ -192,8 +419,8 @@
    "args": {
     "source_id": "WIKI-Ozone_depletion"
    },
-   "timestamp": "22:55:44",
-   "latency_s": 0.028841999999713153,
+   "timestamp": "02:38:30",
+   "latency_s": 0.029263000000355532,
    "output_size": 200,
    "ok": true,
    "error": ""
@@ -203,9 +430,31 @@
    "args": {
     "source_id": "H8-A2"
    },
-   "timestamp": "22:55:44",
-   "latency_s": 0.04265510000004724,
+   "timestamp": "02:38:30",
+   "latency_s": 0.042698199998994824,
    "output_size": 290,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H8-A1"
+   },
+   "timestamp": "02:38:30",
+   "latency_s": 0.05828589999873657,
+   "output_size": 277,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H8-N1"
+   },
+   "timestamp": "02:38:30",
+   "latency_s": 0.04234649999852991,
+   "output_size": 270,
    "ok": true,
    "error": ""
   }
@@ -261,65 +510,97 @@
   },
   {
    "sid": "S7",
+   "doc_id": "D8-A1",
+   "title": "Observed and projected global sea-level change: an assessment",
+   "url": "https://journals.example.org/synthetic-climate-assessment-reports/d8-a1",
+   "credibility": 0.909,
+   "source": "academic"
+  },
+  {
+   "sid": "S8",
    "doc_id": "D8-A2",
    "title": "Satellite evidence for accelerating sea-level rise",
    "url": "https://journals.example.org/synthetic-geophysical-research-letters/d8-a2",
    "credibility": 0.829,
    "source": "academic"
-  },
-  {
-   "sid": "S8",
-   "doc_id": "WIKI-NQ-0631",
-   "title": "Wikipedia passage: Placenta The placenta begins to develop...",
-   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
-   "credibility": 0.678,
-   "source": "web"
   }
  ],
  "conflicts": [],
  "claims": [
   {
-   "text": "Thought: mock reasoning step one because the question asks something.",
+   "text": "The ozone hole was primarily caused by manufactured halocarbon refrigerants, solvents, propellants, and foam-blowing agents such as chlorofluorocarbons (CFCs) and hydrochlorofluorocarbons (HCFCs), which are referred to as ozone-depleting substances (ODS).",
+   "verdict": "SUPPORTED",
+   "confidence": 0.71,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "Ozone depletion",
+     "url": "https://en.wikipedia.org/wiki/Ozone_depletion",
+     "evidence_snippet": "Ozone depletion in the stratosphere (the ozone layer) consists of two related phenomena observed since the late 1970s: a lowered total amount of ozone in Earth's upper stratosphere, and a much larger springtime decrease in around Earth's po",
+     "citation": "Wikipedia contributors. (2026). Ozone depletion. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Ozone_depletion"
+    }
+   ]
+  },
+  {
+   "text": "These compounds were transported into the stratosphere where ultraviolet light broke them apart, releasing chlorine atoms that catalytically destroy thousands of ozone molecules [S1][S2].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.832,
+   "sources": [
+    {
+     "sid": "S2",
+     "title": "Stratospheric chlorine chemistry and the Antarctic ozone hole",
+     "url": "https://journals.example.org/synthetic-reviews-of-atmospheric-chemistry/h8-a2",
+     "evidence_snippet": "Chlorofluorocarbons (CFCs) are broken apart by ultraviolet light in the stratosphere, releasing chlorine atoms. A single chlorine atom can catalytically destroy thousands of ozone molecules. Polar stratospheric clouds that form in the extre",
+     "citation": "Molina, R., & Farman, J. (2019). Stratospheric chlorine chemistry and the Antarctic ozone hole. Synthetic Reviews of Atmospheric Chemistry. https://journals.example.org/synthetic-reviews-of-atmospheric-chemistry/h8-a2 [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "Nearly 99% of banned ozone-depleting substances have been phased out under the Montreal Protocol.",
    "verdict": "UNSUPPORTED",
    "confidence": 0.05,
    "sources": []
   },
   {
-   "text": "Therefore step two follows [S1].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "If current policies continue, the ozone layer is expected to recover to 1980 values by about 2040 globally, around 2045 over the Arctic and around 2066 over the Antarctic [S3].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.917,
+   "sources": [
+    {
+     "sid": "S3",
+     "title": "Scientific assessment of ozone depletion: 2022 summary",
+     "url": "https://journals.example.org/synthetic-atmospheric-assessment-reports/h8-a1",
+     "evidence_snippet": "Nearly 99% of banned ozone-depleting substances have been phased out under the Montreal Protocol. If current policies continue, the ozone layer is expected to recover to 1980 values by about 2040 globally, around 2045 over the Arctic and ar",
+     "citation": "Ozone Assessment Panel (2023). Scientific assessment of ozone depletion: 2022 summary. Synthetic Atmospheric Assessment Reports. https://journals.example.org/synthetic-atmospheric-assessment-reports/h8-a1 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "However, sources may disagree [S2].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "Final Answer: mock answer (67) based on: Evidence: [S1] (wikipedia/encyclopedia, Wikipedia, The Free Encyclopedia, 2026) Ozone depletion Recovery was projected to continue over the next century, with the ozone hole expected to reach pre-1980 levels by around 2075.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "In 2019, NASA reported that the ozone hole was the smallest ever since it wa",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Despite this progress, unexpected emissions of CFC-11 from eastern China in the 2010s temporarily slowed ozone layer recovery but have since decreased with enforcement measures [S4].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.529,
+   "sources": [
+    {
+     "sid": "S4",
+     "title": "Rogue CFC emissions slowed ozone progress",
+     "url": "https://dailyscience.example.com/2023-01-10/rogue-cfc-emissions-slowed-ozone-progress",
+     "evidence_snippet": "Unexpected emissions of the banned chemical CFC-11, traced largely to eastern China in the 2010s, temporarily slowed progress, but emissions fell again after enforcement.",
+     "citation": "Daily Science Report staff (2023, January 10). Rogue CFC emissions slowed ozone progress. Daily Science Report. https://dailyscience.example.com/2023-01-10/rogue-cfc-emissions-slowed-ozone-progress [Synthetic source]"
+    }
+   ]
   }
  ],
- "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (67) based on: Evidence: [S1] (wikipedia/encyclopedia, Wikipedia, The Free Encyclopedia, 2026) Ozone depletion Recovery was projected to continue over the next century, with the ozone hole expected to reach pre-1980 levels by around 2075. In 2019, NASA reported that the ozone hole was the smallest ever since it wa",
- "overall_confidence": 0.05,
+ "final_synthesis": "The ozone hole was primarily caused by manufactured halocarbon refrigerants, solvents, propellants, and foam-blowing agents such as chlorofluorocarbons (CFCs) and hydrochlorofluorocarbons (HCFCs), which are referred to as ozone-depleting substances (ODS). These compounds were transported into the stratosphere where ultraviolet light broke them apart, releasing chlorine atoms that catalytically destroy thousands of ozone molecules [S1][S2]. Nearly 99% of banned ozone-depleting substances have been phased out under the Montreal Protocol. If current policies continue, the ozone layer is expected to recover to 1980 values by about 2040 globally, around 2045 over the Arctic and around 2066 over the Antarctic [S3]. Despite this progress, unexpected emissions of CFC-11 from eastern China in the 2010s temporarily slowed ozone layer recovery but have since decreased with enforcement measures [S4].",
+ "overall_confidence": 0.6075999999999999,
  "metrics": {
-  "latency_s": 2.1378869000000122,
-  "llm_calls": 7,
-  "input_tokens": 7697,
-  "output_tokens": 234,
-  "cost_usd": 0.041995,
-  "n_tool_calls": 17,
+  "latency_s": 76.21024609999586,
+  "llm_calls": 9,
+  "input_tokens": 10579,
+  "output_tokens": 1111,
+  "cost_usd": 0.06956,
+  "n_tool_calls": 37,
   "pii_redacted": [],
-  "halluc_before": 1.0,
-  "halluc_after": 1.0
+  "halluc_before": 0.2,
+  "halluc_after": 0.2
  }
 }

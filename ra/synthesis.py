@@ -284,7 +284,7 @@ def claim_confidence(claim: dict, evidence: list[dict], conflicts: list[dict] | 
     for s in sids:
         docs[ev[s]["doc_id"]] = ev[s]["credibility"]
     if not docs:
-        return {"confidence": 0.05, "n_sources": 0, "support": 0.0, "agreement": 1.0}
+        return {"confidence": 0.05, "n_sources": 0, "support_score": 0.0, "agreement": 1.0}
     support = 1 - math.prod(1 - c for c in docs.values())
     agreement = 1.0
     for c in conflicts or []:
@@ -295,7 +295,7 @@ def claim_confidence(claim: dict, evidence: list[dict], conflicts: list[dict] | 
         own = sum(ev[s]["credibility"] for s in pos_sids[mine[0]] if s in ev)
         opp = sum(ev[s]["credibility"] for i, ps in enumerate(pos_sids) if i != mine[0] for s in ps if s in ev)
         agreement = min(agreement, 1 - 0.5 * opp / (own + opp + 1e-9))
-    return {"confidence": float(np.clip(support * agreement, 0, 1)), "n_sources": len(docs), "support": support,
+    return {"confidence": float(np.clip(support * agreement, 0, 1)), "n_sources": len(docs), "support_score": support,
             "agreement": agreement}
 
 

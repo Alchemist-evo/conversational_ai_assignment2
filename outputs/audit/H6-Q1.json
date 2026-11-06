@@ -1,6 +1,6 @@
 {
  "question": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
- "started": "2026-11-03T22:55:38",
+ "started": "2026-11-06T02:38:12",
  "route": {
   "type": "new_research",
   "standalone_query": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
@@ -8,46 +8,332 @@
  },
  "sub_queries": {
   "static": [
-   "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
-   "How does sleep deprivation affect cognitive performance, and do people notice their own impairment? evidence limitations criticism"
+   "mechanisms of sleep deprivation on cognitive performance",
+   "evidence of cognitive decline due to lack of sleep",
+   "do people recognize their own cognitive impairment from sleep loss"
   ],
   "refinements": [
-   []
+   [
+    "self-assessment accuracy in recognizing cognitive deficits due to sleep deprivation",
+    "underestimation rates of cognitive impairment by sleep-deprived individuals"
+   ],
+   [
+    "Mechanistic pathways linking sleep deprivation with deficits in executive function and emotional regulation",
+    "Quantifying the frequency of underestimation among sleep-deprived individuals regarding their cognitive performance"
+   ],
+   [
+    "Mechanisms by which sleep deprivation impacts individual awareness and perception of cognitive deficits",
+    "Quantitative analysis of self-assessment accuracy in relation to varying degrees of sleep deprivation"
+   ]
   ]
  },
  "tool_calls": [
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
+    "query": "mechanisms of sleep deprivation on cognitive performance",
     "max_results": 5
    },
-   "timestamp": "22:55:38",
-   "latency_s": 1.0637468000004446,
-   "output_size": 3172,
+   "timestamp": "02:38:12",
+   "latency_s": 1.0210209999968356,
+   "output_size": 3820,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
+    "topic": "mechanisms of sleep deprivation on cognitive performance",
     "max_results": 5
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.34486029999970924,
-   "output_size": 5278,
+   "timestamp": "02:38:12",
+   "latency_s": 0.4175288000005821,
+   "output_size": 5179,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
+    "query": "mechanisms of sleep deprivation on cognitive performance",
     "max_results": 5
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.7496589999991556,
+   "timestamp": "02:38:12",
+   "latency_s": 0.7467883999997866,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "evidence of cognitive decline due to lack of sleep",
+    "max_results": 5
+   },
+   "timestamp": "02:38:12",
+   "latency_s": 0.9047955000023649,
+   "output_size": 2912,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "evidence of cognitive decline due to lack of sleep",
+    "max_results": 5
+   },
+   "timestamp": "02:38:12",
+   "latency_s": 0.40573789999689325,
+   "output_size": 5153,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "evidence of cognitive decline due to lack of sleep",
+    "max_results": 5
+   },
+   "timestamp": "02:38:12",
+   "latency_s": 0.8142493999985163,
+   "output_size": 2875,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "do people recognize their own cognitive impairment from sleep loss",
+    "max_results": 5
+   },
+   "timestamp": "02:38:13",
+   "latency_s": 0.9946725999980117,
+   "output_size": 3820,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "do people recognize their own cognitive impairment from sleep loss",
+    "max_results": 5
+   },
+   "timestamp": "02:38:13",
+   "latency_s": 0.6132811999996193,
+   "output_size": 5149,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "do people recognize their own cognitive impairment from sleep loss",
+    "max_results": 5
+   },
+   "timestamp": "02:38:13",
+   "latency_s": 0.8585845999987214,
+   "output_size": 2666,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "mechanisms of sleep deprivation on cognitive performance"
+   },
+   "timestamp": "02:38:14",
+   "latency_s": 0.6492814000012004,
+   "output_size": 3492,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "self-assessment accuracy in recognizing cognitive deficits due to sleep deprivation",
+    "max_results": 5
+   },
+   "timestamp": "02:38:15",
+   "latency_s": 1.1723515999983647,
+   "output_size": 3820,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "self-assessment accuracy in recognizing cognitive deficits due to sleep deprivation",
+    "max_results": 5
+   },
+   "timestamp": "02:38:15",
+   "latency_s": 0.6993157000033534,
+   "output_size": 5206,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "self-assessment accuracy in recognizing cognitive deficits due to sleep deprivation",
+    "max_results": 5
+   },
+   "timestamp": "02:38:15",
+   "latency_s": 0.7031956999999238,
+   "output_size": 2878,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "underestimation rates of cognitive impairment by sleep-deprived individuals",
+    "max_results": 5
+   },
+   "timestamp": "02:38:15",
+   "latency_s": 0.8575911000007181,
+   "output_size": 3997,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "underestimation rates of cognitive impairment by sleep-deprived individuals",
+    "max_results": 5
+   },
+   "timestamp": "02:38:15",
+   "latency_s": 0.5034715000001597,
+   "output_size": 4825,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "underestimation rates of cognitive impairment by sleep-deprived individuals",
+    "max_results": 5
+   },
+   "timestamp": "02:38:15",
+   "latency_s": 0.7613926000012725,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "underestimation rates of cognitive impairment by sleep-deprived individuals"
+   },
+   "timestamp": "02:38:16",
+   "latency_s": 0.6384416000000783,
+   "output_size": 5124,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Mechanistic pathways linking sleep deprivation with deficits in executive function and emotional regulation",
+    "max_results": 5
+   },
+   "timestamp": "02:38:16",
+   "latency_s": 1.0466337999969255,
+   "output_size": 3776,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Mechanistic pathways linking sleep deprivation with deficits in executive function and emotional regulation",
+    "max_results": 5
+   },
+   "timestamp": "02:38:16",
+   "latency_s": 0.6423089000018081,
+   "output_size": 5670,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Mechanistic pathways linking sleep deprivation with deficits in executive function and emotional regulation",
+    "max_results": 5
+   },
+   "timestamp": "02:38:16",
+   "latency_s": 0.5336324999989301,
+   "output_size": 2821,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Quantifying the frequency of underestimation among sleep-deprived individuals regarding their cognitive performance",
+    "max_results": 5
+   },
+   "timestamp": "02:38:16",
+   "latency_s": 1.1245859999980894,
+   "output_size": 3872,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Quantifying the frequency of underestimation among sleep-deprived individuals regarding their cognitive performance",
+    "max_results": 5
+   },
+   "timestamp": "02:38:16",
+   "latency_s": 0.339984900001582,
+   "output_size": 4825,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Quantifying the frequency of underestimation among sleep-deprived individuals regarding their cognitive performance",
+    "max_results": 5
+   },
+   "timestamp": "02:38:16",
+   "latency_s": 0.629067900001246,
+   "output_size": 3010,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Mechanisms by which sleep deprivation impacts individual awareness and perception of cognitive deficits",
+    "max_results": 5
+   },
+   "timestamp": "02:38:18",
+   "latency_s": 1.1235197999994853,
+   "output_size": 3464,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Mechanisms by which sleep deprivation impacts individual awareness and perception of cognitive deficits",
+    "max_results": 5
+   },
+   "timestamp": "02:38:18",
+   "latency_s": 0.6504291999990528,
+   "output_size": 5249,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Mechanisms by which sleep deprivation impacts individual awareness and perception of cognitive deficits",
+    "max_results": 5
+   },
+   "timestamp": "02:38:18",
+   "latency_s": 0.8416256999989855,
    "output_size": 2728,
    "ok": true,
    "error": ""
@@ -55,36 +341,36 @@
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment? evidence limitations criticism",
+    "query": "Quantitative analysis of self-assessment accuracy in relation to varying degrees of sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.9290175000005547,
-   "output_size": 2868,
+   "timestamp": "02:38:18",
+   "latency_s": 0.6752925000000687,
+   "output_size": 3820,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment? evidence limitations criticism",
+    "topic": "Quantitative analysis of self-assessment accuracy in relation to varying degrees of sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.6939431999999215,
-   "output_size": 4923,
+   "timestamp": "02:38:18",
+   "latency_s": 0.5843474000030255,
+   "output_size": 5289,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment? evidence limitations criticism",
+    "query": "Quantitative analysis of self-assessment accuracy in relation to varying degrees of sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "22:55:38",
-   "latency_s": 0.8239972999999736,
-   "output_size": 2907,
+   "timestamp": "02:38:18",
+   "latency_s": 0.45292399999743793,
+   "output_size": 2878,
    "ok": true,
    "error": ""
   },
@@ -93,8 +379,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-psychological-bulletin/h6-a1"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.2012102999997296,
+   "timestamp": "02:38:19",
+   "latency_s": 0.19581470000048284,
    "output_size": 163,
    "ok": true,
    "error": ""
@@ -104,8 +390,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Sleep_deprivation"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.24843199999941135,
+   "timestamp": "02:38:19",
+   "latency_s": 0.24830540000039036,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -115,9 +401,20 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-sleep-research/h6-a2"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.18786370000088937,
+   "timestamp": "02:38:19",
+   "latency_s": 0.1880903000019316,
    "output_size": 177,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
+   },
+   "timestamp": "02:38:19",
+   "latency_s": 0.23462149999977555,
+   "output_size": 167,
    "ok": true,
    "error": ""
   },
@@ -126,8 +423,8 @@
    "args": {
     "source_url": "https://globalhealthwire.example.com/2022-03-18/a-third-of-adults-don-t-get-enough-sleep"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.24630340000021533,
+   "timestamp": "02:38:19",
+   "latency_s": 0.1692591999999422,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -137,8 +434,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-cardiology/h1-a2"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.2167515999999523,
+   "timestamp": "02:38:19",
+   "latency_s": 0.21655640000244603,
    "output_size": 177,
    "ok": true,
    "error": ""
@@ -146,33 +443,22 @@
   {
    "tool": "check_source_credibility",
    "args": {
-    "source_url": "https://journals.example.org/synthetic-reports-in-nutrition-policy/h10-a3"
+    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.10710700000072393,
-   "output_size": 159,
+   "timestamp": "02:38:19",
+   "latency_s": 0.12534450000021025,
+   "output_size": 167,
    "ok": true,
    "error": ""
   },
   {
    "tool": "check_source_credibility",
    "args": {
-    "source_url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul"
+    "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.22789280000051804,
-   "output_size": 164,
-   "ok": true,
-   "error": ""
-  },
-  {
-   "tool": "check_source_credibility",
-   "args": {
-    "source_url": "https://journals.example.org/journal-of-synthetic-metabolic-research/d1-a2"
-   },
-   "timestamp": "22:55:40",
-   "latency_s": 0.10447719999956462,
-   "output_size": 177,
+   "timestamp": "02:38:19",
+   "latency_s": 0.2440993999989587,
+   "output_size": 167,
    "ok": true,
    "error": ""
   },
@@ -181,8 +467,8 @@
    "args": {
     "source_id": "H6-A1"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.04737169999953039,
+   "timestamp": "02:38:19",
+   "latency_s": 0.04787500000020373,
    "output_size": 264,
    "ok": true,
    "error": ""
@@ -192,9 +478,20 @@
    "args": {
     "source_id": "WIKI-Sleep_deprivation"
    },
-   "timestamp": "22:55:40",
-   "latency_s": 0.037758499999654305,
+   "timestamp": "02:38:19",
+   "latency_s": 0.03850149999925634,
    "output_size": 206,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H6-A2"
+   },
+   "timestamp": "02:38:19",
+   "latency_s": 0.04416219999984605,
+   "output_size": 314,
    "ok": true,
    "error": ""
   }
@@ -226,6 +523,14 @@
   },
   {
    "sid": "S4",
+   "doc_id": "WIKI-NQ-0692",
+   "title": "Wikipedia passage: Hypercapnia Hypercapnia normally triggers a reflex...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
+   "source": "web"
+  },
+  {
+   "sid": "S5",
    "doc_id": "H6-N1",
    "title": "A third of adults don't get enough sleep",
    "url": "https://globalhealthwire.example.com/2022-03-18/a-third-of-adults-don-t-get-enough-sleep",
@@ -233,7 +538,7 @@
    "source": "news"
   },
   {
-   "sid": "S5",
+   "sid": "S6",
    "doc_id": "H1-A2",
    "title": "Acute effects of coffee on cardiac ectopy, activity and sleep: a randomised crossover trial",
    "url": "https://journals.example.org/synthetic-journal-of-cardiology/h1-a2",
@@ -241,68 +546,99 @@
    "source": "academic"
   },
   {
-   "sid": "S6",
-   "doc_id": "H10-A3",
-   "title": "Dietary reference intakes for vitamin D",
-   "url": "https://journals.example.org/synthetic-reports-in-nutrition-policy/h10-a3",
-   "credibility": 0.831,
-   "source": "academic"
-  },
-  {
    "sid": "S7",
-   "doc_id": "D1-N1",
-   "title": "Eating within an 8-hour window linked to higher cardiovascular death risk in preliminary study",
-   "url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul",
-   "credibility": 0.538,
-   "source": "news"
+   "doc_id": "WIKI-NQ-0383",
+   "title": "Wikipedia passage: Prefrontal cortex Many authors have indicated...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
+   "source": "web"
   },
   {
    "sid": "S8",
-   "doc_id": "D1-A2",
-   "title": "Time-restricted eating with calorie restriction versus calorie restriction alone: a 12-month randomised trial",
-   "url": "https://journals.example.org/journal-of-synthetic-metabolic-research/d1-a2",
-   "credibility": 0.895,
-   "source": "academic"
+   "doc_id": "WIKI-NQ-0774",
+   "title": "Wikipedia passage: Thalamus The thalamus (from Greek θάλαμος,...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
+   "source": "web"
   }
  ],
  "conflicts": [],
  "claims": [
   {
-   "text": "Thought: mock reasoning step one because the question asks something.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Sleep deprivation significantly impairs cognitive functions such as attention, vigilance, working memory, and decision-making [S1][S2].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.97593,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "Effects of sleep deprivation on cognition: a meta-analysis",
+     "url": "https://journals.example.org/synthetic-psychological-bulletin/h6-a1",
+     "evidence_snippet": "Short-term total sleep deprivation impairs attention and vigilance most strongly, with large increases in lapses, and also impairs working memory. Being awake for 17-19 hours produces performance impairment comparable to a blood alcohol con",
+     "citation": "Lim, J., & Dinges, A. (2018). Effects of sleep deprivation on cognition: a meta-analysis. Synthetic Psychological Bulletin. https://journals.example.org/synthetic-psychological-bulletin/h6-a1 [Synthetic source]"
+    },
+    {
+     "sid": "S2",
+     "title": "Sleep deprivation",
+     "url": "https://en.wikipedia.org/wiki/Sleep_deprivation",
+     "evidence_snippet": "A 2009 review found that sleep loss had a wide range of cognitive and neurobehavioral effects including unstable attention, slowing of response times, decline of memory performance, reduced learning of cognitive tasks, deterioration of perf",
+     "citation": "Wikipedia contributors. (2026). Sleep deprivation. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Sleep_deprivation"
+    }
+   ]
   },
   {
-   "text": "Therefore step two follows [S1].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Being awake for 17 to 19 hours can lead to performance declines comparable to having a blood alcohol concentration of 0.05% [S1].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.917,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "Effects of sleep deprivation on cognition: a meta-analysis",
+     "url": "https://journals.example.org/synthetic-psychological-bulletin/h6-a1",
+     "evidence_snippet": "Short-term total sleep deprivation impairs attention and vigilance most strongly, with large increases in lapses, and also impairs working memory. Being awake for 17-19 hours produces performance impairment comparable to a blood alcohol con",
+     "citation": "Lim, J., & Dinges, A. (2018). Effects of sleep deprivation on cognition: a meta-analysis. Synthetic Psychological Bulletin. https://journals.example.org/synthetic-psychological-bulletin/h6-a1 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "However, sources may disagree [S2].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Chronic sleep restriction, like getting only six hours per night over two weeks, causes cognitive deficits similar to those from total sleep deprivation but individuals often underestimate their level of impairment [S3].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.855,
+   "sources": [
+    {
+     "sid": "S3",
+     "title": "The cumulative cost of additional wakefulness: dose-response effects of chronic sleep restriction",
+     "url": "https://journals.example.org/synthetic-journal-of-sleep-research/h6-a2",
+     "evidence_snippet": "Restricting sleep to 6 hours per night for 14 days produced cognitive deficits equivalent to up to two nights of total sleep deprivation, yet participants rated themselves as only slightly sleepy, showing that people underestimate their own",
+     "citation": "Van Dalen, H., & Price, M. (2003). The cumulative cost of additional wakefulness: dose-response effects of chronic sleep restriction. Synthetic Journal of Sleep Research. https://journals.example.org/synthetic-journal-of-sleep-research/h6-a2 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "Final Answer: mock answer (62) based on: Evidence: [S1] (academic/journal, Synthetic Psychological Bulletin, 2018) Effects of sleep deprivation on cognition: a meta-analysis Short-term total sleep deprivation impairs attention and vigilance most strongly, with large increases in lapses, and also impairs working memory.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "This underestimation suggests that people may not fully recognize the extent of their cognitive decline due to insufficient sleep.",
+   "verdict": "SUPPORTED",
+   "confidence": 0.855,
+   "sources": [
+    {
+     "sid": "S3",
+     "title": "The cumulative cost of additional wakefulness: dose-response effects of chronic sleep restriction",
+     "url": "https://journals.example.org/synthetic-journal-of-sleep-research/h6-a2",
+     "evidence_snippet": "Restricting sleep to 6 hours per night for 14 days produced cognitive deficits equivalent to up to two nights of total sleep deprivation, yet participants rated themselves as only slightly sleepy, showing that people underestimate their own",
+     "citation": "Van Dalen, H., & Price, M. (2003). The cumulative cost of additional wakefulness: dose-response effects of chronic sleep restriction. Synthetic Journal of Sleep Research. https://journals.example.org/synthetic-journal-of-sleep-research/h6-a2 [Synthetic source]"
+    }
+   ]
   }
  ],
- "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (62) based on: Evidence: [S1] (academic/journal, Synthetic Psychological Bulletin, 2018) Effects of sleep deprivation on cognition: a meta-analysis Short-term total sleep deprivation impairs attention and vigilance most strongly, with large increases in lapses, and also impairs working memory. Being awake for 17-1",
- "overall_confidence": 0.05,
+ "final_synthesis": "Sleep deprivation significantly impairs cognitive functions such as attention, vigilance, working memory, and decision-making [S1][S2]. Being awake for 17 to 19 hours can lead to performance declines comparable to having a blood alcohol concentration of 0.05% [S1]. Chronic sleep restriction, like getting only six hours per night over two weeks, causes cognitive deficits similar to those from total sleep deprivation but individuals often underestimate their level of impairment [S3]. This underestimation suggests that people may not fully recognize the extent of their cognitive decline due to insufficient sleep.",
+ "overall_confidence": 0.9007325,
  "metrics": {
-  "latency_s": 1.5505605999996988,
+  "latency_s": 53.63942720000159,
   "llm_calls": 7,
-  "input_tokens": 6613,
-  "output_tokens": 211,
-  "cost_usd": 0.03623,
-  "n_tool_calls": 16,
+  "input_tokens": 7089,
+  "output_tokens": 684,
+  "cost_usd": 0.045704999999999996,
+  "n_tool_calls": 40,
   "pii_redacted": [],
-  "halluc_before": 1.0,
-  "halluc_after": 1.0
+  "halluc_before": 0.0,
+  "halluc_after": 0.0
  }
 }

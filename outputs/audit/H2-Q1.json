@@ -1,6 +1,6 @@
 {
  "question": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
- "started": "2026-11-03T22:55:31",
+ "started": "2026-11-06T02:37:47",
  "route": {
   "type": "new_research",
   "standalone_query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
@@ -8,94 +8,358 @@
  },
  "sub_queries": {
   "static": [
-   "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
-   "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism"
+   "Mechanisms driving antibiotic resistance",
+   "Health burden of antibiotic resistance",
+   "Interventions addressing antibiotic resistance"
   ],
   "refinements": [
-   []
+   [
+    "Effectiveness of community-based interventions to reduce antibiotic resistance",
+    "Economic impact of antibiotic resistance"
+   ],
+   [
+    "Economic regional disparities in the impact of antibiotic resistance",
+    "Long-term health outcomes associated with antibiotic resistance"
+   ],
+   [
+    "Comparative analysis of different intervention strategies to reduce antibiotic resistance",
+    "Impact of healthcare policies on the prevalence of antibiotic resistance"
+   ]
   ]
  },
  "tool_calls": [
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+    "query": "Mechanisms driving antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "22:55:31",
-   "latency_s": 0.8621024000003672,
-   "output_size": 3257,
+   "timestamp": "02:37:47",
+   "latency_s": 0.7057658999983687,
+   "output_size": 3744,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+    "topic": "Mechanisms driving antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "22:55:31",
-   "latency_s": 0.42788519999976415,
-   "output_size": 5372,
+   "timestamp": "02:37:47",
+   "latency_s": 0.7096105000018724,
+   "output_size": 5018,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
+    "query": "Mechanisms driving antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "22:55:31",
-   "latency_s": 0.7801175999993575,
+   "timestamp": "02:37:47",
+   "latency_s": 0.6998082999998587,
+   "output_size": 2465,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Health burden of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:47",
+   "latency_s": 0.6512997999998333,
+   "output_size": 3080,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Health burden of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:47",
+   "latency_s": 0.40687919999982114,
+   "output_size": 5051,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Health burden of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:47",
+   "latency_s": 0.8446879000002809,
+   "output_size": 2959,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Interventions addressing antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:48",
+   "latency_s": 0.931492600000638,
+   "output_size": 3989,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Interventions addressing antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:48",
+   "latency_s": 0.5142663999977231,
+   "output_size": 5759,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Interventions addressing antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:48",
+   "latency_s": 0.632394000000204,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
   },
   {
+   "tool": "search_web",
+   "args": {
+    "query": "Interventions addressing antibiotic resistance"
+   },
+   "timestamp": "02:37:49",
+   "latency_s": 0.8182673000010254,
+   "output_size": 4857,
+   "ok": true,
+   "error": ""
+  },
+  {
    "tool": "search_academic_db",
    "args": {
-    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism",
+    "query": "Effectiveness of community-based interventions to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "22:55:31",
-   "latency_s": 0.9806091000000379,
-   "output_size": 3265,
+   "timestamp": "02:37:50",
+   "latency_s": 0.9160031999999774,
+   "output_size": 3896,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism",
+    "topic": "Effectiveness of community-based interventions to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "22:55:31",
-   "latency_s": 0.6170941999998831,
-   "output_size": 5391,
+   "timestamp": "02:37:50",
+   "latency_s": 0.4303939999990689,
+   "output_size": 5393,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it? evidence limitations criticism",
+    "query": "Effectiveness of community-based interventions to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "22:55:31",
-   "latency_s": 0.6093127000003733,
-   "output_size": 2814,
+   "timestamp": "02:37:50",
+   "latency_s": 0.648791200001142,
+   "output_size": 2930,
    "ok": true,
    "error": ""
   },
   {
-   "tool": "search_web",
+   "tool": "search_academic_db",
    "args": {
-    "query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?"
+    "query": "Economic impact of antibiotic resistance",
+    "max_results": 5
    },
-   "timestamp": "22:55:32",
-   "latency_s": 0.5189484000002267,
-   "output_size": 4075,
+   "timestamp": "02:37:50",
+   "latency_s": 0.8088083000002371,
+   "output_size": 3622,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Economic impact of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:50",
+   "latency_s": 0.6317358000014792,
+   "output_size": 4721,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Economic impact of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:50",
+   "latency_s": 0.7807250999976532,
+   "output_size": 2833,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Economic regional disparities in the impact of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:51",
+   "latency_s": 0.6569448000009288,
+   "output_size": 3622,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Economic regional disparities in the impact of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:51",
+   "latency_s": 0.37398210000174004,
+   "output_size": 5099,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Economic regional disparities in the impact of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:51",
+   "latency_s": 0.7540908999981184,
+   "output_size": 2833,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Long-term health outcomes associated with antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:51",
+   "latency_s": 1.114592800000537,
+   "output_size": 3659,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Long-term health outcomes associated with antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:51",
+   "latency_s": 0.6003349000020535,
+   "output_size": 5260,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Long-term health outcomes associated with antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:51",
+   "latency_s": 0.41719499999817344,
+   "output_size": 3048,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Comparative analysis of different intervention strategies to reduce antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:52",
+   "latency_s": 0.7128307999992103,
+   "output_size": 4033,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Comparative analysis of different intervention strategies to reduce antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:52",
+   "latency_s": 0.328066599999147,
+   "output_size": 5768,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Comparative analysis of different intervention strategies to reduce antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:52",
+   "latency_s": 0.6635275000007823,
+   "output_size": 2771,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Impact of healthcare policies on the prevalence of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:52",
+   "latency_s": 0.9265431000021636,
+   "output_size": 3795,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Impact of healthcare policies on the prevalence of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:52",
+   "latency_s": 0.6418896000031964,
+   "output_size": 5057,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Impact of healthcare policies on the prevalence of antibiotic resistance",
+    "max_results": 5
+   },
+   "timestamp": "02:37:52",
+   "latency_s": 0.8423688000002585,
+   "output_size": 3081,
    "ok": true,
    "error": ""
   },
@@ -104,8 +368,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-global-health-metrics/h2-a1"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.13398439999946277,
+   "timestamp": "02:37:53",
+   "latency_s": 0.13391090000004624,
    "output_size": 165,
    "ok": true,
    "error": ""
@@ -115,8 +379,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.1498910000000251,
+   "timestamp": "02:37:53",
+   "latency_s": 0.14977229999931296,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -126,19 +390,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.13875610000013694,
-   "output_size": 164,
-   "ok": true,
-   "error": ""
-  },
-  {
-   "tool": "check_source_credibility",
-   "args": {
-    "source_url": "https://globalhealthwire.example.com/2024-09-26/world-leaders-pledge-to-cut-superbug-deaths"
-   },
-   "timestamp": "22:55:33",
-   "latency_s": 0.2384183000003759,
+   "timestamp": "02:37:53",
+   "latency_s": 0.13867209999807528,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -148,8 +401,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.1690110999998069,
+   "timestamp": "02:37:53",
+   "latency_s": 0.1692161999999371,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -159,8 +412,19 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.21171830000002956,
+   "timestamp": "02:37:53",
+   "latency_s": 0.2115272000010009,
+   "output_size": 167,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-reviews-in-immunology/d2-a1"
+   },
+   "timestamp": "02:37:53",
+   "latency_s": 0.17320809999728226,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -170,8 +434,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-british-journal-of-medicine/h10-a2"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.10364709999976185,
+   "timestamp": "02:37:53",
+   "latency_s": 0.10318890000053216,
    "output_size": 165,
    "ok": true,
    "error": ""
@@ -179,11 +443,11 @@
   {
    "tool": "check_source_credibility",
    "args": {
-    "source_url": "https://globalhealthwire.example.com/2022-03-18/a-third-of-adults-don-t-get-enough-sleep"
+    "source_url": "https://journals.example.org/synthetic-journal-of-epidemiology/d2-a2"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.16931160000058298,
-   "output_size": 164,
+   "timestamp": "02:37:53",
+   "latency_s": 0.16356960000121035,
+   "output_size": 162,
    "ok": true,
    "error": ""
   },
@@ -192,8 +456,8 @@
    "args": {
     "source_id": "H2-A1"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.059222699999736506,
+   "timestamp": "02:37:53",
+   "latency_s": 0.059571100002358435,
    "output_size": 276,
    "ok": true,
    "error": ""
@@ -203,9 +467,20 @@
    "args": {
     "source_id": "H2-A2"
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.042158500000368804,
+   "timestamp": "02:37:53",
+   "latency_s": 0.04318119999879855,
    "output_size": 265,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "WIKI-Antimicrobial_resistance"
+   },
+   "timestamp": "02:37:53",
+   "latency_s": 0.027653199998894706,
+   "output_size": 227,
    "ok": true,
    "error": ""
   }
@@ -237,10 +512,10 @@
   },
   {
    "sid": "S4",
-   "doc_id": "H2-N1",
-   "title": "World leaders pledge to cut superbug deaths",
-   "url": "https://globalhealthwire.example.com/2024-09-26/world-leaders-pledge-to-cut-superbug-deaths",
-   "credibility": 0.542,
+   "doc_id": "WIKI-NQ-0578",
+   "title": "Wikipedia passage: Genetically modified crops The first genetically...",
+   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
+   "credibility": 0.678,
    "source": "web"
   },
   {
@@ -253,11 +528,11 @@
   },
   {
    "sid": "S6",
-   "doc_id": "WIKI-NQ-0511",
-   "title": "Wikipedia passage: What the Health What the Health...",
-   "url": "https://huggingface.co/datasets/sentence-transformers/natural-questions",
-   "credibility": 0.678,
-   "source": "web"
+   "doc_id": "D2-A1",
+   "title": "Immunological memory and vaccine-induced protection: a review",
+   "url": "https://journals.example.org/synthetic-reviews-in-immunology/d2-a1",
+   "credibility": 0.839,
+   "source": "academic"
   },
   {
    "sid": "S7",
@@ -269,51 +544,90 @@
   },
   {
    "sid": "S8",
-   "doc_id": "H6-N1",
-   "title": "A third of adults don't get enough sleep",
-   "url": "https://globalhealthwire.example.com/2022-03-18/a-third-of-adults-don-t-get-enough-sleep",
-   "credibility": 0.524,
-   "source": "news"
+   "doc_id": "D2-A2",
+   "title": "Waning of mRNA vaccine effectiveness and the effect of booster doses: a cohort study",
+   "url": "https://journals.example.org/synthetic-journal-of-epidemiology/d2-a2",
+   "credibility": 0.825,
+   "source": "academic"
   }
  ],
  "conflicts": [],
  "claims": [
   {
-   "text": "Thought: mock reasoning step one because the question asks something.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Antibiotic resistance arises through random mutations or horizontal gene transfer on plasmids [S2].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.829,
+   "sources": [
+    {
+     "sid": "S2",
+     "title": "How bacteria become resistant: mechanisms and drivers",
+     "url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2",
+     "evidence_snippet": "Resistance arises through random mutation and through horizontal gene transfer, for example on plasmids. Overuse and misuse of antibiotics in human medicine and in agriculture creates selection pressure that lets resistant strains spread. K",
+     "citation": "Okeke, I., & Sandberg, T. (2018). How bacteria become resistant: mechanisms and drivers. Synthetic Reviews in Microbiology. https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "Therefore step two follows [S1].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Overuse and misuse of antibiotics create selection pressure favoring resistant strains, with key mechanisms including enzymatic drug degradation by enzymes like beta-lactamases, efflux pumps that expel drugs, and modification of the drug's target [S2][S3].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.95041,
+   "sources": [
+    {
+     "sid": "S2",
+     "title": "How bacteria become resistant: mechanisms and drivers",
+     "url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2",
+     "evidence_snippet": "Resistance arises through random mutation and through horizontal gene transfer, for example on plasmids. Overuse and misuse of antibiotics in human medicine and in agriculture creates selection pressure that lets resistant strains spread. K",
+     "citation": "Okeke, I., & Sandberg, T. (2018). How bacteria become resistant: mechanisms and drivers. Synthetic Reviews in Microbiology. https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2 [Synthetic source]"
+    },
+    {
+     "sid": "S3",
+     "title": "Antimicrobial resistance",
+     "url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+     "evidence_snippet": "When this occurs, it is possible that the microbes that are less susceptible to treatment still remain in the body. If these microbes are able to continue to reproduce, this can lead to an infection by bacteria that are less susceptible or ",
+     "citation": "Wikipedia contributors. (2026). Antimicrobial resistance. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Antimicrobial_resistance"
+    }
+   ]
   },
   {
-   "text": "However, sources may disagree [S2].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "In 2019, an estimated 1.27 million deaths were directly attributable to bacterial antimicrobial resistance (AMR), with 4.95 million associated deaths, making AMR a leading cause of death globally [S1].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.825,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "Global burden of bacterial antimicrobial resistance in 2019",
+     "url": "https://journals.example.org/synthetic-global-health-metrics/h2-a1",
+     "evidence_snippet": "We estimate that 1.27 million deaths in 2019 were directly attributable to bacterial antimicrobial resistance and 4.95 million deaths were associated with it, making AMR a leading cause of death worldwide.",
+     "citation": "Antimicrobial Burden Collaborators (2022). Global burden of bacterial antimicrobial resistance in 2019. Synthetic Global Health Metrics. https://journals.example.org/synthetic-global-health-metrics/h2-a1 [Synthetic source]"
+    }
+   ]
   },
   {
-   "text": "Final Answer: mock answer (16) based on: Evidence: [S1] (academic/journal, Synthetic Global Health Metrics, 2022) Global burden of bacterial antimicrobial resistance in 2019 We estimate that 1.27 million deaths in 2019 were directly attributable to bacterial antimicrobial resistance and 4.95 million deaths were associated with it, making A",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "text": "Horizontal gene transfer allows rapid spread of resistance genes between species through conjugation, transformation, and transduction [S3].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.71,
+   "sources": [
+    {
+     "sid": "S3",
+     "title": "Antimicrobial resistance",
+     "url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance",
+     "evidence_snippet": "When this occurs, it is possible that the microbes that are less susceptible to treatment still remain in the body. If these microbes are able to continue to reproduce, this can lead to an infection by bacteria that are less susceptible or ",
+     "citation": "Wikipedia contributors. (2026). Antimicrobial resistance. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Antimicrobial_resistance"
+    }
+   ]
   }
  ],
- "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (16) based on: Evidence: [S1] (academic/journal, Synthetic Global Health Metrics, 2022) Global burden of bacterial antimicrobial resistance in 2019 We estimate that 1.27 million deaths in 2019 were directly attributable to bacterial antimicrobial resistance and 4.95 million deaths were associated with it, making A",
- "overall_confidence": 0.05,
+ "final_synthesis": "Antibiotic resistance arises through random mutations or horizontal gene transfer on plasmids [S2]. Overuse and misuse of antibiotics create selection pressure favoring resistant strains, with key mechanisms including enzymatic drug degradation by enzymes like beta-lactamases, efflux pumps that expel drugs, and modification of the drug's target [S2][S3]. In 2019, an estimated 1.27 million deaths were directly attributable to bacterial antimicrobial resistance (AMR), with 4.95 million associated deaths, making AMR a leading cause of death globally [S1]. Horizontal gene transfer allows rapid spread of resistance genes between species through conjugation, transformation, and transduction [S3].",
+ "overall_confidence": 0.8286024999999999,
  "metrics": {
-  "latency_s": 2.029935700000351,
-  "llm_calls": 7,
-  "input_tokens": 6464,
-  "output_tokens": 214,
-  "cost_usd": 0.03553,
-  "n_tool_calls": 17,
+  "latency_s": 67.19982569999775,
+  "llm_calls": 9,
+  "input_tokens": 9829,
+  "output_tokens": 949,
+  "cost_usd": 0.06337999999999999,
+  "n_tool_calls": 39,
   "pii_redacted": [],
-  "halluc_before": 1.0,
-  "halluc_after": 1.0
+  "halluc_before": 0.2,
+  "halluc_after": 0.0
  }
 }

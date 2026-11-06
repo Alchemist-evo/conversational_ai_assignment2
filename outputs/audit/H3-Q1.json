@@ -1,6 +1,6 @@
 {
  "question": "What do we know about the effects of microplastics on human health?",
- "started": "2026-11-03T22:55:33",
+ "started": "2026-11-06T02:37:53",
  "route": {
   "type": "new_research",
   "standalone_query": "What do we know about the effects of microplastics on human health?",
@@ -8,70 +8,155 @@
  },
  "sub_queries": {
   "static": [
-   "What do we know about the effects of microplastics on human health?",
-   "What do we know about the effects of microplastics on human health? evidence limitations criticism"
+   "definition of microplastics",
+   "mechanisms of microplastic effects on human health",
+   "comparison of different types of microplastics impact on human health",
+   "recent studies on evidence for or against the impacts of microplastics on human health"
   ],
   "refinements": [
-   []
+   [
+    "Mechanisms of microplastic entry into human tissues",
+    "Long-term effects of microplastics on human health"
+   ],
+   [
+    "Effects of microplastics on respiratory, digestive, and nervous systems",
+    "Human longitudinal studies investigating long-term exposure to microplastics and chronic disease outcomes"
+   ],
+   [
+    "Effects of microplastics on the endocrine and immune systems",
+    "Interaction between microplastics and other environmental toxins"
+   ]
   ]
  },
  "tool_calls": [
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "What do we know about the effects of microplastics on human health?",
+    "query": "definition of microplastics",
     "max_results": 5
    },
-   "timestamp": "22:55:33",
-   "latency_s": 1.1265997999998945,
-   "output_size": 3160,
+   "timestamp": "02:37:53",
+   "latency_s": 1.0798843000011402,
+   "output_size": 3939,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What do we know about the effects of microplastics on human health?",
+    "topic": "definition of microplastics",
     "max_results": 5
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.31191370000033203,
-   "output_size": 5038,
+   "timestamp": "02:37:53",
+   "latency_s": 0.3240454000006139,
+   "output_size": 5069,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_news",
    "args": {
-    "query": "What do we know about the effects of microplastics on human health?",
+    "query": "definition of microplastics",
     "max_results": 5
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.7428032000007079,
-   "output_size": 2760,
+   "timestamp": "02:37:53",
+   "latency_s": 0.629812099999981,
+   "output_size": 2487,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_academic_db",
    "args": {
-    "query": "What do we know about the effects of microplastics on human health? evidence limitations criticism",
+    "query": "mechanisms of microplastic effects on human health",
     "max_results": 5
    },
-   "timestamp": "22:55:33",
-   "latency_s": 1.1529344000000492,
-   "output_size": 3279,
+   "timestamp": "02:37:53",
+   "latency_s": 0.7071160999985295,
+   "output_size": 3707,
    "ok": true,
    "error": ""
   },
   {
    "tool": "search_wikipedia",
    "args": {
-    "topic": "What do we know about the effects of microplastics on human health? evidence limitations criticism",
+    "topic": "mechanisms of microplastic effects on human health",
     "max_results": 5
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.6848149999996167,
+   "timestamp": "02:37:53",
+   "latency_s": 0.5397770000017772,
+   "output_size": 4804,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "mechanisms of microplastic effects on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:53",
+   "latency_s": 0.6225257000005513,
+   "output_size": 2826,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "comparison of different types of microplastics impact on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:54",
+   "latency_s": 1.1442497000025469,
+   "output_size": 3567,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "comparison of different types of microplastics impact on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:54",
+   "latency_s": 0.6223247999987507,
+   "output_size": 5033,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "comparison of different types of microplastics impact on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:54",
+   "latency_s": 0.8063005000003614,
+   "output_size": 2992,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "recent studies on evidence for or against the impacts of microplastics on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:54",
+   "latency_s": 1.1648190999985673,
+   "output_size": 3269,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "recent studies on evidence for or against the impacts of microplastics on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:54",
+   "latency_s": 0.3410178999984055,
    "output_size": 4879,
    "ok": true,
    "error": ""
@@ -79,34 +164,250 @@
   {
    "tool": "search_news",
    "args": {
-    "query": "What do we know about the effects of microplastics on human health? evidence limitations criticism",
+    "query": "recent studies on evidence for or against the impacts of microplastics on human health",
     "max_results": 5
    },
-   "timestamp": "22:55:33",
-   "latency_s": 0.7036083000002691,
-   "output_size": 2760,
+   "timestamp": "02:37:54",
+   "latency_s": 0.6792088000001968,
+   "output_size": 2992,
    "ok": true,
    "error": ""
   },
   {
-   "tool": "check_source_credibility",
+   "tool": "search_academic_db",
    "args": {
-    "source_url": "https://dailyscience.example.com/2024-08-30/microplastics-found-in-blood--placenta-and-brain-tissue"
+    "query": "Mechanisms of microplastic entry into human tissues",
+    "max_results": 5
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.16859169999952428,
-   "output_size": 164,
+   "timestamp": "02:37:55",
+   "latency_s": 0.6932417000025453,
+   "output_size": 3824,
    "ok": true,
    "error": ""
   },
   {
-   "tool": "check_source_credibility",
+   "tool": "search_wikipedia",
    "args": {
-    "source_url": "https://en.wikipedia.org/wiki/Microplastics"
+    "topic": "Mechanisms of microplastic entry into human tissues",
+    "max_results": 5
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.11842630000046483,
-   "output_size": 164,
+   "timestamp": "02:37:55",
+   "latency_s": 0.5920541999985289,
+   "output_size": 4989,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Mechanisms of microplastic entry into human tissues",
+    "max_results": 5
+   },
+   "timestamp": "02:37:55",
+   "latency_s": 0.46385299999747076,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Long-term effects of microplastics on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:55",
+   "latency_s": 0.6654674999990675,
+   "output_size": 3631,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Long-term effects of microplastics on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:55",
+   "latency_s": 0.43462910000016564,
+   "output_size": 4999,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Long-term effects of microplastics on human health",
+    "max_results": 5
+   },
+   "timestamp": "02:37:55",
+   "latency_s": 0.6183216000026732,
+   "output_size": 2873,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "Mechanisms of microplastic entry into human tissues"
+   },
+   "timestamp": "02:37:56",
+   "latency_s": 0.7492788000017754,
+   "output_size": 3462,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Effects of microplastics on respiratory, digestive, and nervous systems",
+    "max_results": 5
+   },
+   "timestamp": "02:37:56",
+   "latency_s": 1.1857170000002952,
+   "output_size": 3743,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Effects of microplastics on respiratory, digestive, and nervous systems",
+    "max_results": 5
+   },
+   "timestamp": "02:37:56",
+   "latency_s": 0.3799957000010181,
+   "output_size": 5073,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Effects of microplastics on respiratory, digestive, and nervous systems",
+    "max_results": 5
+   },
+   "timestamp": "02:37:56",
+   "latency_s": 0.891373599999497,
+   "output_size": 2780,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Human longitudinal studies investigating long-term exposure to microplastics and chronic disease outcomes",
+    "max_results": 5
+   },
+   "timestamp": "02:37:56",
+   "latency_s": 0.6478822000026412,
+   "output_size": 3097,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Human longitudinal studies investigating long-term exposure to microplastics and chronic disease outcomes",
+    "max_results": 5
+   },
+   "timestamp": "02:37:56",
+   "latency_s": 0.5854016000012052,
+   "output_size": 5004,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Human longitudinal studies investigating long-term exposure to microplastics and chronic disease outcomes",
+    "max_results": 5
+   },
+   "timestamp": "02:37:56",
+   "latency_s": 0.8606595000019297,
+   "output_size": 0,
+   "ok": false,
+   "error": "503 Service Unavailable (simulated upstream failure)"
+  },
+  {
+   "tool": "search_web",
+   "args": {
+    "query": "Human longitudinal studies investigating long-term exposure to microplastics and chronic disease outcomes"
+   },
+   "timestamp": "02:37:58",
+   "latency_s": 0.9936801999974705,
+   "output_size": 3509,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Effects of microplastics on the endocrine and immune systems",
+    "max_results": 5
+   },
+   "timestamp": "02:37:59",
+   "latency_s": 0.7256555999992997,
+   "output_size": 3380,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Effects of microplastics on the endocrine and immune systems",
+    "max_results": 5
+   },
+   "timestamp": "02:37:59",
+   "latency_s": 0.6434273999984725,
+   "output_size": 4882,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Effects of microplastics on the endocrine and immune systems",
+    "max_results": 5
+   },
+   "timestamp": "02:37:59",
+   "latency_s": 0.6493039000015415,
+   "output_size": 2614,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_academic_db",
+   "args": {
+    "query": "Interaction between microplastics and other environmental toxins",
+    "max_results": 5
+   },
+   "timestamp": "02:37:59",
+   "latency_s": 0.6858979999997246,
+   "output_size": 3710,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_wikipedia",
+   "args": {
+    "topic": "Interaction between microplastics and other environmental toxins",
+    "max_results": 5
+   },
+   "timestamp": "02:37:59",
+   "latency_s": 0.6849605999996129,
+   "output_size": 5220,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "search_news",
+   "args": {
+    "query": "Interaction between microplastics and other environmental toxins",
+    "max_results": 5
+   },
+   "timestamp": "02:37:59",
+   "latency_s": 0.6351450999973167,
+   "output_size": 2780,
    "ok": true,
    "error": ""
   },
@@ -115,8 +416,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-environmental-health-reports/h3-a2"
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.1444022000005134,
+   "timestamp": "02:38:00",
+   "latency_s": 0.22294939999846974,
    "output_size": 166,
    "ok": true,
    "error": ""
@@ -126,8 +427,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-medicine/h3-a1"
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.12582639999982348,
+   "timestamp": "02:38:00",
+   "latency_s": 0.12569810000059078,
    "output_size": 182,
    "ok": true,
    "error": ""
@@ -135,11 +436,33 @@
   {
    "tool": "check_source_credibility",
    "args": {
-    "source_url": "https://viralhealthdaily.example.net/2023-04-11/the-microplastic-detox-everyone-needs"
+    "source_url": "https://en.wikipedia.org/wiki/Microplastics"
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.1300267000005988,
-   "output_size": 169,
+   "timestamp": "02:38:00",
+   "latency_s": 0.1184787000020151,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://en.wikipedia.org/wiki/Ozone_depletion"
+   },
+   "timestamp": "02:38:00",
+   "latency_s": 0.191925999999512,
+   "output_size": 164,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "check_source_credibility",
+   "args": {
+    "source_url": "https://journals.example.org/synthetic-psychological-bulletin/h6-a1"
+   },
+   "timestamp": "02:38:00",
+   "latency_s": 0.2008616000020993,
+   "output_size": 163,
    "ok": true,
    "error": ""
   },
@@ -148,8 +471,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2"
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.1612807999999859,
+   "timestamp": "02:38:00",
+   "latency_s": 0.16163650000089547,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -159,8 +482,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1"
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.2469991999996637,
+   "timestamp": "02:38:00",
+   "latency_s": 0.24696449999828474,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -170,8 +493,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-british-journal-of-medicine/h1-a1"
    },
-   "timestamp": "22:55:34",
-   "latency_s": 0.1097527000001719,
+   "timestamp": "02:38:00",
+   "latency_s": 0.10992150000311085,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -179,11 +502,22 @@
   {
    "tool": "generate_citation",
    "args": {
-    "source_id": "H3-N1"
+    "source_id": "H3-A2"
    },
-   "timestamp": "22:55:35",
-   "latency_s": 0.03013849999933882,
-   "output_size": 297,
+   "timestamp": "02:38:00",
+   "latency_s": 0.04992059999858611,
+   "output_size": 280,
+   "ok": true,
+   "error": ""
+  },
+  {
+   "tool": "generate_citation",
+   "args": {
+    "source_id": "H3-A1"
+   },
+   "timestamp": "02:38:00",
+   "latency_s": 0.054855899998074165,
+   "output_size": 279,
    "ok": true,
    "error": ""
   },
@@ -192,8 +526,8 @@
    "args": {
     "source_id": "WIKI-Microplastics"
    },
-   "timestamp": "22:55:35",
-   "latency_s": 0.04001779999998689,
+   "timestamp": "02:38:00",
+   "latency_s": 0.039734000001772074,
    "output_size": 194,
    "ok": true,
    "error": ""
@@ -202,22 +536,6 @@
  "sources": [
   {
    "sid": "S1",
-   "doc_id": "H3-N1",
-   "title": "Microplastics found in blood, placenta and brain tissue",
-   "url": "https://dailyscience.example.com/2024-08-30/microplastics-found-in-blood--placenta-and-brain-tissue",
-   "credibility": 0.541,
-   "source": "news"
-  },
-  {
-   "sid": "S2",
-   "doc_id": "WIKI-Microplastics",
-   "title": "Microplastics",
-   "url": "https://en.wikipedia.org/wiki/Microplastics",
-   "credibility": 0.71,
-   "source": "wikipedia"
-  },
-  {
-   "sid": "S3",
    "doc_id": "H3-A2",
    "title": "Microplastics in drinking water: a health risk assessment",
    "url": "https://journals.example.org/synthetic-environmental-health-reports/h3-a2",
@@ -225,7 +543,7 @@
    "source": "academic"
   },
   {
-   "sid": "S4",
+   "sid": "S2",
    "doc_id": "H3-A1",
    "title": "Microplastics and nanoplastics in carotid plaque and cardiovascular events",
    "url": "https://journals.example.org/synthetic-journal-of-medicine/h3-a1",
@@ -233,12 +551,28 @@
    "source": "academic"
   },
   {
+   "sid": "S3",
+   "doc_id": "WIKI-Microplastics",
+   "title": "Microplastics",
+   "url": "https://en.wikipedia.org/wiki/Microplastics",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
+   "sid": "S4",
+   "doc_id": "WIKI-Ozone_depletion",
+   "title": "Ozone depletion",
+   "url": "https://en.wikipedia.org/wiki/Ozone_depletion",
+   "credibility": 0.71,
+   "source": "wikipedia"
+  },
+  {
    "sid": "S5",
-   "doc_id": "H3-N2",
-   "title": "The microplastic detox everyone needs",
-   "url": "https://viralhealthdaily.example.net/2023-04-11/the-microplastic-detox-everyone-needs",
-   "credibility": 0.243,
-   "source": "news"
+   "doc_id": "H6-A1",
+   "title": "Effects of sleep deprivation on cognition: a meta-analysis",
+   "url": "https://journals.example.org/synthetic-psychological-bulletin/h6-a1",
+   "credibility": 0.917,
+   "source": "academic"
   },
   {
    "sid": "S6",
@@ -265,50 +599,68 @@
    "source": "academic"
   }
  ],
- "conflicts": [],
- "claims": [
+ "conflicts": [
   {
-   "text": "Thought: mock reasoning step one because the question asks something.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "Therefore step two follows [S1].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "However, sources may disagree [S2].",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "Final Answer: mock answer (38) based on: Evidence: [S1] (news/reputable, Daily Science Report, 2024) Microplastics found in blood, placenta and brain tissue Researchers have detected microplastics in human blood, placenta and brain tissue samples.",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
-  },
-  {
-   "text": "Scientists caution that contamination during laboratory measurement is a serious challenge an",
-   "verdict": "UNSUPPORTED",
-   "confidence": 0.05,
-   "sources": []
+   "issue": "The health risk of microplastics in drinking water and their presence in human bodies.",
+   "decision": "contested",
+   "share": 0.5326460481099656
   }
  ],
- "final_synthesis": "Thought: mock reasoning step one because the question asks something. Therefore step two follows [S1]. However, sources may disagree [S2].\nFinal Answer: mock answer (38) based on: Evidence: [S1] (news/reputable, Daily Science Report, 2024) Microplastics found in blood, placenta and brain tissue Researchers have detected microplastics in human blood, placenta and brain tissue samples. Scientists caution that contamination during laboratory measurement is a serious challenge an",
- "overall_confidence": 0.05,
+ "claims": [
+  {
+   "text": "Current evidence is insufficient to determine the human health risks associated with microplastics in drinking water, as most ingested particles are likely excreted [S1].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.7126804124956012,
+   "sources": [
+    {
+     "sid": "S1",
+     "title": "Microplastics in drinking water: a health risk assessment",
+     "url": "https://journals.example.org/synthetic-environmental-health-reports/h3-a2",
+     "evidence_snippet": "Current evidence is insufficient to determine the human health risk of microplastics in drinking water. Detection and quantification methods are not standardised, and most ingested microplastic particles are likely excreted. More research o",
+     "citation": "Water Quality Expert Panel (2022). Microplastics in drinking water: a health risk assessment. Synthetic Environmental Health Reports. https://journals.example.org/synthetic-environmental-health-reports/h3-a2 [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "However, an observational study found that patients whose carotid plaque contained detectable polyethylene micro- and nanoplastics had a higher risk of heart attack, stroke, or death over 34 months, indicating a potential health concern [S2].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.598680412495601,
+   "sources": [
+    {
+     "sid": "S2",
+     "title": "Microplastics and nanoplastics in carotid plaque and cardiovascular events",
+     "url": "https://journals.example.org/synthetic-journal-of-medicine/h3-a1",
+     "evidence_snippet": "Among 257 patients undergoing carotid surgery, those whose plaque contained detectable polyethylene micro- and nanoplastics had a higher risk of heart attack, stroke or death over 34 months (hazard ratio about 4.5). The study is observation",
+     "citation": "Romano, G., & Esposito, L. (2024). Microplastics and nanoplastics in carotid plaque and cardiovascular events. Synthetic Journal of Medicine. https://journals.example.org/synthetic-journal-of-medicine/h3-a1 [Synthetic source]"
+    }
+   ]
+  },
+  {
+   "text": "The prevalence of microplastics with uneven shapes suggests fragmentation is a key source, entering the environment through various means such as wear and tear on synthetic clothing and tire erosion [S3].",
+   "verdict": "SUPPORTED",
+   "confidence": 0.71,
+   "sources": [
+    {
+     "sid": "S3",
+     "title": "Microplastics",
+     "url": "https://en.wikipedia.org/wiki/Microplastics",
+     "evidence_snippet": "The prevalence of microplastics with uneven shapes suggests that fragmentation is a key source. One study suggested that more microplastics might be formed from biodegradable polymer than from non-biodegradable polymer in both seawater and ",
+     "citation": "Wikipedia contributors. (2026). Microplastics. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Microplastics"
+    }
+   ]
+  }
+ ],
+ "final_synthesis": "Current evidence is insufficient to determine the human health risks associated with microplastics in drinking water, as most ingested particles are likely excreted [S1]. However, an observational study found that patients whose carotid plaque contained detectable polyethylene micro- and nanoplastics had a higher risk of heart attack, stroke, or death over 34 months, indicating a potential health concern [S2]. The prevalence of microplastics with uneven shapes suggests fragmentation is a key source, entering the environment through various means such as wear and tear on synthetic clothing and tire erosion [S3].",
+ "overall_confidence": 0.673786941663734,
  "metrics": {
-  "latency_s": 1.6703047999999399,
-  "llm_calls": 7,
-  "input_tokens": 6370,
-  "output_tokens": 205,
-  "cost_usd": 0.034925,
-  "n_tool_calls": 16,
+  "latency_s": 70.35980639999798,
+  "llm_calls": 9,
+  "input_tokens": 9711,
+  "output_tokens": 1089,
+  "cost_usd": 0.06488999999999999,
+  "n_tool_calls": 43,
   "pii_redacted": [],
-  "halluc_before": 1.0,
-  "halluc_after": 1.0
+  "halluc_before": 0.25,
+  "halluc_after": 0.0
  }
 }

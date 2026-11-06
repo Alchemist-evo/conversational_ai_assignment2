@@ -59,7 +59,7 @@ class Embedder:
     def _init(self):
         from sentence_transformers import SentenceTransformer
 
-        self.model = SentenceTransformer(config.EMBED_MODEL, device="cpu")
+        self.model = SentenceTransformer(config.EMBED_MODEL, device=config.torch_device())
         self.path = config.CACHE_DIR / "emb_cache.pkl"
         try:
             self.cache = pickle.load(open(self.path, "rb"))
@@ -190,7 +190,7 @@ class CrossEncoderReranker:
         if CrossEncoderReranker._model is None:
             from sentence_transformers import CrossEncoder
 
-            CrossEncoderReranker._model = CrossEncoder(config.CROSS_ENCODER_MODEL, device="cpu")
+            CrossEncoderReranker._model = CrossEncoder(config.CROSS_ENCODER_MODEL, device=config.torch_device())
         self.model = CrossEncoderReranker._model
 
     def rerank(self, query: str, hits: list[Hit], top_k: int | None = None) -> list[Hit]:
