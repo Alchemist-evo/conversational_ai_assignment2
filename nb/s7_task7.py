@@ -61,7 +61,7 @@ md(r"""
 **Assumptions, used consistently** (from the assignment):
 * 2,000 input + 500 output tokens per query
 * 10,000 queries/day, 30-day month
-* prices per 1M tokens: GPT-4o $5 in / $15 out; small LM $0.10 / $0.30; MoE mid $0.60 / $1.10
+* prices per 1M tokens: GPT-4o \$5 in / \$15 out; small LM \$0.10 / \$0.30; MoE mid \$0.60 / \$1.10
 
 Per-query cost:
 * GPT-4o = 2000·5/10⁶ + 500·15/10⁶ = **$0.0175**

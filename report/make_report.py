@@ -117,6 +117,9 @@ Team: Prajwal Shetty K P (2025AE05434) · Poornima Prakash Patil (2025AE05411) �
 <h2>11. Conclusion, limitations and future work</h2>{sec('<!--CONCLUSION-->')}
 <h2>12. References</h2>
 <p>Kwiatkowski et al. (2019) Natural Questions, TACL · Wei et al. (2022) CoT · Yao et al. (2023) ToT; ReAct · Zhou et al. (2023) APE · Cormack et al. (2009) RRF · Reimers &amp; Gurevych (2019) SBERT · Johnson et al. (2019) FAISS · Liu et al. (2023) Lost in the Middle · Gao et al. (2023) HyDE · Yan et al. (2024) CRAG · Wang et al. (2023) Self-Instruct · Rafailov et al. (2023) DPO · Hu et al. (2022) LoRA · Dettmers et al. (2023) QLoRA · Shao et al. (2024) GRPO · Bai et al. (2022) Constitutional AI · Chen et al. (2024) SPIN · Lightman et al. (2023) PRM · Guo et al. (2017) Calibration · Zheng et al. (2023) LLM-as-a-Judge · Qwen Team (2024) Qwen2.5 · Google Gemini and Groq API documentation (Nov 2026) · AIMLCZG521 course sessions 4–12. The full list is in the notebook.</p>
+<h2>Appendix A. Virtual Lab environment</h2>
+<p>The project workspace is set up in the prescribed BITS Virtual Lab (Prayogshala) under student account <code>s2025ae05434</code>, at <code>~/workspace/conversational_ai_assignment2</code>. The terminal lists the repository tree. The editor window shows <code>ra/agent.py</code> (the ReAct agent, Task 2) open in GVIM. The session path and access token in the address bar are redacted.</p>
+{img('screenshot_virtual_lab_1', 'Figure A1 – The project workspace in the BITS Virtual Lab (Prayogshala), 6 Nov 2026', 100)}
 </body></html>"""
     out = ROOT / "report" / "Final_Report.html"
     out.write_text(html, encoding="utf-8")

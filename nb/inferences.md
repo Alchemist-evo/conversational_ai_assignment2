@@ -6,7 +6,7 @@
 **Which technique produces the most reliable multi-step reasoning?**
 **APE and Few-Shot** were the most reliable: both were correct on **100 %** of the 20 questions, against CoT 90 %, ToT 90 % and Zero-Shot 75 % (Table 1.3).
 * Few-Shot covered slightly more key facts (0.95 vs APE 0.93).
-* APE got there **26 % cheaper** ($7.58 vs $10.29 per 1,000 queries) because it carries one instruction instead of three worked examples.
+* APE got there **26 % cheaper** (\$7.58 vs \$10.29 per 1,000 queries) because it carries one instruction instead of three worked examples.
 * APE is therefore the best *value*. CoT produces the **deepest visible reasoning** (5.25 steps) and references the most sources (3.6), but its long reasoning did not raise correctness above 90 %.
 
 **Would we use different techniques for different complexities?** Yes. Table 1.4 shows a clear split by question level:
@@ -134,7 +134,7 @@
 
 **How does self-correction reduce hallucinations?**
 * The verifier checks each claim against the retrieved evidence and regenerates any unsupported claim using only the evidence.
-* The hallucination rate falls from **6.5 % to 1.7 %** (10.7 % → 3.25 % on the Task 6 set).
+* The hallucination rate falls from **6.5 % to 1.7 %** (10.7 % → 3.2 % when the same questions run through the integrated assistant in Task 6; §6.3 explains why the two sets of numbers differ).
 * On the constructed test set the detector reached F1 1.00 (30 supported, 20 fabricated claims, §4.4.1). Those fabrications are easy (off-topic facts, altered numbers), so this is an upper bound.
 * Citation accuracy (does the cited source *directly* support the claim) was **83.9 %** of 56 claim–citation pairs.
 
@@ -198,7 +198,7 @@ Only the LoRA adapters are trained, 0.25 % of a 7B model. In our estimates, a 7B
 **Why is a hybrid RAG + fine-tuning approach useful?** They fix different failures:
 * **RAG** fixes *knowledge*: fresh, attributable, conflict-aware.
 * **Fine-tuning** fixes *behaviour*: the claim ↔ citation format, balanced framing and explicit uncertainty, learned once instead of carried in a long prompt.
-* RAG costs about 10× more per query than Zero-Shot ($0.034 vs $0.003) and is about 5× slower. A LoRA-tuned model can shorten the instructions RAG needs to carry, and route easy questions without retrieval.
+* RAG costs about 10× more per query than Zero-Shot (\$0.034 vs \$0.003) and is about 5× slower. A LoRA-tuned model can shorten the instructions RAG needs to carry, and route easy questions without retrieval.
 
 ## <!--T6_INFERENCE-->
 **How does a multi-turn research conversation differ from single-turn Q&A?**
@@ -229,7 +229,7 @@ Only the LoRA adapters are trained, 0.25 % of a 7B model. In our estimates, a 7B
 * The breakdown in Table 6.2 points the same way. Citation accuracy is 84 % on contested queries but 57 % on factual ones, and hallucination after correction is 1.6 % for multi-source vs 10 % for single-source queries.
 
 **Is the system production-ready? What would we fix first?** Not yet.
-* Quality is good: synthesis 4.63, conflict resolution 100 %, hallucination 3.25 % after correction, task completion 100 % complex and 98 % NQ-50, NQ accuracy 86 %.
+* Quality is good: synthesis 4.62, conflict resolution 100 %, hallucination 3.2 % after correction, task completion 100 % complex and 98 % NQ-50, NQ accuracy 86 %.
 * **Latency is the first fix.** P50 is 66 s and P95 88 s for a complex query (8.2 sequential LLM calls), which is too slow for interactive use. We would:
   * run conflict detection in parallel with drafting
   * cap refinement when it adds nothing (Task 3 showed 0 coverage gain)
@@ -247,7 +247,7 @@ Only the LoRA adapters are trained, 0.25 % of a 7B model. In our estimates, a 7B
 | Conflict resolution | **Credibility-weighted decision** (evidence strength as tie-break), "contested" below a 60 % share | Gold agreement 57 % vs 29 % for majority vote; changes the answer on D1-C1 |
 | Prompting | **APE-selected instruction** for synthesis; Zero-Shot for simple factual look-ups; no ToT in production | APE 100 % correct at $7.58/1k; Zero-Shot 100 % on simple questions; ToT 4× the cost for 60 % on ambiguous questions |
 | Memory design | **Working (N = 10 + rolling summary) + episodic top-2 + RAG top-3 with full context engineering** | Config E 4.88 vs C 3.94 with fewer tokens; history stays near 1.5k tokens over 10 turns |
-| Model routing | **80 % small / 15 % MoE / 5 % dense**, with a complexity router that sends contested multi-source synthesis to the dense tier | Routed quality 4.66 at $0.94/1k vs dense-only 4.91 at $13.25/1k; $425/month vs $5,250 for 10k queries/day |
+| Model routing | **80 % small / 15 % MoE / 5 % dense**, with a complexity router that sends contested multi-source synthesis to the dense tier | Routed quality 4.66 at \$0.94/1k vs dense-only 4.91 at \$13.25/1k; \$425/month vs \$5,250 for 10k queries/day |
 
 ## <!--T7_INFERENCE-->
 **What is the single most impactful change to research synthesis quality?**
@@ -260,14 +260,14 @@ Only the LoRA adapters are trained, 0.25 % of a 7B model. In our estimates, a 7B
 * Routing exploits the fact that most research traffic is easy: the router sent **76 %** of NQ queries down the simple path.
 * On identical evidence, the tiers scored small (local Qwen2.5-14B) 4.63, MoE 4.75 and dense (gpt-oss-120b) 4.91 (Table 7.4).
 * The 80/15/5 mix gives **4.66** quality at **93 % lower cost** than dense-only. That is a 0.25-point drop, and it lands mostly on simple questions where every tier is already correct.
-* At the brief's token assumptions, routing cuts the monthly bill from **$5,250 to $425** (−91.9 %).
+* At the brief's token assumptions, routing cuts the monthly bill from **\$5,250 to \$425** (−91.9 %).
 * Combining routing with prompt caching and compact tool schemas reaches **$298** (−94.3 %, Table 7.3).
 * The risk is mis-routing a contested question to the small tier. The router should therefore err towards the larger model whenever conflicts are detected.
 
 ## <!--CONCLUSION-->
 **Key observations.**
 * We built an end-to-end research assistant covering the full pipeline: decomposition, parallel multi-source tool calls through a ReAct agent with six safety mechanisms, credibility-weighted fusion and re-ranking, conflict resolution, cited synthesis, verification with self-correction, calibrated confidence, memory, and an audit trail.
-* On 10 held-out complex questions it reached synthesis quality **4.63/5**, conflict resolution **100 %** (67 % agreement with adjudicated answers), citation accuracy **74 %**, and hallucination **10.7 % → 3.25 %** after self-correction.
+* On 10 held-out complex questions it reached synthesis quality **4.62/5**, conflict resolution **100 %** (67 % agreement with adjudicated answers), citation accuracy **74 %**, and hallucination **10.7 % → 3.2 %** after self-correction.
 * It also reached claim-level ECE **0.19**, task completion **100 %**, and traceability **97 %**.
 * On 50 held-out Natural Questions accuracy was **86 %** with **98 %** completion. Cost was $0.060 per complex query at GPT-4o prices.
 

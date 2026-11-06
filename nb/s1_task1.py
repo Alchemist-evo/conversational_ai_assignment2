@@ -36,7 +36,7 @@ md(r"""
 * **Reasoning depth.** A fixed lexical rule (`ra.evaluation.reasoning_depth`). A sentence of at least 5 words counts as one reasoning step if it starts an enumerated line (`1.`, `Step 2`, a bullet) **or** contains an inferential/contrastive connective from a fixed lexicon (*because, therefore, however, which means, …*). The same rule is applied to every technique's delivered response.
 * **Sources referenced**: the number of distinct `[S#]` sources cited.
 * **Tokens & latency**: exact API usage and wall-clock latency, summed over all calls a technique makes per query (ToT = 4 calls).
-* **Cost per 1,000 queries**: tokens × the assignment's GPT-4o pricing ($5 / 1M input, $15 / 1M output).
+* **Cost per 1,000 queries**: tokens × the assignment's GPT-4o pricing (\$5 / 1M input, \$15 / 1M output).
 """),
 module("prompting.py"),
 code(r"""

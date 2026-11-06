@@ -39,6 +39,8 @@ def to_html(nb_path: Path) -> Path:
     subprocess.run([sys.executable, "-m", "nbconvert", "--to", "html", "--embed-images", str(nb_path)], check=True)
     html = nb_path.with_suffix(".html")
     txt = html.read_text(encoding="utf-8")
+    # Currency amounts ("$0.94 vs $13.25") must not be paired into inline math: keep only \( \) inline and $$ display math.
+    txt = txt.replace("""inlineMath: [ ['$','$'], ["\\\\(","\\\\)"] ],""", """inlineMath: [ ["\\\\(","\\\\)"] ],""")
     html.write_text(txt.replace("</head>", PRINT_CSS + "</head>", 1), encoding="utf-8")
     return html
 

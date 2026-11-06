@@ -129,6 +129,16 @@ plt.tight_layout(); save(fig, "fig6_3_audit"); plt.show()
 md(r"""
 ### 6.3 Evaluation on 10 complex held-out research queries
 Every query goes through `ResearchAssistant.research(mode="full")`. Queries are grouped by **source profile** (single-source: answerable from one collection; multi-source) and **nature** (factual vs contested). The metric definitions are those from Task 4. The Conflict Resolution Rate uses the assistant's credibility-weighted decisions on the conflicts it detected.
+
+**Why these numbers differ from Task 4 §4.4.** These are the same 10 held-out questions, with the same metrics and the same judge, but a different pipeline:
+
+| | Task 4 §4.4 (synthesis module in isolation) | Task 6 §6.3 (integrated assistant, end to end) |
+|---|---|---|
+| Evidence gathering | Direct call: decomposition → hybrid retrieval → credibility-weighted RRF → cross-encoder, top-8 | ReAct agent tool calls, plus up to 3 iterative-refinement rounds |
+| Tool reliability | All sources always available | `search_news` fails 15 % of the time (injected), so graceful degradation kicks in |
+| Extra context | None | Episodic memory, working memory and conversation history in the prompt |
+
+The evidence packs therefore differ, the model writes different claims, and the judge scores different claim–citation pairs. That explains why citation accuracy (83.9 % → 74 %), hallucination after correction (1.7 % → 3.2 %) and ECE (0.119 → 0.190) are all worse here. Task 4 measures what the synthesis module can do on a controlled evidence pack. Task 6 measures the whole system under realistic conditions, so **Task 6 values are the headline results** (Summary of expected outputs). The gap is the cost of the noisier agentic retrieval path. It shows that evidence quality, not the synthesis step, limits the integrated system.
 """),
 code(r"""
 EV = make_assistant()
@@ -210,7 +220,7 @@ print(); display(pd.Series(nq_summary).round(3).to_frame("50 held-out NQ questio
 RESULTS["task6"]["nq50"] = nq_summary
 """),
 md(r"""
-### 6.5 Cost analysis (GPT-4o pricing: $5 / 1M input, $15 / 1M output)
+### 6.5 Cost analysis (GPT-4o pricing: \$5 / 1M input, \$15 / 1M output)
 Measured token usage for each of the 10 complex queries is priced at the assignment's GPT-4o rates. The generator actually used was Qwen2.5-14B-Instruct running locally (zero marginal API cost); the GPT-4o price is applied for comparability, as the assignment requires.
 """),
 code(r"""

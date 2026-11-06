@@ -8,7 +8,7 @@ md(r"""
 **Course:** Conversational AI (AIMLCZG521) — EC-1 Assessment · **Total marks:** 10
 
 ### Student details & contribution areas
-> ✏️ *Fill in before submission. Every member must own ≥ 2 contribution areas, and each claimed area must point to the notebook sections that evidence it.*
+Each member owns at least two contribution areas. The last column points to the notebook sections that evidence each claimed area.
 
 | # | Name | BITS ID | Contribution areas (≥ 2) | Evidence (notebook sections) |
 |---|------|---------|--------------------------|------------------------------|
@@ -59,6 +59,16 @@ md(r"""
 * **LLM response cache.** Every LLM call is cached in SQLite, keyed on (model, messages, temperature, max_tokens, json-mode, seed). The cache stores the *original* latency and token usage. Re-running the notebook replays identical outputs and reports the latencies that were measured live.
 * **Role-based model selection with fallback.** If a free-tier daily limit is exhausted, the next model in the role's list is used. Every call logs which model served it (see the usage table at the end).
 * All hyper-parameters live in `ra/config.py` and are printed below.
+
+### 0.2.1 Virtual Lab environment
+The project workspace is set up in the prescribed **BITS Virtual Lab (Prayogshala)** under student account `s2025ae05434`, at `~/workspace/conversational_ai_assignment2`.
+* The left terminal lists the repository tree: `ra/`, `nb/`, `report/`, `requirements.txt` and the assignment brief.
+* The right window has `ra/agent.py` (the ReAct agent, Task 2) open in GVIM.
+* The session path and access token in the browser address bar are redacted.
+
+![Virtual Lab screenshot: project workspace in BITS Prayogshala](outputs/figures/screenshot_virtual_lab_1.png)
+
+*Figure 0.0 – The project workspace in the BITS Virtual Lab (Prayogshala), 6 Nov 2026.*
 """),
 code(r"""
 # --- Google Colab bootstrap (skipped automatically when running locally / in the Virtual Lab) ---
