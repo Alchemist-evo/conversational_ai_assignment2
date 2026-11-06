@@ -320,7 +320,10 @@ for qid, t in T4.items():
         items.append({"item_id": f"{qid}:{crit}", "criterion": crit, "question": t["q"]["question"], "context_excerpt": ctx,
                       "answer": t["res"].answer, "judge_score": t["triad"][crit]})
 items = pd.DataFrame(items)
-items.drop(columns="judge_score").assign(human_score="").to_csv("data/human_labels_template.csv", index=False)
+try:  # the blank template for annotators (may be open in a spreadsheet program, which locks it on Windows)
+    items.drop(columns="judge_score").assign(human_score="").to_csv("data/human_labels_template.csv", index=False)
+except PermissionError:
+    print("note: data/human_labels_template.csv is open in another program - template not rewritten")
 hp = Path("data/human_labels.csv")
 if hp.exists():
     hl = pd.read_csv(hp).dropna(subset=["human_score"])

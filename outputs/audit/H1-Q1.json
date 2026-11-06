@@ -1,6 +1,6 @@
 {
  "question": "What does current evidence say about the health benefits and risks of drinking coffee?",
- "started": "2026-11-06T10:29:19",
+ "started": "2026-11-06T13:44:04",
  "route": {
   "type": "new_research",
   "standalone_query": "What does current evidence say about the health benefits and risks of drinking coffee?",
@@ -35,8 +35,8 @@
     "query": "current evidence health benefits drinking coffee",
     "max_results": 5
    },
-   "timestamp": "10:29:19",
-   "latency_s": 0.7726304000025266,
+   "timestamp": "13:44:04",
+   "latency_s": 0.7751916999986861,
    "output_size": 3319,
    "ok": true,
    "error": ""
@@ -47,8 +47,8 @@
     "topic": "current evidence health benefits drinking coffee",
     "max_results": 5
    },
-   "timestamp": "10:29:19",
-   "latency_s": 0.7083764999988489,
+   "timestamp": "13:44:04",
+   "latency_s": 0.7024692999984836,
    "output_size": 4858,
    "ok": true,
    "error": ""
@@ -59,8 +59,8 @@
     "query": "current evidence health benefits drinking coffee",
     "max_results": 5
    },
-   "timestamp": "10:29:19",
-   "latency_s": 0.6570953999980702,
+   "timestamp": "13:44:04",
+   "latency_s": 0.6568575000055716,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -71,8 +71,8 @@
     "query": "recent studies risks associated with coffee consumption",
     "max_results": 5
    },
-   "timestamp": "10:29:19",
-   "latency_s": 0.9911477000059676,
+   "timestamp": "13:44:04",
+   "latency_s": 0.9881434999988414,
    "output_size": 3340,
    "ok": true,
    "error": ""
@@ -83,8 +83,8 @@
     "topic": "recent studies risks associated with coffee consumption",
     "max_results": 5
    },
-   "timestamp": "10:29:19",
-   "latency_s": 0.38675599999987753,
+   "timestamp": "13:44:04",
+   "latency_s": 0.3828658999991603,
    "output_size": 4913,
    "ok": true,
    "error": ""
@@ -95,8 +95,8 @@
     "query": "recent studies risks associated with coffee consumption",
     "max_results": 5
    },
-   "timestamp": "10:29:19",
-   "latency_s": 0.5378377000015462,
+   "timestamp": "13:44:04",
+   "latency_s": 0.5374100999979419,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -107,8 +107,8 @@
     "query": "empirical data coffee health impacts",
     "max_results": 5
    },
-   "timestamp": "10:29:19",
-   "latency_s": 0.6690715000004275,
+   "timestamp": "13:44:04",
+   "latency_s": 0.6669309999997495,
    "output_size": 3158,
    "ok": true,
    "error": ""
@@ -119,8 +119,8 @@
     "topic": "empirical data coffee health impacts",
     "max_results": 5
    },
-   "timestamp": "10:29:20",
-   "latency_s": 0.3612587000025087,
+   "timestamp": "13:44:05",
+   "latency_s": 0.35904410000512144,
    "output_size": 4858,
    "ok": true,
    "error": ""
@@ -131,8 +131,8 @@
     "query": "empirical data coffee health impacts",
     "max_results": 5
    },
-   "timestamp": "10:29:20",
-   "latency_s": 0.49710809999669436,
+   "timestamp": "13:44:05",
+   "latency_s": 0.497576100002334,
    "output_size": 2591,
    "ok": true,
    "error": ""
@@ -143,8 +143,8 @@
     "query": "comparison benefits risks coffee recent research",
     "max_results": 5
    },
-   "timestamp": "10:29:20",
-   "latency_s": 1.0287682999987737,
+   "timestamp": "13:44:05",
+   "latency_s": 1.028435600004741,
    "output_size": 3150,
    "ok": true,
    "error": ""
@@ -155,8 +155,8 @@
     "topic": "comparison benefits risks coffee recent research",
     "max_results": 5
    },
-   "timestamp": "10:29:20",
-   "latency_s": 0.32724009999947157,
+   "timestamp": "13:44:05",
+   "latency_s": 0.32240259999525733,
    "output_size": 5385,
    "ok": true,
    "error": ""
@@ -167,8 +167,8 @@
     "query": "comparison benefits risks coffee recent research",
     "max_results": 5
    },
-   "timestamp": "10:29:20",
-   "latency_s": 0.7903227999995579,
+   "timestamp": "13:44:05",
+   "latency_s": 0.7915942000036011,
    "output_size": 2576,
    "ok": true,
    "error": ""
@@ -178,8 +178,8 @@
    "args": {
     "query": "current evidence health benefits drinking coffee"
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.676930599998741,
+   "timestamp": "13:44:06",
+   "latency_s": 0.678116900002351,
    "output_size": 3412,
    "ok": true,
    "error": ""
@@ -189,8 +189,8 @@
    "args": {
     "query": "recent studies risks associated with coffee consumption"
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.5371464999989257,
+   "timestamp": "13:44:06",
+   "latency_s": 0.5383340999978827,
    "output_size": 3875,
    "ok": true,
    "error": ""
@@ -201,8 +201,8 @@
     "query": "mechanisms by which coffee consumption impacts health outcomes",
     "max_results": 5
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.6671990999966511,
+   "timestamp": "13:44:06",
+   "latency_s": 0.6677093999969657,
    "output_size": 3193,
    "ok": true,
    "error": ""
@@ -213,8 +213,8 @@
     "topic": "mechanisms by which coffee consumption impacts health outcomes",
     "max_results": 5
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.34021999999822583,
+   "timestamp": "13:44:06",
+   "latency_s": 0.3353888999990886,
    "output_size": 4858,
    "ok": true,
    "error": ""
@@ -225,8 +225,8 @@
     "query": "mechanisms by which coffee consumption impacts health outcomes",
     "max_results": 5
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.48063160000310745,
+   "timestamp": "13:44:06",
+   "latency_s": 0.4806663000053959,
    "output_size": 2862,
    "ok": true,
    "error": ""
@@ -237,8 +237,8 @@
     "query": "longitudinal studies on the effects of coffee consumption on cardiovascular disease and cancer risk",
     "max_results": 5
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.9247495999952662,
+   "timestamp": "13:44:06",
+   "latency_s": 0.9239346000031219,
    "output_size": 3190,
    "ok": true,
    "error": ""
@@ -249,8 +249,8 @@
     "topic": "longitudinal studies on the effects of coffee consumption on cardiovascular disease and cancer risk",
     "max_results": 5
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.5502092000024277,
+   "timestamp": "13:44:06",
+   "latency_s": 0.5524609999993118,
    "output_size": 5251,
    "ok": true,
    "error": ""
@@ -261,8 +261,8 @@
     "query": "longitudinal studies on the effects of coffee consumption on cardiovascular disease and cancer risk",
     "max_results": 5
    },
-   "timestamp": "10:29:21",
-   "latency_s": 0.5236597000039183,
+   "timestamp": "13:44:06",
+   "latency_s": 0.5335323000035714,
    "output_size": 2701,
    "ok": true,
    "error": ""
@@ -273,8 +273,8 @@
     "query": "mechanisms of coffee on neurological health outcomes",
     "max_results": 5
    },
-   "timestamp": "10:29:22",
-   "latency_s": 0.8459399999992456,
+   "timestamp": "13:44:07",
+   "latency_s": 0.8468971999973292,
    "output_size": 3804,
    "ok": true,
    "error": ""
@@ -285,8 +285,8 @@
     "topic": "mechanisms of coffee on neurological health outcomes",
     "max_results": 5
    },
-   "timestamp": "10:29:22",
-   "latency_s": 0.4109640999959083,
+   "timestamp": "13:44:07",
+   "latency_s": 0.4116632999939611,
    "output_size": 5091,
    "ok": true,
    "error": ""
@@ -297,8 +297,8 @@
     "query": "mechanisms of coffee on neurological health outcomes",
     "max_results": 5
    },
-   "timestamp": "10:29:22",
-   "latency_s": 0.5419368000002578,
+   "timestamp": "13:44:07",
+   "latency_s": 0.5418705999982194,
    "output_size": 2862,
    "ok": true,
    "error": ""
@@ -309,8 +309,8 @@
     "query": "quantitative comparison of health risks between high and moderate coffee consumption",
     "max_results": 5
    },
-   "timestamp": "10:29:22",
-   "latency_s": 0.6463006999983918,
+   "timestamp": "13:44:07",
+   "latency_s": 0.6462181999959284,
    "output_size": 3193,
    "ok": true,
    "error": ""
@@ -321,8 +321,8 @@
     "topic": "quantitative comparison of health risks between high and moderate coffee consumption",
     "max_results": 5
    },
-   "timestamp": "10:29:22",
-   "latency_s": 0.439275999997335,
+   "timestamp": "13:44:07",
+   "latency_s": 0.4397626999998465,
    "output_size": 5092,
    "ok": true,
    "error": ""
@@ -333,8 +333,8 @@
     "query": "quantitative comparison of health risks between high and moderate coffee consumption",
     "max_results": 5
    },
-   "timestamp": "10:29:22",
-   "latency_s": 0.621770199999446,
+   "timestamp": "13:44:07",
+   "latency_s": 0.6215252000038163,
    "output_size": 2862,
    "ok": true,
    "error": ""
@@ -345,8 +345,8 @@
     "query": "mechanisms through which coffee affects neurodegenerative diseases like Alzheimer's and Parkinson's",
     "max_results": 5
    },
-   "timestamp": "10:29:23",
-   "latency_s": 0.8699821000045631,
+   "timestamp": "13:44:08",
+   "latency_s": 0.8704295999996248,
    "output_size": 3365,
    "ok": true,
    "error": ""
@@ -357,8 +357,8 @@
     "topic": "mechanisms through which coffee affects neurodegenerative diseases like Alzheimer's and Parkinson's",
     "max_results": 5
    },
-   "timestamp": "10:29:23",
-   "latency_s": 0.42386879999685334,
+   "timestamp": "13:44:08",
+   "latency_s": 0.43158630000107223,
    "output_size": 5274,
    "ok": true,
    "error": ""
@@ -369,8 +369,8 @@
     "query": "mechanisms through which coffee affects neurodegenerative diseases like Alzheimer's and Parkinson's",
     "max_results": 5
    },
-   "timestamp": "10:29:23",
-   "latency_s": 0.422242799999367,
+   "timestamp": "13:44:08",
+   "latency_s": 0.4293643000055454,
    "output_size": 2612,
    "ok": true,
    "error": ""
@@ -381,8 +381,8 @@
     "query": "quantitative analysis of the impact of varying levels of daily coffee intake (high vs. moderate) on long-term cardiovascular disease risk",
     "max_results": 5
    },
-   "timestamp": "10:29:23",
-   "latency_s": 0.9901056999951834,
+   "timestamp": "13:44:08",
+   "latency_s": 0.9875889000031748,
    "output_size": 3708,
    "ok": true,
    "error": ""
@@ -393,8 +393,8 @@
     "topic": "quantitative analysis of the impact of varying levels of daily coffee intake (high vs. moderate) on long-term cardiovascular disease risk",
     "max_results": 5
    },
-   "timestamp": "10:29:23",
-   "latency_s": 0.7014506999985315,
+   "timestamp": "13:44:08",
+   "latency_s": 0.7011679999995977,
    "output_size": 4914,
    "ok": true,
    "error": ""
@@ -405,8 +405,8 @@
     "query": "quantitative analysis of the impact of varying levels of daily coffee intake (high vs. moderate) on long-term cardiovascular disease risk",
     "max_results": 5
    },
-   "timestamp": "10:29:23",
-   "latency_s": 0.6998565999965649,
+   "timestamp": "13:44:08",
+   "latency_s": 0.6991622999994433,
    "output_size": 2862,
    "ok": true,
    "error": ""
@@ -416,8 +416,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-british-journal-of-medicine/h1-a1"
    },
-   "timestamp": "10:29:24",
-   "latency_s": 0.1469751999975415,
+   "timestamp": "13:44:09",
+   "latency_s": 0.1472451000008732,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -427,8 +427,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Health_effects_of_coffee"
    },
-   "timestamp": "10:29:24",
-   "latency_s": 0.2285976999992272,
+   "timestamp": "13:44:09",
+   "latency_s": 0.22849739999946905,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -438,8 +438,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-cardiology/h1-a2"
    },
-   "timestamp": "10:29:24",
-   "latency_s": 0.19958970000152476,
+   "timestamp": "13:44:09",
+   "latency_s": 0.19960890000220388,
    "output_size": 177,
    "ok": true,
    "error": ""
@@ -449,8 +449,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-environmental-health-reports/h3-a2"
    },
-   "timestamp": "10:29:24",
-   "latency_s": 0.1446319000024232,
+   "timestamp": "13:44:09",
+   "latency_s": 0.14470360000268556,
    "output_size": 166,
    "ok": true,
    "error": ""
@@ -460,8 +460,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-reviews-in-nutrition/d7-a3"
    },
-   "timestamp": "10:29:24",
-   "latency_s": 0.13394419999531237,
+   "timestamp": "13:44:09",
+   "latency_s": 0.1339575000019977,
    "output_size": 166,
    "ok": true,
    "error": ""
@@ -471,8 +471,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2"
    },
-   "timestamp": "10:29:24",
-   "latency_s": 0.18039020000287564,
+   "timestamp": "13:44:09",
+   "latency_s": 0.18057869999756804,
    "output_size": 169,
    "ok": true,
    "error": ""
@@ -482,8 +482,8 @@
    "args": {
     "source_url": "https://globalhealthwire.example.com/2021-05-10/how-much-caffeine-is-safe-during-pregnancy"
    },
-   "timestamp": "10:29:25",
-   "latency_s": 0.19391029999678722,
+   "timestamp": "13:44:10",
+   "latency_s": 0.19491030000062892,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -493,8 +493,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1"
    },
-   "timestamp": "10:29:25",
-   "latency_s": 0.20664649999525864,
+   "timestamp": "13:44:10",
+   "latency_s": 0.20624010000028647,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -504,8 +504,8 @@
    "args": {
     "source_id": "H1-A1"
    },
-   "timestamp": "10:29:25",
-   "latency_s": 0.04695549999451032,
+   "timestamp": "13:44:10",
+   "latency_s": 0.04660509999666829,
    "output_size": 284,
    "ok": true,
    "error": ""
@@ -515,8 +515,8 @@
    "args": {
     "source_id": "WIKI-Health_effects_of_coffee"
    },
-   "timestamp": "10:29:25",
-   "latency_s": 0.022121600006357767,
+   "timestamp": "13:44:10",
+   "latency_s": 0.02188659999956144,
    "output_size": 227,
    "ok": true,
    "error": ""
@@ -526,8 +526,8 @@
    "args": {
     "source_id": "H1-A2"
    },
-   "timestamp": "10:29:25",
-   "latency_s": 0.021277899999404326,
+   "timestamp": "13:44:10",
+   "latency_s": 0.02116379999642959,
    "output_size": 295,
    "ok": true,
    "error": ""
@@ -537,8 +537,8 @@
    "args": {
     "source_id": "H1-N1"
    },
-   "timestamp": "10:29:25",
-   "latency_s": 0.045144099996832665,
+   "timestamp": "13:44:10",
+   "latency_s": 0.04530339999473654,
    "output_size": 269,
    "ok": true,
    "error": ""
@@ -711,7 +711,7 @@
  "final_synthesis": "Current evidence suggests that consuming three to four cups of coffee daily may offer some health benefits, such as reducing all-cause mortality by about 17% compared to not drinking coffee [S1]. This level of consumption is also associated with lower risks of type 2 diabetes and chronic liver disease [S1][S2]. However, the evidence supporting these benefits is largely observational, which means causation cannot be definitively established. Additionally, there are potential harms linked to high coffee intake during pregnancy, such as an increased risk of low birth weight or fetal loss [S1][S7], and a higher fracture risk in women [S1]. A randomized crossover trial involving 100 adults found that drinking coffee did not increase premature atrial contractions but modestly increased premature ventricular contractions, while also increasing daily step counts by about 1,000 steps and reducing sleep duration by approximately 36 minutes per night [S3].",
  "overall_confidence": 0.7161596414211481,
  "metrics": {
-  "latency_s": 62.298735100006525,
+  "latency_s": 62.28965829999834,
   "llm_calls": 7,
   "input_tokens": 6597,
   "output_tokens": 1030,

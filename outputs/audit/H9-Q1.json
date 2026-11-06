@@ -1,6 +1,6 @@
 {
  "question": "Do electric vehicles really produce lower lifetime emissions than petrol cars?",
- "started": "2026-11-06T10:31:52",
+ "started": "2026-11-06T13:44:52",
  "route": {
   "type": "new_research",
   "standalone_query": "Do electric vehicles really produce lower lifetime emissions than petrol cars?",
@@ -35,8 +35,8 @@
     "query": "definition of lifetime emissions electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.730231300003652,
+   "timestamp": "13:44:52",
+   "latency_s": 0.7253004999947734,
    "output_size": 3916,
    "ok": true,
    "error": ""
@@ -47,8 +47,8 @@
     "topic": "definition of lifetime emissions electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.6809352999989642,
+   "timestamp": "13:44:52",
+   "latency_s": 0.675574000000779,
    "output_size": 5115,
    "ok": true,
    "error": ""
@@ -59,8 +59,8 @@
     "query": "definition of lifetime emissions electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.40309560000605416,
+   "timestamp": "13:44:52",
+   "latency_s": 0.4028366000056849,
    "output_size": 2773,
    "ok": true,
    "error": ""
@@ -71,8 +71,8 @@
     "query": "comparison lifecycle emissions petrol cars vs electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.8896770999999717,
+   "timestamp": "13:44:52",
+   "latency_s": 0.8881411000038497,
    "output_size": 4074,
    "ok": true,
    "error": ""
@@ -83,8 +83,8 @@
     "topic": "comparison lifecycle emissions petrol cars vs electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.3826891999997315,
+   "timestamp": "13:44:52",
+   "latency_s": 0.3846770000018296,
    "output_size": 4808,
    "ok": true,
    "error": ""
@@ -95,8 +95,8 @@
     "query": "comparison lifecycle emissions petrol cars vs electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.7737613999997848,
+   "timestamp": "13:44:52",
+   "latency_s": 0.7724527000027592,
    "output_size": 2530,
    "ok": true,
    "error": ""
@@ -107,8 +107,8 @@
     "query": "recent technological advancements reducing emissions electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 1.097343399997044,
+   "timestamp": "13:44:53",
+   "latency_s": 1.0966504000025452,
    "output_size": 3720,
    "ok": true,
    "error": ""
@@ -119,8 +119,8 @@
     "topic": "recent technological advancements reducing emissions electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.7082248000006075,
+   "timestamp": "13:44:53",
+   "latency_s": 0.7041864999991958,
    "output_size": 4970,
    "ok": true,
    "error": ""
@@ -131,8 +131,8 @@
     "query": "recent technological advancements reducing emissions electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.7471514999997453,
+   "timestamp": "13:44:53",
+   "latency_s": 0.7456944000005024,
    "output_size": 2463,
    "ok": true,
    "error": ""
@@ -143,8 +143,8 @@
     "query": "policy impacts on emission reduction petrol cars versus electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.9629816000015126,
+   "timestamp": "13:44:53",
+   "latency_s": 0.9609663000010187,
    "output_size": 3575,
    "ok": true,
    "error": ""
@@ -155,8 +155,8 @@
     "topic": "policy impacts on emission reduction petrol cars versus electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.626292500004638,
+   "timestamp": "13:44:53",
+   "latency_s": 0.6221721999972942,
    "output_size": 5125,
    "ok": true,
    "error": ""
@@ -167,8 +167,8 @@
     "query": "policy impacts on emission reduction petrol cars versus electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:52",
-   "latency_s": 0.7825984000010067,
+   "timestamp": "13:44:53",
+   "latency_s": 0.7796366999973543,
    "output_size": 2531,
    "ok": true,
    "error": ""
@@ -179,8 +179,8 @@
     "query": "Impact of battery production and end-of-life management on total lifecycle emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:53",
-   "latency_s": 0.7680484000011347,
+   "timestamp": "13:44:54",
+   "latency_s": 0.768167899994296,
    "output_size": 3279,
    "ok": true,
    "error": ""
@@ -191,8 +191,8 @@
     "topic": "Impact of battery production and end-of-life management on total lifecycle emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:53",
-   "latency_s": 0.6705439000070328,
+   "timestamp": "13:44:54",
+   "latency_s": 0.674819200001366,
    "output_size": 5233,
    "ok": true,
    "error": ""
@@ -203,8 +203,8 @@
     "query": "Impact of battery production and end-of-life management on total lifecycle emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:53",
-   "latency_s": 0.4125527000069269,
+   "timestamp": "13:44:54",
+   "latency_s": 0.4135186999992584,
    "output_size": 2453,
    "ok": true,
    "error": ""
@@ -215,8 +215,8 @@
     "query": "Regional variations in life-cycle greenhouse gas emissions for electric vehicles based on grid carbon intensity",
     "max_results": 5
    },
-   "timestamp": "10:31:53",
-   "latency_s": 0.7174426999990828,
+   "timestamp": "13:44:54",
+   "latency_s": 0.7184152000045287,
    "output_size": 4149,
    "ok": true,
    "error": ""
@@ -227,8 +227,8 @@
     "topic": "Regional variations in life-cycle greenhouse gas emissions for electric vehicles based on grid carbon intensity",
     "max_results": 5
    },
-   "timestamp": "10:31:53",
-   "latency_s": 0.3491587000025902,
+   "timestamp": "13:44:54",
+   "latency_s": 0.3564680999988923,
    "output_size": 4780,
    "ok": true,
    "error": ""
@@ -239,8 +239,8 @@
     "query": "Regional variations in life-cycle greenhouse gas emissions for electric vehicles based on grid carbon intensity",
     "max_results": 5
    },
-   "timestamp": "10:31:53",
-   "latency_s": 0.48207710000133375,
+   "timestamp": "13:44:54",
+   "latency_s": 0.4822115999995731,
    "output_size": 2379,
    "ok": true,
    "error": ""
@@ -251,8 +251,8 @@
     "query": "Impact of battery recycling and reuse programs on reducing life-cycle emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:54",
-   "latency_s": 1.0504492000036407,
+   "timestamp": "13:44:55",
+   "latency_s": 1.052244200000132,
    "output_size": 3839,
    "ok": true,
    "error": ""
@@ -263,8 +263,8 @@
     "topic": "Impact of battery recycling and reuse programs on reducing life-cycle emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:54",
-   "latency_s": 0.3380615999994916,
+   "timestamp": "13:44:55",
+   "latency_s": 0.34593999999924563,
    "output_size": 5233,
    "ok": true,
    "error": ""
@@ -275,8 +275,8 @@
     "query": "Impact of battery recycling and reuse programs on reducing life-cycle emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:54",
-   "latency_s": 0.840286799997557,
+   "timestamp": "13:44:55",
+   "latency_s": 0.8401161000001593,
    "output_size": 2530,
    "ok": true,
    "error": ""
@@ -287,8 +287,8 @@
     "query": "Comparison of long-term environmental impacts between electric vehicle battery production and petrol car fuel extraction",
     "max_results": 5
    },
-   "timestamp": "10:31:54",
-   "latency_s": 0.605350300000282,
+   "timestamp": "13:44:55",
+   "latency_s": 0.6057699999946635,
    "output_size": 4157,
    "ok": true,
    "error": ""
@@ -299,8 +299,8 @@
     "topic": "Comparison of long-term environmental impacts between electric vehicle battery production and petrol car fuel extraction",
     "max_results": 5
    },
-   "timestamp": "10:31:54",
-   "latency_s": 0.4674615000039921,
+   "timestamp": "13:44:55",
+   "latency_s": 0.4664487000045483,
    "output_size": 5021,
    "ok": true,
    "error": ""
@@ -311,8 +311,8 @@
     "query": "Comparison of long-term environmental impacts between electric vehicle battery production and petrol car fuel extraction",
     "max_results": 5
    },
-   "timestamp": "10:31:54",
-   "latency_s": 0.7220193999964977,
+   "timestamp": "13:44:55",
+   "latency_s": 0.7216052999938256,
    "output_size": 2503,
    "ok": true,
    "error": ""
@@ -323,8 +323,8 @@
     "query": "Impact of different battery chemistries on the lifecycle greenhouse gas emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:55",
-   "latency_s": 0.7384365999969305,
+   "timestamp": "13:44:56",
+   "latency_s": 0.7390509000033489,
    "output_size": 4149,
    "ok": true,
    "error": ""
@@ -335,8 +335,8 @@
     "topic": "Impact of different battery chemistries on the lifecycle greenhouse gas emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:55",
-   "latency_s": 0.36607169999479083,
+   "timestamp": "13:44:56",
+   "latency_s": 0.36963070000638254,
    "output_size": 5233,
    "ok": true,
    "error": ""
@@ -347,8 +347,8 @@
     "query": "Impact of different battery chemistries on the lifecycle greenhouse gas emissions of electric vehicles",
     "max_results": 5
    },
-   "timestamp": "10:31:55",
-   "latency_s": 0.7213134999983595,
+   "timestamp": "13:44:56",
+   "latency_s": 0.7212392000001273,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -359,8 +359,8 @@
     "query": "Comprehensive analysis of long-term environmental impacts including disposal and recycling processes for both electric vehicle batteries and petrol car components",
     "max_results": 5
    },
-   "timestamp": "10:31:55",
-   "latency_s": 1.155225700000301,
+   "timestamp": "13:44:56",
+   "latency_s": 1.1560039999967557,
    "output_size": 4157,
    "ok": true,
    "error": ""
@@ -371,8 +371,8 @@
     "topic": "Comprehensive analysis of long-term environmental impacts including disposal and recycling processes for both electric vehicle batteries and petrol car components",
     "max_results": 5
    },
-   "timestamp": "10:31:55",
-   "latency_s": 0.5982916000066325,
+   "timestamp": "13:44:56",
+   "latency_s": 0.5976923999987775,
    "output_size": 5142,
    "ok": true,
    "error": ""
@@ -383,8 +383,8 @@
     "query": "Comprehensive analysis of long-term environmental impacts including disposal and recycling processes for both electric vehicle batteries and petrol car components",
     "max_results": 5
    },
-   "timestamp": "10:31:55",
-   "latency_s": 0.4898135999974329,
+   "timestamp": "13:44:56",
+   "latency_s": 0.4899608999985503,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -394,8 +394,8 @@
    "args": {
     "query": "Impact of different battery chemistries on the lifecycle greenhouse gas emissions of electric vehicles"
    },
-   "timestamp": "10:31:56",
-   "latency_s": 0.8620881999959238,
+   "timestamp": "13:44:57",
+   "latency_s": 0.8585854999982985,
    "output_size": 3427,
    "ok": true,
    "error": ""
@@ -405,8 +405,8 @@
    "args": {
     "query": "Comprehensive analysis of long-term environmental impacts including disposal and recycling processes for both electric vehicle batteries and petrol car components"
    },
-   "timestamp": "10:31:56",
-   "latency_s": 0.6161023000022396,
+   "timestamp": "13:44:57",
+   "latency_s": 0.6071589999992284,
    "output_size": 4081,
    "ok": true,
    "error": ""
@@ -416,8 +416,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-transport-research-reports/h9-a1"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.17991640000400366,
+   "timestamp": "13:44:58",
+   "latency_s": 0.17997679999825777,
    "output_size": 172,
    "ok": true,
    "error": ""
@@ -427,8 +427,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-environmental-science-letters/h9-a2"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.17679380000481615,
+   "timestamp": "13:44:58",
+   "latency_s": 0.1768131999997422,
    "output_size": 171,
    "ok": true,
    "error": ""
@@ -438,8 +438,8 @@
    "args": {
     "source_url": "https://techcurrent.example.com/2023-10-05/cleaner-grids-are-making-evs-even-greener"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.10388500000408385,
+   "timestamp": "13:44:58",
+   "latency_s": 0.10396570000011707,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -449,8 +449,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Electric_vehicle"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.13149780000094324,
+   "timestamp": "13:44:58",
+   "latency_s": 0.13151579999976093,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -460,8 +460,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.21125469999969937,
+   "timestamp": "13:44:58",
+   "latency_s": 0.17649250000249594,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -471,8 +471,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-climate-assessment-reports/d8-a1"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.18897770000330638,
+   "timestamp": "13:44:58",
+   "latency_s": 0.18909150000399677,
    "output_size": 168,
    "ok": true,
    "error": ""
@@ -482,8 +482,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-plant-physiology-reviews/d3-a1"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.10556930000166176,
+   "timestamp": "13:44:58",
+   "latency_s": 0.10549829999945359,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -493,8 +493,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-clinical-nutrition/d1-a1"
    },
-   "timestamp": "10:31:57",
-   "latency_s": 0.21192409999639494,
+   "timestamp": "13:44:58",
+   "latency_s": 0.21205869999539573,
    "output_size": 163,
    "ok": true,
    "error": ""
@@ -504,8 +504,8 @@
    "args": {
     "source_id": "H9-A1"
    },
-   "timestamp": "10:32:49",
-   "latency_s": 0.040743099998508114,
+   "timestamp": "13:44:58",
+   "latency_s": 0.040450299995427486,
    "output_size": 295,
    "ok": true,
    "error": ""
@@ -515,8 +515,8 @@
    "args": {
     "source_id": "H9-A2"
    },
-   "timestamp": "10:32:49",
-   "latency_s": 0.035855400004948024,
+   "timestamp": "13:44:58",
+   "latency_s": 0.03569520000019111,
    "output_size": 289,
    "ok": true,
    "error": ""
@@ -526,8 +526,8 @@
    "args": {
     "source_id": "H9-N2"
    },
-   "timestamp": "10:32:49",
-   "latency_s": 0.05651090000174008,
+   "timestamp": "13:44:58",
+   "latency_s": 0.056232499999168795,
    "output_size": 250,
    "ok": true,
    "error": ""
@@ -537,8 +537,8 @@
    "args": {
     "source_id": "WIKI-Electric_vehicle"
    },
-   "timestamp": "10:32:49",
-   "latency_s": 0.039825899999414105,
+   "timestamp": "13:44:58",
+   "latency_s": 0.03976820000389125,
    "output_size": 203,
    "ok": true,
    "error": ""
@@ -647,7 +647,7 @@
    "sources": []
   },
   {
-   "text": "Initial manufacturing impacts for EV batteries contribute higher emissions early on; this 'carbon debt' is typically repaid within one to two years of typical driving [S1].",
+   "text": "Initial manufacturing impacts, especially from batteries, contribute higher emissions early on; these 'carbon debts' are repaid within about one to two years of typical driving [S1].",
    "verdict": "SUPPORTED",
    "confidence": 0.839,
    "sources": [
@@ -675,7 +675,7 @@
    ]
   },
   {
-   "text": "In regions with coal-heavy grids, the life-cycle emission reduction benefits are diminished but still remain lower than those from petrol cars in most studied areas.",
+   "text": "In regions with coal-heavy grids, the life-cycle emission reduction is less pronounced but still generally lower than petrol cars.",
    "verdict": "SUPPORTED",
    "confidence": 0.836,
    "sources": [
@@ -689,7 +689,7 @@
    ]
   },
   {
-   "text": "As more electricity is generated from renewable sources, the emissions advantage of EVs continues to grow [S3].",
+   "text": "As more electricity comes from renewable sources, EVs' emissions advantages continue to grow [S3].",
    "verdict": "SUPPORTED",
    "confidence": 0.534,
    "sources": [
@@ -703,45 +703,31 @@
    ]
   },
   {
-   "text": "In summary, while there are initial higher manufacturing emissions for electric vehicles due to battery production, their operational phase results in significantly reduced greenhouse gas emissions compared to petrol cars, making them a greener option overall [S1][S2][S3].",
+   "text": "Moreover, EVs release no tailpipe pollutants and can reduce respiratory illnesses like asthma by decreasing air pollution types such as nitrogen dioxide [S4].",
    "verdict": "SUPPORTED",
-   "confidence": 0.987695736,
+   "confidence": 0.71,
    "sources": [
     {
-     "sid": "S1",
-     "title": "A global comparison of the life-cycle greenhouse gas emissions of passenger cars",
-     "url": "https://journals.example.org/synthetic-transport-research-reports/h9-a1",
-     "evidence_snippet": "Battery electric cars registered in Europe in 2021 have life-cycle greenhouse gas emissions 66-69% lower than comparable petrol cars. Battery manufacturing makes an electric car's initial emissions higher, but this 'carbon debt' is repaid w",
-     "citation": "Bieker, G., & Mock, P. (2021). A global comparison of the life-cycle greenhouse gas emissions of passenger cars. Synthetic Transport Research Reports. https://journals.example.org/synthetic-transport-research-reports/h9-a1 [Synthetic source]"
-    },
-    {
-     "sid": "S2",
-     "title": "Grid carbon intensity and the climate benefit of electric vehicles",
-     "url": "https://journals.example.org/synthetic-environmental-science-letters/h9-a2",
-     "evidence_snippet": "The climate advantage of electric vehicles depends on the carbon intensity of the electricity grid. In coal-heavy grids the life-cycle advantage shrinks substantially, but electric cars still have lower emissions than petrol cars in most re",
-     "citation": "Hausfather, K., & Wu, J. (2020). Grid carbon intensity and the climate benefit of electric vehicles. Synthetic Environmental Science Letters. https://journals.example.org/synthetic-environmental-science-letters/h9-a2 [Synthetic source]"
-    },
-    {
-     "sid": "S3",
-     "title": "Cleaner grids are making EVs even greener",
-     "url": "https://techcurrent.example.com/2023-10-05/cleaner-grids-are-making-evs-even-greener",
-     "evidence_snippet": "As more electricity comes from renewables, the life-cycle emissions advantage of electric vehicles keeps growing.",
-     "citation": "TechCurrent staff (2023, October 5). Cleaner grids are making EVs even greener. TechCurrent. https://techcurrent.example.com/2023-10-05/cleaner-grids-are-making-evs-even-greener [Synthetic source]"
+     "sid": "S4",
+     "title": "Electric vehicle",
+     "url": "https://en.wikipedia.org/wiki/Electric_vehicle",
+     "evidence_snippet": "General Motors (GM) is adding a capability called V2H, or bidirectional charging, to allow its new electric vehicles to send power from their batteries to the owner's home. GM will start with 2024 models, including the Silverado and Blazer ",
+     "citation": "Wikipedia contributors. (2026). Electric vehicle. In Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Electric_vehicle"
     }
    ]
   }
  ],
- "final_synthesis": "Electric vehicles (EVs) are often touted for their environmental benefits, particularly regarding greenhouse gas emissions [S4]. According to recent studies, battery electric cars registered in Europe in 2021 have life-cycle greenhouse gas emissions that are 66-69% lower than comparable petrol cars [S1]. This significant reduction is due to the overall lifecycle analysis which includes both manufacturing and operational phases. Initial manufacturing impacts for EV batteries contribute higher emissions early on; this 'carbon debt' is typically repaid within one to two years of typical driving [S1].\n\nThe climate advantage of electric vehicles depends heavily on the carbon intensity of the electricity grid they use [S2]. In regions with coal-heavy grids, the life-cycle emission reduction benefits are diminished but still remain lower than those from petrol cars in most studied areas. As more electricity is generated from renewable sources, the emissions advantage of EVs continues to grow [S3].\n\nIn summary, while there are initial higher manufacturing emissions for electric vehicles due to battery production, their operational phase results in significantly reduced greenhouse gas emissions compared to petrol cars, making them a greener option overall [S1][S2][S3].",
- "overall_confidence": 0.7039619669999999,
+ "final_synthesis": "Electric vehicles (EVs) are often touted for their environmental benefits, particularly regarding greenhouse gas emissions [S4]. According to recent studies, battery electric cars registered in Europe in 2021 have life-cycle greenhouse gas emissions that are 66-69% lower than comparable petrol cars [S1]. This significant reduction is due to the overall lifecycle analysis which includes both manufacturing and operational phases. Initial manufacturing impacts, especially from batteries, contribute higher emissions early on; these 'carbon debts' are repaid within about one to two years of typical driving [S1].\n\nThe climate advantage of electric vehicles depends heavily on the carbon intensity of the electricity grid they use [S2]. In regions with coal-heavy grids, the life-cycle emission reduction is less pronounced but still generally lower than petrol cars. As more electricity comes from renewable sources, EVs' emissions advantages continue to grow [S3].\n\nMoreover, EVs release no tailpipe pollutants and can reduce respiratory illnesses like asthma by decreasing air pollution types such as nitrogen dioxide [S4].",
+ "overall_confidence": 0.6692499999999999,
  "metrics": {
-  "latency_s": 86.7335350000103,
+  "latency_s": 90.58862000000227,
   "llm_calls": 9,
-  "input_tokens": 11659,
-  "output_tokens": 1414,
-  "cost_usd": 0.07950499999999999,
+  "input_tokens": 11649,
+  "output_tokens": 1385,
+  "cost_usd": 0.07901999999999999,
   "n_tool_calls": 44,
   "pii_redacted": [],
-  "halluc_before": 0.125,
+  "halluc_before": 0.2222222222222222,
   "halluc_after": 0.125
  }
 }
