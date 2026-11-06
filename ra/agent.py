@@ -227,7 +227,9 @@ class ReActAgent:
                 print(f"[step {i}] {step.thought[:120]} | actions={[a['tool'] for a in planned]}")
             messages += [{"role": "assistant", "content": json.dumps({"thought": step.thought, "actions": planned})},
                          {"role": "user", "content": "Observations:\n" + "\n\n".join(obs)[:6000]
-                          + f"\n\n(step {i}/{self.max_iterations}; time left {max(0, deadline - time.time()):.0f}s)"}]
+                          # no wall-clock value in the prompt: it would change the prompt on every run and break
+                          # reproducibility (the 60 s timeout is enforced by the loop itself)
+                          + f"\n\n(step {i}/{self.max_iterations}; time budget {self.timeout_s:.0f}s in total)"}]
 
         if answer is None:
             # graceful degradation: answer from whatever evidence was collected

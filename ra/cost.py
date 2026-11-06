@@ -36,7 +36,8 @@ def optimisation_table(cacheable_input_share: float, context_reduction_share: fl
 
     * prompt caching: the cacheable prefix (system prompt + tool schemas) is billed at a 50 % or 90 % discount.
     * model routing : Strategy B above.
-    * context reduction: drop the measured 'potentially redundant' share of input tokens (Task 3 classification).
+    * context reduction: drop the measured 'potentially redundant' share of input tokens (Task 3 classification) and
+      send compact tool schemas; the caller passes the measured share of input tokens saved.
     """
     base = monthly(per_query("gpt-4o"))
     p = PRICING["gpt-4o"]

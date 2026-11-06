@@ -51,6 +51,9 @@ except Exception:
 
 # Reference "today" used for recency / source-freshness computations.
 REFERENCE_DATE = "2026-11-01"
+# Date stamped on LIVE episodic-memory sessions written during a run. Fixed (the date of the recorded run) instead
+# of the wall clock, because the date is part of later prompts: a different date would break cache replay.
+RUN_DATE = "2026-11-06"
 
 # ----------------------------------------------------------------------------
 # LLM backend & model roles
@@ -130,18 +133,23 @@ MIXED_MODEL_ROLES: dict[str, list[str]] = {
 LOCAL_BASE_URL = os.environ.get("LOCAL_BASE_URL", "http://localhost:1234/v1")
 LOCAL_MODEL = os.environ.get("LOCAL_MODEL", "auto")
 LOCAL_TIMEOUT_S = float(os.environ.get("LOCAL_TIMEOUT_S", "600"))  # local generation of long prompts can be slow
+# 1 = if the local server is down, fall back to the cloud models of the role; 0 = stop with an error instead, so
+# every generator answer of a run comes from the same local model.
+LOCAL_FALLBACK = os.environ.get("LOCAL_FALLBACK", "1") == "1"
 LOCAL_MODEL_ROLES: dict[str, list[str]] = {r: [f"local:{LOCAL_MODEL}"] for r in
                                            ("generator", "judge", "long_context", "tier_small", "tier_moe", "tier_dense")}
 # Hybrid (recommended with a local GPU): the local model does the bulk generation work with no rate limits; the judge
-# stays a large model of a *different* family on Groq (less self-preference bias, credible RAG-Triad scores); the
+# is ONE model of a *different* family (Gemini 3.5 Flash-Lite: less self-preference bias than Qwen judging Qwen, and a
+# daily quota large enough for all ~450 judge calls, so every score comes from the same judge). Groq models are
+# deliberately not judge fallbacks: their 200K tokens/day cap would split the judging across models again. The
 # 10K+ token lost-in-the-middle test goes to Gemini (1M context window) because local context is usually 8-32K.
 HYBRID_MODEL_ROLES: dict[str, list[str]] = {
     "generator": [f"local:{LOCAL_MODEL}", "gemini:gemini-3.1-flash-lite", "groq:openai/gpt-oss-20b"],
-    "judge": ["groq:openai/gpt-oss-120b", "groq:qwen/qwen3.8-27b", "gemini:gemini-3.5-flash-lite"],
+    "judge": ["gemini:gemini-3.5-flash-lite", "gemini:gemini-3.5-flash"],
     "long_context": ["gemini:gemini-3.1-flash-lite", "gemini:gemini-3.5-flash-lite", f"local:{LOCAL_MODEL}"],
     "tier_small": [f"local:{LOCAL_MODEL}", "groq:openai/gpt-oss-20b"],
     "tier_moe": ["gemini:gemini-3.1-flash-lite", "groq:openai/gpt-oss-20b"],
-    "tier_dense": ["groq:openai/gpt-oss-120b", "groq:qwen/qwen3.8-27b", "gemini:gemini-3.5-flash"],
+    "tier_dense": ["groq:openai/gpt-oss-120b", "gemini:gemini-3.5-flash"],
 }
 # Device for the embedding model + cross-encoder: "cpu" (default, bit-identical to the cached run), "xpu" (Intel Arc
 # with a PyTorch XPU build), "cuda", or "auto". Both models are tiny, so CPU is fast enough.

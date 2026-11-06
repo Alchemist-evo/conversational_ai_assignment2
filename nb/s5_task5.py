@@ -160,7 +160,7 @@ md(r"""
 The same 5 contested held-out research questions are answered three ways:
 * **Zero-Shot prompting:** closed-book, no evidence.
 * **RAG:** the Task 4 evidence and synthesis.
-* **Fine-tuning (simulated).** We cannot train a model through the Gemini API, so the *behaviour* of a fine-tuned model is approximated by conditioning on 8 of our filtered Self-Instruct examples (an in-context proxy for the learned style), with **no retrieval**. Cost is reported **without** the demonstration tokens, because a truly fine-tuned model would not need them. This is a stated approximation, not a real fine-tune.
+* **Fine-tuning (simulated).** We do not fine-tune the model in this assignment (no training budget in the Virtual Lab), so the *behaviour* of a fine-tuned model is approximated by conditioning on 8 of our filtered Self-Instruct examples (an in-context proxy for the learned style), with **no retrieval**. Cost is reported **without** the demonstration tokens, because a truly fine-tuned model would not need them. This is a stated approximation, not a real fine-tune.
 
 **Metrics.** *Accuracy* uses the Task 1 correctness criterion. *Hallucination rate* is the share of claims the verifier cannot support from the topic's full credible document set.
 """),

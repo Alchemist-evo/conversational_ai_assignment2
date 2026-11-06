@@ -14,7 +14,7 @@ from __future__ import annotations
 import time
 
 from . import config
-from .llm import LLM
+from .llm import LLM, item_value, list_field
 from .retrieval import Embedder, Hit, MultiSourceRetriever
 
 SOURCES = ("academic", "wikipedia", "news")
@@ -52,9 +52,9 @@ def crag(llm: LLM, retriever: MultiSourceRetriever, question: str, k: int = conf
                             default={}, purpose="t3_crag_evaluate", max_tokens=300)
     tokens, llm_lat = r.input_tokens + r.output_tokens, r.latency_s
     scores = []
-    for x in (data.get("scores") or []):
+    for x in list_field(data, "scores"):
         try:
-            scores.append(float(x))
+            scores.append(float(item_value(x)))
         except Exception:
             scores.append(0.0)
     scores = (scores + [0.0] * len(hits))[: len(hits)]

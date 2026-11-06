@@ -35,7 +35,7 @@ md(r"""
 6. Yao, S., et al. (2023). ReAct: Synergizing Reasoning and Acting in Language Models. *ICLR*.
 7. Robertson, S., & Zaragoza, H. (2009). The Probabilistic Relevance Framework: BM25 and Beyond. *FnTIR*. Library: `rank-bm25`.
 8. Reimers, N., & Gurevych, I. (2019). Sentence-BERT. *EMNLP*. Model: `sentence-transformers/all-MiniLM-L6-v2`; cross-encoder `cross-encoder/ms-marco-MiniLM-L-6-v2`.
-9. Johnson, J., Douze, M., & Jégou, H. (2019). Billion-scale similarity search with GPUs (FAISS). *IEEE TBD*.
+9. Johnson, J., Douze, M., & Jégou, H. (2019). Billion-scale similarity search with GPUs (FAISS). *IEEE Transactions on Big Data*, 7(3), 535–547.
 10. Cormack, G., Clarke, C., & Buettcher, S. (2009). Reciprocal Rank Fusion outperforms Condorcet and individual rank learning methods. *SIGIR*.
 11. Liu, N. F., et al. (2023). Lost in the Middle: How Language Models Use Long Contexts. *TACL*.
 12. Gao, L., et al. (2023). Precise Zero-Shot Dense Retrieval without Relevance Labels (HyDE). *ACL*.
@@ -48,7 +48,7 @@ md(r"""
 19. Rafailov, R., et al. (2023). Direct Preference Optimization. *NeurIPS*. Ouyang, L., et al. (2022). InstructGPT / RLHF. *NeurIPS*. Schulman, J., et al. (2017). PPO.
 20. Hu, E., et al. (2022). LoRA. *ICLR*. Dettmers, T., et al. (2023). QLoRA. *NeurIPS*.
 21. Shao, Z., et al. (2024). DeepSeekMath (GRPO). arXiv:2402.03300. Bai, Y., et al. (2022). Constitutional AI. Chen, Z., et al. (2024). SPIN. *ICML*. Lightman, H., et al. (2023). Let's Verify Step by Step (PRM).
-22. Google Gemini API documentation (gemini-3.1-flash-lite), ai.google.dev/gemini-api/docs; Groq API documentation (openai/gpt-oss-120b, openai/gpt-oss-20b, qwen/qwen3.8-27b), console.groq.com/docs; both accessed Nov 2026. GPT-4o pricing as specified in the assignment brief.
+22. Google Gemini API documentation (gemini-3.1-flash-lite), ai.google.dev/gemini-api/docs; gemini-3.5-flash-lite (judge); Groq API documentation (openai/gpt-oss-120b), console.groq.com/docs; Qwen Team (2024), Qwen2.5 technical report, arXiv:2412.15115, model card huggingface.co/Qwen/Qwen2.5-14B-Instruct (GGUF: huggingface.co/bartowski/Qwen2.5-14B-Instruct-GGUF); LM Studio, lmstudio.ai; all accessed Nov 2026. GPT-4o pricing as specified in the assignment brief.
 23. Course material: AIMLCZG521 Sessions 4, 5, 6, 7, 9, 10, 12 (as referenced in the assignment).
 
 *Synthetic data disclosure.* All academic, news and forum documents in `data/curated/` and all 50 episodic sessions are synthetic and are labelled as such in the data and in every citation the system generates (`[Synthetic source]`).

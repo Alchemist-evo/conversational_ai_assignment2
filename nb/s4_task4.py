@@ -288,7 +288,7 @@ RESULTS["task4"]["synthesis_quality"] = sq_mean.overall.round(3).to_dict()
 """),
 md(r"""
 ### 4.6 RAG Triad evaluation on the 10 held-out questions (LLM-as-a-Judge)
-The judge (gpt-oss-120b on Groq, temperature 0) scores **Context Relevance**, **Groundedness** and **Answer Relevance** on anchored 1–5 rubrics. The prompt includes worked examples for levels 1, 3 and 5, shown in full below. A query *fails* at the first stage, in pipeline order (retrieval → grounding → answer), that scores < 3.
+The judge (gemini-3.5-flash-lite, temperature 0) scores **Context Relevance**, **Groundedness** and **Answer Relevance** on anchored 1–5 rubrics. The prompt includes worked examples for levels 1, 3 and 5, shown in full below. To stop the judge from handing out 5s by default, it must first **list every claim that is not stated in the retrieved context** (true background knowledge counts as unsupported), and only then score; groundedness 5 is allowed only when that list is empty. A query *fails* at the first stage, in pipeline order (retrieval → grounding → answer), that scores **< 4**: for a research assistant a 3 already means invented details or an ignored part of the question.
 """),
 code(r"""
 from ra.evaluation import rag_triad, triad_failure_stage, TRIAD_RUBRIC, cohen_kappa
@@ -310,7 +310,7 @@ RESULTS["task4"]["triad"] = tri_mean.round(3).to_dict(); RESULTS["task4"]["triad
 """),
 md(r"""
 #### 4.6.1 Judge reliability: Cohen's κ against human labels
-Human annotators score the same (question, context, answer) items with the same rubric, without seeing the judge's scores. We export a template with all 30 judge items (10 questions × 3 criteria). **At least 15 must be labelled by the team** in `data/human_labels.csv`, column `human_score`. We report unweighted κ, quadratic-weighted κ on the 1–5 scale, and κ on the binarised pass/fail (≥ 3) decision.
+Human annotators score the same (question, context, answer) items with the same rubric, without seeing the judge's scores. We export a template with all 30 judge items (10 questions × 3 criteria). **At least 15 must be labelled by the team** in `data/human_labels.csv`, column `human_score`. We report unweighted κ, quadratic-weighted κ on the 1–5 scale, and κ on the binarised pass/fail decision (≥ 4, the same threshold as the failure diagnosis in Table 4.9).
 """),
 code(r"""
 items = []
@@ -328,7 +328,7 @@ if hp.exists():
     m["human_score"] = m.human_score.astype(int)
     k_u = cohen_kappa(m.judge_score.tolist(), m.human_score.tolist(), labels=[1, 2, 3, 4, 5])
     k_q = cohen_kappa(m.judge_score.tolist(), m.human_score.tolist(), weights="quadratic", labels=[1, 2, 3, 4, 5])
-    k_b = cohen_kappa((m.judge_score >= 3).tolist(), (m.human_score >= 3).tolist(), labels=[False, True])
+    k_b = cohen_kappa((m.judge_score >= 4).tolist(), (m.human_score >= 4).tolist(), labels=[False, True])
     print(f"{len(m)} human-labelled items | Cohen's kappa: unweighted {k_u:.3f}, quadratic-weighted {k_q:.3f}, pass/fail {k_b:.3f} | exact agreement {np.mean(m.judge_score == m.human_score):.2f}")
     display(pd.crosstab(m.human_score, m.judge_score, rownames=["human"], colnames=["judge"]))
     RESULTS["task4"]["kappa"] = {"n": len(m), "unweighted": k_u, "quadratic": k_q, "binary": k_b}

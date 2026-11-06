@@ -211,7 +211,7 @@ RESULTS["task6"]["nq50"] = nq_summary
 """),
 md(r"""
 ### 6.5 Cost analysis (GPT-4o pricing: $5 / 1M input, $15 / 1M output)
-Measured token usage for each of the 10 complex queries is priced at the assignment's GPT-4o rates. The generator actually used was gemini-3.1-flash-lite (free tier); the GPT-4o price is applied for comparability, as the assignment requires.
+Measured token usage for each of the 10 complex queries is priced at the assignment's GPT-4o rates. The generator actually used was Qwen2.5-14B-Instruct running locally (zero marginal API cost); the GPT-4o price is applied for comparability, as the assignment requires.
 """),
 code(r"""
 evd_df["cost_gpt4o"] = [config.cost_usd(a, b) for a, b in zip(evd_df.input_tokens, evd_df.output_tokens)]
@@ -237,7 +237,7 @@ md(r"""
 code(r"""
 N = {"user": (1.0, 7.2, "User / UI\n(chat, API)", PALETTE[5], 1.8), "gw": (3.4, 7.2, "API gateway\nauth · RBAC · rate limit", PALETTE[3], 2.4),
      "orch": (6.4, 7.2, "Orchestrator\n(ResearchAssistant, ReAct)", PALETTE[0], 2.8), "cache": (9.6, 7.2, "Caching layer\nprompt / response / embedding", PALETTE[6], 2.8),
-     "router": (6.4, 5.5, "Model router\nsmall | MoE | dense", PALETTE[4], 2.6), "llm": (9.6, 5.5, "LLM endpoints\n(Gemini / GPT-4o)", PALETTE[0], 2.6),
+     "router": (6.4, 5.5, "Model router\nsmall | MoE | dense", PALETTE[4], 2.6), "llm": (9.6, 5.5, "LLM endpoints\n(local Qwen / Gemini / Groq)", PALETTE[0], 2.6),
      "apis": (1.4, 5.5, "Source APIs\nacademic · wiki · news · web", PALETTE[1], 2.6), "vdb": (3.9, 5.5, "Vector DB (FAISS/HNSW)\n+ BM25 index", PALETTE[1], 2.4),
      "conf": (2.2, 3.6, "Conflict resolver\n(credibility-weighted)", PALETTE[3], 2.6), "cit": (5.2, 3.6, "Citation generator\n(APA / MLA)", PALETTE[2], 2.4),
      "ver": (8.2, 3.6, "Verifier +\nconfidence calibrator", PALETTE[3], 2.4), "mem": (2.2, 1.6, "Memory store\nworking · episodic (vector)", PALETTE[2], 2.8),
@@ -263,8 +263,8 @@ md(r"""
 | # | Limitation (observed) | Proposed improvement |
 |---|---|---|
 | 1 | Most of the multi-source corpus is synthetic and small (75 documents), so retrieval is easier than on the open web | Connect real APIs (Semantic Scholar, PubMed, news APIs) and re-run the same evaluation harness |
-| 2 | A single LLM judge (gpt-oss-120b) scores everything and may have its own biases; κ needs human labels; κ needs human labels | More human labels, a judge from a different model family, judge ensembles |
-| 3 | The verifier is the same small generator model, which misses subtle numeric hallucinations (see the Task 4 confusion matrix) | A dedicated NLI verifier (e.g. DeBERTa-MNLI) or a stronger model for verification only |
+| 2 | A single LLM judge (gemini-3.5-flash-lite) scores everything, and it agrees poorly with our 30 human labels (κ 0.03, quadratic 0.10). It is more lenient, especially on groundedness (4.5 vs 3.3) | More human labels, a judge from a different model family, judge ensembles |
+| 3 | The verifier is the generator model itself. It scores F1 1.00 on our constructed test (§4.4.1), but those fakes are easy (off-topic facts, numbers ×2+1); subtle paraphrase errors and unsupported evaluative wording (the two RAG-Triad grounding failures) are not caught | A dedicated NLI verifier (e.g. DeBERTa-MNLI) or a stronger model for verification only, tested on harder, human-written perturbations |
 | 4 | Conflict detection relies on one LLM pass, so missed conflicts are invisible to the resolver | Claim-level clustering (embed claims, then pairwise NLI contradiction) as a second detector |
 | 5 | Latency: complex queries need about 10 sequential LLM calls | Parallelise conflict detection with synthesis, cache decompositions, route helper calls to small models, stream answers |
 

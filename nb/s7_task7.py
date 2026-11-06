@@ -15,9 +15,15 @@ memq = pd.DataFrame(T3["memory_ablation"]); varq = pd.DataFrame(T3["rag_variants
 def close(a, b, tol=0.15): return abs(a - b) < tol
 rows = []
 best_ret = ret_nq["Recall@10"].drop("hybrid+CE").idxmax()
-rows.append(("Retrieval method", "Hybrid RRF (BM25 + dense)" if best_ret == "hybrid" or close(ret_nq.loc["hybrid", "Recall@10"], ret_nq.loc[best_ret, "Recall@10"], 0.03) else best_ret,
+# The pipeline passes the top-5 to the LLM, so Recall@5 *after* re-ranking is what matters for synthesis.
+best_r5 = ret_nq["Recall@5"].idxmax()
+rows.append(("Retrieval method", "Hybrid RRF (BM25 + dense) + cross-encoder re-ranking" if best_r5 == "hybrid+CE" else best_r5,
              f"Table 3.4: NQ Recall@10 BM25 {ret_nq.loc['bm25','Recall@10']:.2f} / dense {ret_nq.loc['dense','Recall@10']:.2f} / hybrid {ret_nq.loc['hybrid','Recall@10']:.2f}; "
-             f"curated multi-source Recall@10 {ret_cur.loc['bm25','Recall@10']:.2f} / {ret_cur.loc['dense','Recall@10']:.2f} / {ret_cur.loc['hybrid','Recall@10']:.2f}. Hybrid is robust across both benchmarks (lexical + semantic)."))
+             f"curated multi-source Recall@10 {ret_cur.loc['bm25','Recall@10']:.2f} / {ret_cur.loc['dense','Recall@10']:.2f} / {ret_cur.loc['hybrid','Recall@10']:.2f}. "
+             f"Dense alone has the best Recall@10 ({best_ret}), but only the top-5 reaches the prompt: NQ Recall@5 is highest for hybrid + cross-encoder "
+             f"({ret_nq.loc['hybrid+CE','Recall@5']:.2f} vs dense {ret_nq.loc['dense','Recall@5']:.2f}), and BM25 keeps exact names/numbers retrievable. "
+             f"On the small curated set dense is ahead (Recall@5 {ret_cur.loc['dense','Recall@5']:.2f} vs {ret_cur.loc['hybrid+CE','Recall@5']:.2f}), so the two are close; "
+             f"we keep hybrid + CE for robustness and accept ~{ret_nq.loc['hybrid+CE','latency_ms']/1000:.1f}s re-ranking latency."))
 bc = T3["best_chunking"]
 rows.append(("Chunking strategy", f"{bc['strategy'].capitalize()} {bc['size']} tokens, overlap {bc['overlap']}",
              f"Table 3.3 / Fig 3.1: best Answer Recall@5 = {bc['recall5']:.2f} among 12 strategy × overlap configurations; ties broken by fewer context tokens."))
@@ -41,9 +47,11 @@ rows.append(("Synthesis strategy", "Multi-source with conflict resolution", "Tab
              f"; conflict gold-agreement (credibility) {T4r['conflicts_dev']['gold_agreement_pct'].get('credibility', float('nan')):.0f}% vs majority {T4r['conflicts_dev']['gold_agreement_pct'].get('majority', float('nan')):.0f}% (Table 4.4)."))
 rows.append(("Hallucination control", "Verification ON (+ self-correction)", f"Fig 4.3: hallucination rate {100*T4r['halluc_before']:.1f}% → {100*T4r['halluc_after']:.1f}% "
              f"after the verification + self-correction pass; detector F1 {T4r['detector']['f1']:.2f} (Fig 4.2)."))
-tri = T4r["triad"]; weakest = min(tri, key=tri.get)
-rows.append(("RAG Triad weak stage", weakest.replace("_", " ").title(), "Table 4.9: means " + ", ".join(f"{k} {v:.2f}" for k, v in tri.items()) +
-             f"; failures by stage {T4r['triad_failures']}."))
+tri = T4r["triad"]; fails = {k: v for k, v in T4r["triad_failures"].items() if k != "none"}
+stage_name = {"retrieval": "Context Relevance (retrieval)", "grounding": "Groundedness (grounding)", "answer": "Answer Relevance (answer)"}
+weakest = stage_name[max(fails, key=fails.get)] if fails else min(tri, key=tri.get).replace("_", " ").title()
+rows.append(("RAG Triad weak stage", weakest, "Table 4.9: stage that failed most often (score < 4) " + (f"= {max(fails, key=fails.get)} in {max(fails.values())} of {sum(T4r['triad_failures'].values())} queries" if fails else "none; lowest mean used") +
+             "; means " + ", ".join(f"{k} {v:.2f}" for k, v in tri.items()) + "."))
 dec = pd.DataFrame(rows, columns=["Design choice", "Selected option", "Justification (from our experiments)"])
 display(Markdown("**Table 7.1 – RAG & agent architecture decision table.**")); display(dec)
 RESULTS["task7"] = {"decisions": dec.to_dict("records")}
@@ -71,16 +79,34 @@ tbk = pd.DataFrame(RESULTS["task3"]["token_breakdown"]).set_index("Component")["
 input_total = tbk.drop(["TOTAL", "Reserved for Output"], errors="ignore").sum()
 cacheable = (tbk.get("System Prompt", 0) + tbk.get("Tool Definitions", 0)) / input_total
 redundant = RESULTS["task3"]["context_categories_pct"].get("potentially redundant", 0) / 100
-ot = optimisation_table(cacheable_input_share=float(cacheable), context_reduction_share=float(redundant))
+# Context reduction. Table 3.11 found no 'potentially redundant' component in this query (every piece is >= 0.45 similar to
+# the query), so dropping redundant context saves nothing here. The largest *operational* component is the tool schemas
+# (Table 3.10), so the measured reduction is: send compact schemas (name, one-line description, parameter names/types/enums,
+# required list) instead of the full schemas with bad/good examples and per-parameter prose.
+import json as _json
+from ra.tools import TOOL_SCHEMAS
+from ra.tokens import count_tokens
+def _compact(sch):
+    f = sch["function"]; props = f.get("parameters", {}).get("properties", {})
+    return {"name": f["name"], "description": f.get("description", "").split(". ")[0][:120],
+            "parameters": {"type": "object", "required": f.get("parameters", {}).get("required", []),
+                           "properties": {k: {kk: vv for kk, vv in v.items() if kk in ("type", "enum", "minimum", "maximum")} for k, v in props.items()}}}
+full_tool_tok = count_tokens(_json.dumps([s["function"] for s in TOOL_SCHEMAS], separators=(",", ":")))
+compact_tool_tok = count_tokens(_json.dumps([_compact(s) for s in TOOL_SCHEMAS], separators=(",", ":")))
+reduction = (full_tool_tok - compact_tool_tok + redundant * input_total) / input_total
+print(f"Tool schemas: full {full_tool_tok} tokens -> compact {compact_tool_tok} tokens; input context {input_total:.0f} tokens "
+      f"-> context reduction {reduction:.0%} of input tokens (redundant share {redundant:.0%} + schema compaction)")
+ot = optimisation_table(cacheable_input_share=float(cacheable), context_reduction_share=float(reduction))
 display(Markdown(f"**Table 7.3 – Cost optimisation strategies.** Cached prefix = system prompt + tool schemas = {cacheable:.0%} of input tokens (Table 3.10); "
-                 f"context reduction = measured 'potentially redundant' share {redundant:.0%} (Table 3.11)."))
+                 f"context reduction = 'potentially redundant' share ({redundant:.0%}, Table 3.11) + compact tool schemas "
+                 f"({full_tool_tok}→{compact_tool_tok} tokens) = {reduction:.0%} of input tokens."))
 display(ot.round(2))
 RESULTS["task7"].update({"routing": rt.round(4).to_dict("records"), "optimisations": ot.round(2).to_dict("records")})
 """),
 md(r"""
 ## Part C — Final recommendation & model comparison dashboard (0.2 marks)
 To ground routing in *measured* quality rather than price alone, three model tiers available to us synthesise answers to the 8 dev questions from **identical evidence** (Config D evidence from Task 3):
-* **Small LM:** gpt-oss-20b (Groq), priced as "Small LM".
+* **Small LM:** Qwen2.5-14B-Instruct (local, Q4_K_M), priced as "Small LM".
 * **Mid tier:** gemini-3.1-flash-lite, priced as "MoE Mid".
 * **Large tier:** gpt-oss-120b (Groq, 120B MoE), priced as GPT-4o, the "dense LLM". (Gemini Pro has a quota of 0 on the free tier.)
 
@@ -112,9 +138,9 @@ mix_policy = {"tier_small": 0.80, "tier_moe": 0.15, "tier_dense": 0.05}
 routed_q = sum(mix_policy[t] * tm.loc[t, "quality"] for t in mix_policy); routed_c = sum(mix_policy[t] * tm.loc[t, "cost_per_query"] for t in mix_policy)
 points = pd.concat([tm[["quality", "cost_per_query"]], pd.DataFrame({"quality": [routed_q], "cost_per_query": [routed_c]}, index=["routed 80/15/5"])])
 fig, axes = plt.subplots(1, 2, figsize=(15, 4.2))
-names = {"tier_small": "Small (gpt-oss-20b)", "tier_moe": "Mid (gemini-3.1-flash-lite)", "tier_dense": "Large (gpt-oss-120b ≈ GPT-4o)", "routed 80/15/5": "Routed 80/15/5"}
+names = {"tier_small": "Small\n(Qwen2.5-14B local)", "tier_moe": "Mid\n(gemini-3.1-flash-lite)", "tier_dense": "Large\n(gpt-oss-120b ≈ GPT-4o)", "routed 80/15/5": "Routed\n80/15/5"}
 axes[0].bar([names[i] for i in points.index], points.cost_per_query * 1000, color=PALETTE[:4]); bar_labels(axes[0], "{:.3f}")
-axes[0].set_ylabel("$ per 1,000 queries (measured tokens)"); axes[0].set_title("Fig 7.1 – Cost per query vs model")
+axes[0].set_ylabel("$ per 1,000 queries (measured tokens)"); axes[0].set_title("Fig 7.1 – Cost per query vs model"); axes[0].tick_params(axis="x", labelsize=8)
 for i, (idx, rrow) in enumerate(points.iterrows()):
     axes[1].scatter(rrow.cost_per_query * 1000, rrow.quality, s=180, color=PALETTE[i], edgecolor="k", zorder=3); axes[1].annotate(names[idx], (rrow.cost_per_query * 1000, rrow.quality), xytext=(6, 6), textcoords="offset points")
 pareto = points.sort_values("cost_per_query"); front, best_q = [], -1

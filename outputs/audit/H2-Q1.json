@@ -1,6 +1,6 @@
 {
  "question": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
- "started": "2026-11-06T02:37:47",
+ "started": "2026-11-06T10:29:25",
  "route": {
   "type": "new_research",
   "standalone_query": "What drives antibiotic resistance, how large is its health burden, and what is being done about it?",
@@ -34,8 +34,8 @@
     "query": "Mechanisms driving antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:47",
-   "latency_s": 0.7057658999983687,
+   "timestamp": "10:29:25",
+   "latency_s": 0.699220399998012,
    "output_size": 3744,
    "ok": true,
    "error": ""
@@ -46,8 +46,8 @@
     "topic": "Mechanisms driving antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:47",
-   "latency_s": 0.7096105000018724,
+   "timestamp": "10:29:25",
+   "latency_s": 0.7021101999998791,
    "output_size": 5018,
    "ok": true,
    "error": ""
@@ -58,8 +58,8 @@
     "query": "Mechanisms driving antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:47",
-   "latency_s": 0.6998082999998587,
+   "timestamp": "10:29:25",
+   "latency_s": 0.6979092000037781,
    "output_size": 2465,
    "ok": true,
    "error": ""
@@ -70,8 +70,8 @@
     "query": "Health burden of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:47",
-   "latency_s": 0.6512997999998333,
+   "timestamp": "10:29:25",
+   "latency_s": 0.6496888999972725,
    "output_size": 3080,
    "ok": true,
    "error": ""
@@ -82,8 +82,8 @@
     "topic": "Health burden of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:47",
-   "latency_s": 0.40687919999982114,
+   "timestamp": "10:29:25",
+   "latency_s": 0.4117504000023473,
    "output_size": 5051,
    "ok": true,
    "error": ""
@@ -94,8 +94,8 @@
     "query": "Health burden of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:47",
-   "latency_s": 0.8446879000002809,
+   "timestamp": "10:29:25",
+   "latency_s": 0.8450475999998162,
    "output_size": 2959,
    "ok": true,
    "error": ""
@@ -106,8 +106,8 @@
     "query": "Interventions addressing antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:48",
-   "latency_s": 0.931492600000638,
+   "timestamp": "10:29:25",
+   "latency_s": 0.9325128999989829,
    "output_size": 3989,
    "ok": true,
    "error": ""
@@ -118,8 +118,8 @@
     "topic": "Interventions addressing antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:48",
-   "latency_s": 0.5142663999977231,
+   "timestamp": "10:29:25",
+   "latency_s": 0.5143287999962922,
    "output_size": 5759,
    "ok": true,
    "error": ""
@@ -130,8 +130,8 @@
     "query": "Interventions addressing antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:48",
-   "latency_s": 0.632394000000204,
+   "timestamp": "10:29:26",
+   "latency_s": 0.6321427000002586,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -141,8 +141,8 @@
    "args": {
     "query": "Interventions addressing antibiotic resistance"
    },
-   "timestamp": "02:37:49",
-   "latency_s": 0.8182673000010254,
+   "timestamp": "10:29:26",
+   "latency_s": 0.8134964999990189,
    "output_size": 4857,
    "ok": true,
    "error": ""
@@ -153,8 +153,8 @@
     "query": "Effectiveness of community-based interventions to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:50",
-   "latency_s": 0.9160031999999774,
+   "timestamp": "10:29:27",
+   "latency_s": 0.913262100002612,
    "output_size": 3896,
    "ok": true,
    "error": ""
@@ -165,8 +165,8 @@
     "topic": "Effectiveness of community-based interventions to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:50",
-   "latency_s": 0.4303939999990689,
+   "timestamp": "10:29:27",
+   "latency_s": 0.4355543999990914,
    "output_size": 5393,
    "ok": true,
    "error": ""
@@ -177,8 +177,8 @@
     "query": "Effectiveness of community-based interventions to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:50",
-   "latency_s": 0.648791200001142,
+   "timestamp": "10:29:27",
+   "latency_s": 0.6488766000038595,
    "output_size": 2930,
    "ok": true,
    "error": ""
@@ -189,8 +189,8 @@
     "query": "Economic impact of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:50",
-   "latency_s": 0.8088083000002371,
+   "timestamp": "10:29:27",
+   "latency_s": 0.808642999996664,
    "output_size": 3622,
    "ok": true,
    "error": ""
@@ -201,8 +201,8 @@
     "topic": "Economic impact of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:50",
-   "latency_s": 0.6317358000014792,
+   "timestamp": "10:29:27",
+   "latency_s": 0.6335498000044026,
    "output_size": 4721,
    "ok": true,
    "error": ""
@@ -213,8 +213,8 @@
     "query": "Economic impact of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:50",
-   "latency_s": 0.7807250999976532,
+   "timestamp": "10:29:27",
+   "latency_s": 0.7804764999964391,
    "output_size": 2833,
    "ok": true,
    "error": ""
@@ -225,8 +225,8 @@
     "query": "Economic regional disparities in the impact of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:51",
-   "latency_s": 0.6569448000009288,
+   "timestamp": "10:29:28",
+   "latency_s": 0.6570767000011983,
    "output_size": 3622,
    "ok": true,
    "error": ""
@@ -237,8 +237,8 @@
     "topic": "Economic regional disparities in the impact of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:51",
-   "latency_s": 0.37398210000174004,
+   "timestamp": "10:29:28",
+   "latency_s": 0.377813300001435,
    "output_size": 5099,
    "ok": true,
    "error": ""
@@ -249,8 +249,8 @@
     "query": "Economic regional disparities in the impact of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:51",
-   "latency_s": 0.7540908999981184,
+   "timestamp": "10:29:28",
+   "latency_s": 0.7538346000001184,
    "output_size": 2833,
    "ok": true,
    "error": ""
@@ -261,8 +261,8 @@
     "query": "Long-term health outcomes associated with antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:51",
-   "latency_s": 1.114592800000537,
+   "timestamp": "10:29:28",
+   "latency_s": 1.11289769999712,
    "output_size": 3659,
    "ok": true,
    "error": ""
@@ -273,8 +273,8 @@
     "topic": "Long-term health outcomes associated with antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:51",
-   "latency_s": 0.6003349000020535,
+   "timestamp": "10:29:28",
+   "latency_s": 0.6014071000026888,
    "output_size": 5260,
    "ok": true,
    "error": ""
@@ -285,8 +285,8 @@
     "query": "Long-term health outcomes associated with antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:51",
-   "latency_s": 0.41719499999817344,
+   "timestamp": "10:29:28",
+   "latency_s": 0.42015460000402527,
    "output_size": 3048,
    "ok": true,
    "error": ""
@@ -297,8 +297,8 @@
     "query": "Comparative analysis of different intervention strategies to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:52",
-   "latency_s": 0.7128307999992103,
+   "timestamp": "10:29:29",
+   "latency_s": 0.7129305999987992,
    "output_size": 4033,
    "ok": true,
    "error": ""
@@ -309,8 +309,8 @@
     "topic": "Comparative analysis of different intervention strategies to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:52",
-   "latency_s": 0.328066599999147,
+   "timestamp": "10:29:29",
+   "latency_s": 0.32531619999645045,
    "output_size": 5768,
    "ok": true,
    "error": ""
@@ -321,8 +321,8 @@
     "query": "Comparative analysis of different intervention strategies to reduce antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:52",
-   "latency_s": 0.6635275000007823,
+   "timestamp": "10:29:29",
+   "latency_s": 0.6632867000007536,
    "output_size": 2771,
    "ok": true,
    "error": ""
@@ -333,8 +333,8 @@
     "query": "Impact of healthcare policies on the prevalence of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:52",
-   "latency_s": 0.9265431000021636,
+   "timestamp": "10:29:29",
+   "latency_s": 0.9267206999938935,
    "output_size": 3795,
    "ok": true,
    "error": ""
@@ -345,8 +345,8 @@
     "topic": "Impact of healthcare policies on the prevalence of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:52",
-   "latency_s": 0.6418896000031964,
+   "timestamp": "10:29:29",
+   "latency_s": 0.6444848000028287,
    "output_size": 5057,
    "ok": true,
    "error": ""
@@ -357,8 +357,8 @@
     "query": "Impact of healthcare policies on the prevalence of antibiotic resistance",
     "max_results": 5
    },
-   "timestamp": "02:37:52",
-   "latency_s": 0.8423688000002585,
+   "timestamp": "10:29:29",
+   "latency_s": 0.8427956999948947,
    "output_size": 3081,
    "ok": true,
    "error": ""
@@ -368,8 +368,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-global-health-metrics/h2-a1"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.13391090000004624,
+   "timestamp": "10:29:30",
+   "latency_s": 0.13404730000183918,
    "output_size": 165,
    "ok": true,
    "error": ""
@@ -379,8 +379,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-reviews-in-microbiology/h2-a2"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.14977229999931296,
+   "timestamp": "10:29:30",
+   "latency_s": 0.1494818999999552,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -390,8 +390,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Antimicrobial_resistance"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.13867209999807528,
+   "timestamp": "10:29:30",
+   "latency_s": 0.13840370000252733,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -401,8 +401,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.1692161999999371,
+   "timestamp": "10:29:30",
+   "latency_s": 0.16885769999498734,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -412,8 +412,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.2115272000010009,
+   "timestamp": "10:29:30",
+   "latency_s": 0.21161419999407372,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -423,8 +423,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-reviews-in-immunology/d2-a1"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.17320809999728226,
+   "timestamp": "10:29:30",
+   "latency_s": 0.17301299999962794,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -434,8 +434,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-british-journal-of-medicine/h10-a2"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.10318890000053216,
+   "timestamp": "10:29:30",
+   "latency_s": 0.10333209999953397,
    "output_size": 165,
    "ok": true,
    "error": ""
@@ -445,8 +445,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-epidemiology/d2-a2"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.16356960000121035,
+   "timestamp": "10:29:30",
+   "latency_s": 0.16375870000047144,
    "output_size": 162,
    "ok": true,
    "error": ""
@@ -456,8 +456,8 @@
    "args": {
     "source_id": "H2-A1"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.059571100002358435,
+   "timestamp": "10:29:30",
+   "latency_s": 0.059849199999007396,
    "output_size": 276,
    "ok": true,
    "error": ""
@@ -467,8 +467,8 @@
    "args": {
     "source_id": "H2-A2"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.04318119999879855,
+   "timestamp": "10:29:30",
+   "latency_s": 0.04199240000161808,
    "output_size": 265,
    "ok": true,
    "error": ""
@@ -478,8 +478,8 @@
    "args": {
     "source_id": "WIKI-Antimicrobial_resistance"
    },
-   "timestamp": "02:37:53",
-   "latency_s": 0.027653199998894706,
+   "timestamp": "10:29:30",
+   "latency_s": 0.027385200002754573,
    "output_size": 227,
    "ok": true,
    "error": ""
@@ -620,7 +620,7 @@
  "final_synthesis": "Antibiotic resistance arises through random mutations or horizontal gene transfer on plasmids [S2]. Overuse and misuse of antibiotics create selection pressure favoring resistant strains, with key mechanisms including enzymatic drug degradation by enzymes like beta-lactamases, efflux pumps that expel drugs, and modification of the drug's target [S2][S3]. In 2019, an estimated 1.27 million deaths were directly attributable to bacterial antimicrobial resistance (AMR), with 4.95 million associated deaths, making AMR a leading cause of death globally [S1]. Horizontal gene transfer allows rapid spread of resistance genes between species through conjugation, transformation, and transduction [S3].",
  "overall_confidence": 0.8286024999999999,
  "metrics": {
-  "latency_s": 67.19982569999775,
+  "latency_s": 67.19987519999631,
   "llm_calls": 9,
   "input_tokens": 9829,
   "output_tokens": 949,

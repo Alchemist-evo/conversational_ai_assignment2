@@ -1,6 +1,6 @@
 {
  "question": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
- "started": "2026-11-06T02:38:12",
+ "started": "2026-11-06T10:29:50",
  "route": {
   "type": "new_research",
   "standalone_query": "How does sleep deprivation affect cognitive performance, and do people notice their own impairment?",
@@ -34,8 +34,8 @@
     "query": "mechanisms of sleep deprivation on cognitive performance",
     "max_results": 5
    },
-   "timestamp": "02:38:12",
-   "latency_s": 1.0210209999968356,
+   "timestamp": "10:29:50",
+   "latency_s": 1.020110500001465,
    "output_size": 3820,
    "ok": true,
    "error": ""
@@ -46,8 +46,8 @@
     "topic": "mechanisms of sleep deprivation on cognitive performance",
     "max_results": 5
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.4175288000005821,
+   "timestamp": "10:29:50",
+   "latency_s": 0.41943719999835594,
    "output_size": 5179,
    "ok": true,
    "error": ""
@@ -58,8 +58,8 @@
     "query": "mechanisms of sleep deprivation on cognitive performance",
     "max_results": 5
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.7467883999997866,
+   "timestamp": "10:29:50",
+   "latency_s": 0.7465959000037401,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -70,8 +70,8 @@
     "query": "evidence of cognitive decline due to lack of sleep",
     "max_results": 5
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.9047955000023649,
+   "timestamp": "10:29:50",
+   "latency_s": 0.9059971999959089,
    "output_size": 2912,
    "ok": true,
    "error": ""
@@ -82,8 +82,8 @@
     "topic": "evidence of cognitive decline due to lack of sleep",
     "max_results": 5
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.40573789999689325,
+   "timestamp": "10:29:50",
+   "latency_s": 0.40293199999723583,
    "output_size": 5153,
    "ok": true,
    "error": ""
@@ -94,8 +94,8 @@
     "query": "evidence of cognitive decline due to lack of sleep",
     "max_results": 5
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.8142493999985163,
+   "timestamp": "10:29:50",
+   "latency_s": 0.813397800004168,
    "output_size": 2875,
    "ok": true,
    "error": ""
@@ -106,8 +106,8 @@
     "query": "do people recognize their own cognitive impairment from sleep loss",
     "max_results": 5
    },
-   "timestamp": "02:38:13",
-   "latency_s": 0.9946725999980117,
+   "timestamp": "10:29:50",
+   "latency_s": 0.9948244000042905,
    "output_size": 3820,
    "ok": true,
    "error": ""
@@ -118,8 +118,8 @@
     "topic": "do people recognize their own cognitive impairment from sleep loss",
     "max_results": 5
    },
-   "timestamp": "02:38:13",
-   "latency_s": 0.6132811999996193,
+   "timestamp": "10:29:50",
+   "latency_s": 0.6108674999995856,
    "output_size": 5149,
    "ok": true,
    "error": ""
@@ -130,8 +130,8 @@
     "query": "do people recognize their own cognitive impairment from sleep loss",
     "max_results": 5
    },
-   "timestamp": "02:38:13",
-   "latency_s": 0.8585845999987214,
+   "timestamp": "10:29:50",
+   "latency_s": 0.8588134999954491,
    "output_size": 2666,
    "ok": true,
    "error": ""
@@ -141,8 +141,8 @@
    "args": {
     "query": "mechanisms of sleep deprivation on cognitive performance"
    },
-   "timestamp": "02:38:14",
-   "latency_s": 0.6492814000012004,
+   "timestamp": "10:29:51",
+   "latency_s": 0.647050899999158,
    "output_size": 3492,
    "ok": true,
    "error": ""
@@ -153,8 +153,8 @@
     "query": "self-assessment accuracy in recognizing cognitive deficits due to sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "02:38:15",
-   "latency_s": 1.1723515999983647,
+   "timestamp": "10:29:52",
+   "latency_s": 1.1725436999986414,
    "output_size": 3820,
    "ok": true,
    "error": ""
@@ -165,8 +165,8 @@
     "topic": "self-assessment accuracy in recognizing cognitive deficits due to sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "02:38:15",
-   "latency_s": 0.6993157000033534,
+   "timestamp": "10:29:52",
+   "latency_s": 0.7022963000054006,
    "output_size": 5206,
    "ok": true,
    "error": ""
@@ -177,8 +177,8 @@
     "query": "self-assessment accuracy in recognizing cognitive deficits due to sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "02:38:15",
-   "latency_s": 0.7031956999999238,
+   "timestamp": "10:29:52",
+   "latency_s": 0.7031901000009384,
    "output_size": 2878,
    "ok": true,
    "error": ""
@@ -189,8 +189,8 @@
     "query": "underestimation rates of cognitive impairment by sleep-deprived individuals",
     "max_results": 5
    },
-   "timestamp": "02:38:15",
-   "latency_s": 0.8575911000007181,
+   "timestamp": "10:29:52",
+   "latency_s": 0.8573505000022124,
    "output_size": 3997,
    "ok": true,
    "error": ""
@@ -201,8 +201,8 @@
     "topic": "underestimation rates of cognitive impairment by sleep-deprived individuals",
     "max_results": 5
    },
-   "timestamp": "02:38:15",
-   "latency_s": 0.5034715000001597,
+   "timestamp": "10:29:52",
+   "latency_s": 0.5073116999992635,
    "output_size": 4825,
    "ok": true,
    "error": ""
@@ -213,8 +213,8 @@
     "query": "underestimation rates of cognitive impairment by sleep-deprived individuals",
     "max_results": 5
    },
-   "timestamp": "02:38:15",
-   "latency_s": 0.7613926000012725,
+   "timestamp": "10:29:52",
+   "latency_s": 0.7613263000021107,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -224,8 +224,8 @@
    "args": {
     "query": "underestimation rates of cognitive impairment by sleep-deprived individuals"
    },
-   "timestamp": "02:38:16",
-   "latency_s": 0.6384416000000783,
+   "timestamp": "10:29:53",
+   "latency_s": 0.638725600001635,
    "output_size": 5124,
    "ok": true,
    "error": ""
@@ -236,8 +236,8 @@
     "query": "Mechanistic pathways linking sleep deprivation with deficits in executive function and emotional regulation",
     "max_results": 5
    },
-   "timestamp": "02:38:16",
-   "latency_s": 1.0466337999969255,
+   "timestamp": "10:29:54",
+   "latency_s": 1.0467855999959284,
    "output_size": 3776,
    "ok": true,
    "error": ""
@@ -248,8 +248,8 @@
     "topic": "Mechanistic pathways linking sleep deprivation with deficits in executive function and emotional regulation",
     "max_results": 5
    },
-   "timestamp": "02:38:16",
-   "latency_s": 0.6423089000018081,
+   "timestamp": "10:29:54",
+   "latency_s": 0.644934000003559,
    "output_size": 5670,
    "ok": true,
    "error": ""
@@ -260,8 +260,8 @@
     "query": "Mechanistic pathways linking sleep deprivation with deficits in executive function and emotional regulation",
     "max_results": 5
    },
-   "timestamp": "02:38:16",
-   "latency_s": 0.5336324999989301,
+   "timestamp": "10:29:54",
+   "latency_s": 0.5343008999989252,
    "output_size": 2821,
    "ok": true,
    "error": ""
@@ -272,8 +272,8 @@
     "query": "Quantifying the frequency of underestimation among sleep-deprived individuals regarding their cognitive performance",
     "max_results": 5
    },
-   "timestamp": "02:38:16",
-   "latency_s": 1.1245859999980894,
+   "timestamp": "10:29:54",
+   "latency_s": 1.1241612000012537,
    "output_size": 3872,
    "ok": true,
    "error": ""
@@ -284,8 +284,8 @@
     "topic": "Quantifying the frequency of underestimation among sleep-deprived individuals regarding their cognitive performance",
     "max_results": 5
    },
-   "timestamp": "02:38:16",
-   "latency_s": 0.339984900001582,
+   "timestamp": "10:29:54",
+   "latency_s": 0.3393173000004026,
    "output_size": 4825,
    "ok": true,
    "error": ""
@@ -296,8 +296,8 @@
     "query": "Quantifying the frequency of underestimation among sleep-deprived individuals regarding their cognitive performance",
     "max_results": 5
    },
-   "timestamp": "02:38:16",
-   "latency_s": 0.629067900001246,
+   "timestamp": "10:29:54",
+   "latency_s": 0.6293641000011121,
    "output_size": 3010,
    "ok": true,
    "error": ""
@@ -308,8 +308,8 @@
     "query": "Mechanisms by which sleep deprivation impacts individual awareness and perception of cognitive deficits",
     "max_results": 5
    },
-   "timestamp": "02:38:18",
-   "latency_s": 1.1235197999994853,
+   "timestamp": "10:29:55",
+   "latency_s": 1.120944900001632,
    "output_size": 3464,
    "ok": true,
    "error": ""
@@ -320,8 +320,8 @@
     "topic": "Mechanisms by which sleep deprivation impacts individual awareness and perception of cognitive deficits",
     "max_results": 5
    },
-   "timestamp": "02:38:18",
-   "latency_s": 0.6504291999990528,
+   "timestamp": "10:29:55",
+   "latency_s": 0.650901499997417,
    "output_size": 5249,
    "ok": true,
    "error": ""
@@ -332,8 +332,8 @@
     "query": "Mechanisms by which sleep deprivation impacts individual awareness and perception of cognitive deficits",
     "max_results": 5
    },
-   "timestamp": "02:38:18",
-   "latency_s": 0.8416256999989855,
+   "timestamp": "10:29:55",
+   "latency_s": 0.8422009999994771,
    "output_size": 2728,
    "ok": true,
    "error": ""
@@ -344,8 +344,8 @@
     "query": "Quantitative analysis of self-assessment accuracy in relation to varying degrees of sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "02:38:18",
-   "latency_s": 0.6752925000000687,
+   "timestamp": "10:29:55",
+   "latency_s": 0.6752631000053952,
    "output_size": 3820,
    "ok": true,
    "error": ""
@@ -356,8 +356,8 @@
     "topic": "Quantitative analysis of self-assessment accuracy in relation to varying degrees of sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "02:38:18",
-   "latency_s": 0.5843474000030255,
+   "timestamp": "10:29:55",
+   "latency_s": 0.5845972000024631,
    "output_size": 5289,
    "ok": true,
    "error": ""
@@ -368,8 +368,8 @@
     "query": "Quantitative analysis of self-assessment accuracy in relation to varying degrees of sleep deprivation",
     "max_results": 5
    },
-   "timestamp": "02:38:18",
-   "latency_s": 0.45292399999743793,
+   "timestamp": "10:29:55",
+   "latency_s": 0.4577793999997084,
    "output_size": 2878,
    "ok": true,
    "error": ""
@@ -379,8 +379,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-psychological-bulletin/h6-a1"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.19581470000048284,
+   "timestamp": "10:29:56",
+   "latency_s": 0.195546100003412,
    "output_size": 163,
    "ok": true,
    "error": ""
@@ -390,8 +390,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Sleep_deprivation"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.24830540000039036,
+   "timestamp": "10:29:56",
+   "latency_s": 0.24818609999783803,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -401,8 +401,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-sleep-research/h6-a2"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.1880903000019316,
+   "timestamp": "10:29:56",
+   "latency_s": 0.18755090000195196,
    "output_size": 177,
    "ok": true,
    "error": ""
@@ -412,8 +412,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.23462149999977555,
+   "timestamp": "10:29:56",
+   "latency_s": 0.2347628999996232,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -423,8 +423,8 @@
    "args": {
     "source_url": "https://globalhealthwire.example.com/2022-03-18/a-third-of-adults-don-t-get-enough-sleep"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.1692591999999422,
+   "timestamp": "10:29:56",
+   "latency_s": 0.16948879999836208,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -434,8 +434,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-cardiology/h1-a2"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.21655640000244603,
+   "timestamp": "10:29:56",
+   "latency_s": 0.2167699999990873,
    "output_size": 177,
    "ok": true,
    "error": ""
@@ -445,8 +445,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.12534450000021025,
+   "timestamp": "10:29:56",
+   "latency_s": 0.1251817000011215,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -456,8 +456,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.2440993999989587,
+   "timestamp": "10:29:56",
+   "latency_s": 0.24403480000182753,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -467,8 +467,8 @@
    "args": {
     "source_id": "H6-A1"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.04787500000020373,
+   "timestamp": "10:29:57",
+   "latency_s": 0.0475737000015215,
    "output_size": 264,
    "ok": true,
    "error": ""
@@ -478,8 +478,8 @@
    "args": {
     "source_id": "WIKI-Sleep_deprivation"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.03850149999925634,
+   "timestamp": "10:29:57",
+   "latency_s": 0.038223800002015196,
    "output_size": 206,
    "ok": true,
    "error": ""
@@ -489,8 +489,8 @@
    "args": {
     "source_id": "H6-A2"
    },
-   "timestamp": "02:38:19",
-   "latency_s": 0.04416219999984605,
+   "timestamp": "10:29:57",
+   "latency_s": 0.04712719999952242,
    "output_size": 314,
    "ok": true,
    "error": ""
@@ -631,7 +631,7 @@
  "final_synthesis": "Sleep deprivation significantly impairs cognitive functions such as attention, vigilance, working memory, and decision-making [S1][S2]. Being awake for 17 to 19 hours can lead to performance declines comparable to having a blood alcohol concentration of 0.05% [S1]. Chronic sleep restriction, like getting only six hours per night over two weeks, causes cognitive deficits similar to those from total sleep deprivation but individuals often underestimate their level of impairment [S3]. This underestimation suggests that people may not fully recognize the extent of their cognitive decline due to insufficient sleep.",
  "overall_confidence": 0.9007325,
  "metrics": {
-  "latency_s": 53.63942720000159,
+  "latency_s": 53.63348009999936,
   "llm_calls": 7,
   "input_tokens": 7089,
   "output_tokens": 684,

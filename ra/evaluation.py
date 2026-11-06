@@ -12,7 +12,7 @@ from collections import Counter
 
 import numpy as np
 
-from .llm import LLM
+from .llm import LLM, item_value, list_field, truthy
 
 # ------------------------------------------------------------------ helpers
 
@@ -72,14 +72,13 @@ def judge_correctness(llm: LLM, q: dict, answer: str, purpose: str = "judge_corr
     )
     data, resp = llm.chat_json(prompt, default={}, role="judge", system=CORRECTNESS_SYSTEM, max_tokens=300,
                                purpose=purpose)
-    covered = data.get("covered") or []
-    covered = [bool(c) for c in covered][: len(q["fact_texts"])]
+    covered = [truthy(c) for c in list_field(data, "covered")][: len(q["fact_texts"])]
     covered += [False] * (len(q["fact_texts"]) - len(covered))
     coverage = float(np.mean(covered)) if covered else 0.0
-    contradiction = bool(data.get("contradiction", False))
-    ack = bool(data.get("acknowledges_uncertainty", False))
+    contradiction = truthy(data.get("contradiction", False))
+    ack = truthy(data.get("acknowledges_uncertainty", False))
     if q.get("gold_answers"):
-        gm = gold_match(answer, q["gold_answers"]) or bool(data.get("gold_match", False))
+        gm = gold_match(answer, q["gold_answers"]) or truthy(data.get("gold_match", False))
         correct = gm and not contradiction
         coverage = 1.0 if gm else 0.0
     elif q["category"] == "ambiguous":
@@ -131,8 +130,11 @@ CONTEXT RELEVANCE (is the retrieved evidence relevant to the question?)
  5 = nearly all passages are relevant and together they cover every aspect of the question.
 GROUNDEDNESS (is every claim in the answer supported by the retrieved context?)
  1 = most claims are not found in the context or contradict it.
+ 2 = several core claims are unsupported.
  3 = core claims are supported but some details/numbers are not in the context.
- 5 = every factual claim can be traced to the context.
+ 4 = exactly one minor detail (a number, date, name or qualifier) is not in the context.
+ 5 = every factual claim can be traced to the context. Background knowledge that is true but absent from the
+     context still counts as unsupported.
 ANSWER RELEVANCE (does the answer address the question that was asked?)
  1 = answers a different question or refuses.
  3 = partially answers; a main part of the question is ignored.
@@ -147,10 +149,15 @@ WORKED EXAMPLES (question: "How do vaccines work and why are boosters needed?")
 def rag_triad(llm: LLM, question: str, contexts: list[dict], answer: str, purpose: str = "rag_triad") -> dict:
     ctx = format_evidence(contexts, max_words=90)
     prompt = (f"{TRIAD_RUBRIC}\n\nNow evaluate.\nQuestion: {question}\n\nRetrieved context:\n{ctx}\n\nAnswer:\n\"\"\"{answer}\"\"\"\n\n"
-              "Return JSON: {\"context_relevance\": int, \"groundedness\": int, \"answer_relevance\": int, "
+              "Procedure: (1) go through the answer claim by claim and list every claim, number or detail that is NOT "
+              "stated in the retrieved context; (2) list the parts of the question with no relevant passage and the "
+              "parts the answer does not address; (3) only then assign the three scores from the anchors above. "
+              "Groundedness may be 5 only if the unsupported list is empty.\n"
+              "Return JSON: {\"unsupported_claims\": [str], \"missing_aspects\": [str], \"context_relevance\": int, "
+              "\"groundedness\": int, \"answer_relevance\": int, "
               "\"rationale\": {\"context_relevance\": str, \"groundedness\": str, \"answer_relevance\": str}}")
-    data, resp = llm.chat_json(prompt, default={}, role="judge", max_tokens=400, purpose=purpose,
-                               system="You are a meticulous RAG evaluator. Respond with JSON only.")
+    data, resp = llm.chat_json(prompt, default={}, role="judge", max_tokens=900, purpose=purpose,
+                               system="You are a strict, meticulous RAG evaluator. Respond with JSON only.")
     out = {}
     for k in ("context_relevance", "groundedness", "answer_relevance"):
         try:
@@ -158,11 +165,13 @@ def rag_triad(llm: LLM, question: str, contexts: list[dict], answer: str, purpos
         except Exception:
             out[k] = 1
     out["rationale"] = data.get("rationale", {})
+    out["unsupported_claims"] = data.get("unsupported_claims", []) if isinstance(data.get("unsupported_claims"), list) else []
     return out
 
 
-def triad_failure_stage(scores: dict, threshold: int = 3) -> str:
-    """First broken stage along the pipeline order retrieval -> grounding -> answer."""
+def triad_failure_stage(scores: dict, threshold: int = 4) -> str:
+    """First broken stage along the pipeline order retrieval -> grounding -> answer. A stage fails below 4: for a
+    research assistant a 3 already means invented details (groundedness) or an ignored part of the question."""
     if scores["context_relevance"] < threshold:
         return "retrieval"
     if scores["groundedness"] < threshold:
@@ -189,7 +198,7 @@ def judge_claims_correct(llm: LLM, q: dict, claims: list[str], reference_docs: l
               "Return JSON: {\"labels\": [true/false per claim in order]}")
     data, _ = llm.chat_json(prompt, default={}, role="judge", max_tokens=200, purpose=purpose,
                             system="You are a careful fact-checker. Respond with JSON only.")
-    labels = [bool(x) for x in (data.get("labels") or [])][: len(claims)]
+    labels = [truthy(x) for x in list_field(data, "labels")][: len(claims)]
     return labels + [False] * (len(claims) - len(labels))
 
 
@@ -202,7 +211,7 @@ def judge_citation_support(llm: LLM, pairs: list[tuple[str, str]], purpose: str 
               "Return JSON: {\"supports\": [true/false per pair in order]}")
     data, _ = llm.chat_json(prompt, default={}, role="judge", max_tokens=150 + 10 * len(pairs), purpose=purpose,
                             system="You are a strict citation auditor. Respond with JSON only.")
-    labels = [bool(x) for x in (data.get("supports") or [])][: len(pairs)]
+    labels = [truthy(x) for x in list_field(data, "supports")][: len(pairs)]
     return labels + [False] * (len(pairs) - len(labels))
 
 

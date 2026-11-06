@@ -1,6 +1,6 @@
 {
  "question": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
- "started": "2026-11-06T02:38:06",
+ "started": "2026-11-06T10:29:43",
  "route": {
   "type": "new_research",
   "standalone_query": "Does eating red and processed meat increase cancer risk, and why do expert guidelines disagree?",
@@ -33,8 +33,8 @@
     "query": "Does consumption of red and processed meat increase cancer risk evidence",
     "max_results": 5
    },
-   "timestamp": "02:38:06",
-   "latency_s": 1.0957794000023569,
+   "timestamp": "10:29:43",
+   "latency_s": 1.0954649000050267,
    "output_size": 3404,
    "ok": true,
    "error": ""
@@ -45,8 +45,8 @@
     "topic": "Does consumption of red and processed meat increase cancer risk evidence",
     "max_results": 5
    },
-   "timestamp": "02:38:06",
-   "latency_s": 0.6530438999980106,
+   "timestamp": "10:29:43",
+   "latency_s": 0.6525565000047209,
    "output_size": 4660,
    "ok": true,
    "error": ""
@@ -57,8 +57,8 @@
     "query": "Does consumption of red and processed meat increase cancer risk evidence",
     "max_results": 5
    },
-   "timestamp": "02:38:06",
-   "latency_s": 0.6044130000009318,
+   "timestamp": "10:29:43",
+   "latency_s": 0.6042583999951603,
    "output_size": 2679,
    "ok": true,
    "error": ""
@@ -69,8 +69,8 @@
     "query": "Why do expert guidelines differ on the link between red and processed meat and cancer",
     "max_results": 5
    },
-   "timestamp": "02:38:06",
-   "latency_s": 0.9929354999985662,
+   "timestamp": "10:29:43",
+   "latency_s": 0.9907329000052414,
    "output_size": 3289,
    "ok": true,
    "error": ""
@@ -81,8 +81,8 @@
     "topic": "Why do expert guidelines differ on the link between red and processed meat and cancer",
     "max_results": 5
    },
-   "timestamp": "02:38:06",
-   "latency_s": 0.5076844000031997,
+   "timestamp": "10:29:43",
+   "latency_s": 0.5108734000023105,
    "output_size": 5071,
    "ok": true,
    "error": ""
@@ -93,8 +93,8 @@
     "query": "Why do expert guidelines differ on the link between red and processed meat and cancer",
     "max_results": 5
    },
-   "timestamp": "02:38:06",
-   "latency_s": 0.4810832000002847,
+   "timestamp": "10:29:43",
+   "latency_s": 0.48093969999899855,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -104,8 +104,8 @@
    "args": {
     "query": "Why do expert guidelines differ on the link between red and processed meat and cancer"
    },
-   "timestamp": "02:38:07",
-   "latency_s": 0.5443467000004603,
+   "timestamp": "10:29:44",
+   "latency_s": 0.5453305000046385,
    "output_size": 2824,
    "ok": true,
    "error": ""
@@ -116,8 +116,8 @@
     "query": "Mechanisms by which red and processed meat increase cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:07",
-   "latency_s": 0.7223216999991564,
+   "timestamp": "10:29:45",
+   "latency_s": 0.7224442000006093,
    "output_size": 3286,
    "ok": true,
    "error": ""
@@ -128,8 +128,8 @@
     "topic": "Mechanisms by which red and processed meat increase cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:07",
-   "latency_s": 0.6401312000016333,
+   "timestamp": "10:29:45",
+   "latency_s": 0.6415962999963085,
    "output_size": 4677,
    "ok": true,
    "error": ""
@@ -140,8 +140,8 @@
     "query": "Mechanisms by which red and processed meat increase cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:07",
-   "latency_s": 0.5567236000024423,
+   "timestamp": "10:29:45",
+   "latency_s": 0.5567292999985511,
    "output_size": 2679,
    "ok": true,
    "error": ""
@@ -152,8 +152,8 @@
     "query": "Reasons for discrepancies among expert guidelines on red and processed meat consumption",
     "max_results": 5
    },
-   "timestamp": "02:38:07",
-   "latency_s": 1.0728264999997918,
+   "timestamp": "10:29:45",
+   "latency_s": 1.0726966000001994,
    "output_size": 3885,
    "ok": true,
    "error": ""
@@ -164,8 +164,8 @@
     "topic": "Reasons for discrepancies among expert guidelines on red and processed meat consumption",
     "max_results": 5
    },
-   "timestamp": "02:38:07",
-   "latency_s": 0.448123599999235,
+   "timestamp": "10:29:45",
+   "latency_s": 0.4575041999996756,
    "output_size": 4713,
    "ok": true,
    "error": ""
@@ -176,8 +176,8 @@
     "query": "Reasons for discrepancies among expert guidelines on red and processed meat consumption",
     "max_results": 5
    },
-   "timestamp": "02:38:07",
-   "latency_s": 0.44439860000056797,
+   "timestamp": "10:29:45",
+   "latency_s": 0.4561651999974856,
    "output_size": 2973,
    "ok": true,
    "error": ""
@@ -188,8 +188,8 @@
     "query": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis",
     "max_results": 5
    },
-   "timestamp": "02:38:08",
-   "latency_s": 0.792957400000887,
+   "timestamp": "10:29:46",
+   "latency_s": 0.79359430000477,
    "output_size": 3328,
    "ok": true,
    "error": ""
@@ -200,8 +200,8 @@
     "topic": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis",
     "max_results": 5
    },
-   "timestamp": "02:38:08",
-   "latency_s": 0.4323648999998113,
+   "timestamp": "10:29:46",
+   "latency_s": 0.4353294999964419,
    "output_size": 5079,
    "ok": true,
    "error": ""
@@ -212,8 +212,8 @@
     "query": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis",
     "max_results": 5
    },
-   "timestamp": "02:38:08",
-   "latency_s": 0.5711488999986614,
+   "timestamp": "10:29:46",
+   "latency_s": 0.5711574000015389,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -224,8 +224,8 @@
     "query": "Studies refuting the association between red and processed meat consumption and increased cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:08",
-   "latency_s": 1.1020336000001407,
+   "timestamp": "10:29:46",
+   "latency_s": 1.1043938999937382,
    "output_size": 3404,
    "ok": true,
    "error": ""
@@ -236,8 +236,8 @@
     "topic": "Studies refuting the association between red and processed meat consumption and increased cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:08",
-   "latency_s": 0.45993450000241864,
+   "timestamp": "10:29:46",
+   "latency_s": 0.46015710000210674,
    "output_size": 5075,
    "ok": true,
    "error": ""
@@ -248,8 +248,8 @@
     "query": "Studies refuting the association between red and processed meat consumption and increased cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:08",
-   "latency_s": 0.4271800999995321,
+   "timestamp": "10:29:46",
+   "latency_s": 0.417685899999924,
    "output_size": 2679,
    "ok": true,
    "error": ""
@@ -259,8 +259,8 @@
    "args": {
     "query": "Mechanistic studies on how components of red and processed meats contribute to carcinogenesis"
    },
-   "timestamp": "02:38:10",
-   "latency_s": 0.5689970000021276,
+   "timestamp": "10:29:47",
+   "latency_s": 0.5720956000004662,
    "output_size": 4061,
    "ok": true,
    "error": ""
@@ -271,8 +271,8 @@
     "query": "Mechanisms refuting the link between red and processed meat consumption and increased cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:10",
-   "latency_s": 0.8630573000009463,
+   "timestamp": "10:29:47",
+   "latency_s": 0.8629876999984845,
    "output_size": 3404,
    "ok": true,
    "error": ""
@@ -283,8 +283,8 @@
     "topic": "Mechanisms refuting the link between red and processed meat consumption and increased cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:10",
-   "latency_s": 0.46638249999887194,
+   "timestamp": "10:29:47",
+   "latency_s": 0.47218140000040876,
    "output_size": 5030,
    "ok": true,
    "error": ""
@@ -295,8 +295,8 @@
     "query": "Mechanisms refuting the link between red and processed meat consumption and increased cancer risk",
     "max_results": 5
    },
-   "timestamp": "02:38:10",
-   "latency_s": 0.5893299000017578,
+   "timestamp": "10:29:47",
+   "latency_s": 0.5892598000064027,
    "output_size": 2679,
    "ok": true,
    "error": ""
@@ -307,8 +307,8 @@
     "query": "Impact of cooking methods on the carcinogenicity of red and processed meats",
     "max_results": 5
    },
-   "timestamp": "02:38:10",
-   "latency_s": 0.7934219000017038,
+   "timestamp": "10:29:47",
+   "latency_s": 0.7953199999974458,
    "output_size": 3826,
    "ok": true,
    "error": ""
@@ -319,8 +319,8 @@
     "topic": "Impact of cooking methods on the carcinogenicity of red and processed meats",
     "max_results": 5
    },
-   "timestamp": "02:38:10",
-   "latency_s": 0.3352008999972895,
+   "timestamp": "10:29:47",
+   "latency_s": 0.33808780000254046,
    "output_size": 5184,
    "ok": true,
    "error": ""
@@ -331,8 +331,8 @@
     "query": "Impact of cooking methods on the carcinogenicity of red and processed meats",
     "max_results": 5
    },
-   "timestamp": "02:38:10",
-   "latency_s": 0.4703403999992588,
+   "timestamp": "10:29:47",
+   "latency_s": 0.472017500003858,
    "output_size": 0,
    "ok": false,
    "error": "503 Service Unavailable (simulated upstream failure)"
@@ -342,8 +342,8 @@
    "args": {
     "query": "Impact of cooking methods on the carcinogenicity of red and processed meats"
    },
-   "timestamp": "02:38:11",
-   "latency_s": 0.7251428999989002,
+   "timestamp": "10:29:48",
+   "latency_s": 0.7207049999997253,
    "output_size": 4166,
    "ok": true,
    "error": ""
@@ -353,8 +353,8 @@
    "args": {
     "source_url": "https://globalhealthwire.example.com/2019-10-01/meat-guidelines-spark-backlash-from-health-bodies"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.14323570000124164,
+   "timestamp": "10:29:49",
+   "latency_s": 0.1431901999967522,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -364,8 +364,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-annals-of-internal-medicine/h5-a2"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.2105228000000352,
+   "timestamp": "10:29:49",
+   "latency_s": 0.21005570000124862,
    "output_size": 169,
    "ok": true,
    "error": ""
@@ -375,8 +375,8 @@
    "args": {
     "source_url": "https://en.wikipedia.org/wiki/Red_meat"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.23866569999881904,
+   "timestamp": "10:29:49",
+   "latency_s": 0.2386696000030497,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -386,8 +386,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-lancet-oncology-reports/h5-a1"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.18693200000052457,
+   "timestamp": "10:29:49",
+   "latency_s": 0.1870139000020572,
    "output_size": 168,
    "ok": true,
    "error": ""
@@ -397,8 +397,8 @@
    "args": {
     "source_url": "https://huggingface.co/datasets/sentence-transformers/natural-questions"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.1058249000016076,
+   "timestamp": "10:29:49",
+   "latency_s": 0.10600700000213692,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -408,8 +408,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-food-and-chemical-toxicology/d7-a1"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.24621539999861852,
+   "timestamp": "10:29:49",
+   "latency_s": 0.2458191000041552,
    "output_size": 167,
    "ok": true,
    "error": ""
@@ -419,8 +419,8 @@
    "args": {
     "source_url": "https://dailyscience.example.com/2024-03-19/eating-within-an-8-hour-window-linked-to-higher-cardiovascul"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.18024289999812027,
+   "timestamp": "10:29:49",
+   "latency_s": 0.18003419999877224,
    "output_size": 164,
    "ok": true,
    "error": ""
@@ -430,8 +430,8 @@
    "args": {
     "source_url": "https://journals.example.org/synthetic-journal-of-population-health/d7-a2"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.16929030000028433,
+   "timestamp": "10:29:49",
+   "latency_s": 0.16935669999656966,
    "output_size": 162,
    "ok": true,
    "error": ""
@@ -441,8 +441,8 @@
    "args": {
     "source_id": "H5-N1"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.05961899999965681,
+   "timestamp": "10:29:50",
+   "latency_s": 0.05902270000660792,
    "output_size": 285,
    "ok": true,
    "error": ""
@@ -452,8 +452,8 @@
    "args": {
     "source_id": "H5-A2"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.036491999999270774,
+   "timestamp": "10:29:50",
+   "latency_s": 0.03663339999911841,
    "output_size": 298,
    "ok": true,
    "error": ""
@@ -463,8 +463,8 @@
    "args": {
     "source_id": "WIKI-Red_meat"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.04093560000183061,
+   "timestamp": "10:29:50",
+   "latency_s": 0.04139959999884013,
    "output_size": 179,
    "ok": true,
    "error": ""
@@ -474,8 +474,8 @@
    "args": {
     "source_id": "H5-A1"
    },
-   "timestamp": "02:38:12",
-   "latency_s": 0.05896219999704044,
+   "timestamp": "10:29:50",
+   "latency_s": 0.059339200000977144,
    "output_size": 293,
    "ok": true,
    "error": ""
@@ -657,7 +657,7 @@
  "final_synthesis": "Current evidence suggests that consuming red and processed meats does increase the risk of certain cancers. Processed meat is classified as carcinogenic to humans, with each 50g portion eaten daily increasing colorectal cancer risk by about 18% [S4]. Unprocessed red meat also shows a link to increased cancer risks, though these are generally lower than those for processed meats [S3][S4]. However, the certainty of evidence linking red and processed meat to cancer is rated as low to very low by some panels [S2], leading them to suggest adults continue their current consumption levels. This contrasts with guidance from cancer organizations that emphasize relative risk increases at population scales [S1]. The disagreement centers on how evidence is graded and whether small absolute risk reductions justify dietary changes, highlighting the complexity in translating scientific findings into public health recommendations.",
  "overall_confidence": 0.6294895413545536,
  "metrics": {
-  "latency_s": 60.3364799999963,
+  "latency_s": 60.346558499999446,
   "llm_calls": 7,
   "input_tokens": 7501,
   "output_tokens": 857,

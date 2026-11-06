@@ -263,7 +263,7 @@ class ResearchAssistant:
 
         # memory update
         self.working.add({"type": "finding", "content": answer[:300]})
-        self.episodic.add({"session_id": f"LIVE-{len(self.audits):03d}", "synthetic": False, "date": time.strftime("%Y-%m-%d"),
+        self.episodic.add({"session_id": f"LIVE-{len(self.audits):03d}", "synthetic": False, "date": config.RUN_DATE,
                            "user_query": q, "key_findings": [c["text"] for c in res.claims_after[:3]],
                            "user_preference": "-", "sources_consulted": [e["doc_id"] for e in evidence]})
         return {"answer": answer, "audit": audit, "result": res, "evidence": evidence, "route": route, "blocked": False}

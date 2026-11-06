@@ -12,7 +12,7 @@ import numpy as np
 from . import config
 from .credibility import credibility
 from .evaluation import format_evidence
-from .llm import LLM
+from .llm import LLM, as_list, list_field
 from .retrieval import Hit
 from .tools import format_citation
 
@@ -98,9 +98,13 @@ def detect_conflicts(llm: LLM, question: str, evidence: list[dict]) -> list[dict
                             default={}, max_tokens=600, purpose="t4_detect_conflicts")
     sid2doc = {e["sid"]: e["doc_id"] for e in evidence}
     out = []
-    for c in data.get("conflicts") or []:
+    for c in list_field(data, "conflicts"):
+        if not isinstance(c, dict):
+            continue
         pos = []
-        for p in c.get("positions") or []:
+        for p in as_list(c.get("positions")):
+            if not isinstance(p, dict):
+                continue
             sids = [s for s in (p.get("sources") or []) if s in sid2doc]
             if sids:
                 pos.append({"stance": str(p.get("stance", "")), "sids": sids, "docs": [sid2doc[s] for s in sids]})
@@ -229,7 +233,7 @@ def verify_claims(llm: LLM, claims: list[dict], evidence: list[dict], role: str 
     data, _ = llm.chat_json(VERIFY_PROMPT.format(ev=_ev_block(evidence, 110, False), claims=numbered), default={},
                             max_tokens=120 + 40 * len(claims), purpose=purpose, role=role)
     by_idx = {}
-    for r in data.get("results") or []:
+    for r in list_field(data, "results"):
         try:
             by_idx[int(r.get("claim"))] = r
         except Exception:

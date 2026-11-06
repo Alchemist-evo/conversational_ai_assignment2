@@ -75,20 +75,29 @@ class Embedder:
         single = isinstance(texts, str)
         texts = [texts] if single else list(texts)
         keys = [self._h(t) for t in texts]
-        missing = [i for i, k in enumerate(keys) if k not in self.cache]
-        if missing:
-            vecs = self.model.encode([texts[i] for i in missing], batch_size=64, normalize_embeddings=True,
-                                     show_progress_bar=False, convert_to_numpy=True)
-            for i, v in zip(missing, vecs):
-                self.cache[keys[i]] = v.astype(np.float32)
-            self._dirty += len(missing)
-            if self._dirty > 500:
-                self.save()
-        out = np.stack([self.cache[k] for k in keys]).astype(np.float32)
+        # The tools run in parallel threads (parallel function calling). SentenceTransformer/tokenizer calls and the
+        # shared cache are not thread-safe (a race produced "IndexError: tuple index out of range"), so encoding and
+        # cache access are serialised. Query encoding takes milliseconds, so the parallel speed-up is unaffected.
+        with Embedder._lock:
+            missing = [i for i, k in enumerate(keys) if k not in self.cache]
+            if missing:
+                vecs = self.model.encode([texts[i] for i in missing], batch_size=64, normalize_embeddings=True,
+                                         show_progress_bar=False, convert_to_numpy=True)
+                for i, v in zip(missing, vecs):
+                    self.cache[keys[i]] = v.astype(np.float32)
+                self._dirty += len(missing)
+                if self._dirty > 500:
+                    self._save_unlocked()
+            out = np.stack([self.cache[k] for k in keys]).astype(np.float32)
         return out[0] if single else out
 
-    def save(self):
+    def _save_unlocked(self):
         pickle.dump(self.cache, open(self.path, "wb"))
+        self._dirty = 0
+
+    def save(self):
+        with Embedder._lock:
+            self._save_unlocked()
         self._dirty = 0
 
 

@@ -11,6 +11,7 @@ import hashlib
 import json
 import random
 import re
+import threading
 import time
 from dataclasses import dataclass, field
 from typing import Literal, Optional
@@ -208,6 +209,7 @@ class ToolRegistry:
         self.docs_by_url = {d["url"]: d for d in data.docs.values()}
         register_domains(data.docs.values())
         self._attempts: dict[str, int] = {}
+        self._attempt_lock = threading.Lock()  # tools are called from parallel threads
         self.log: list[ToolResult] = []
         self.audit = None
 
@@ -279,8 +281,9 @@ class ToolRegistry:
                 res.blocked_by = defense if ("injection" in msg) else ""
                 raise ToolError(f"invalid arguments: {msg}")
             key = f"{tool}|{json.dumps(args, sort_keys=True)}"
-            attempt = self._attempts.get(key, 0)
-            self._attempts[key] = attempt + 1
+            with self._attempt_lock:
+                attempt = self._attempts.get(key, 0)
+                self._attempts[key] = attempt + 1
             rng = self._rng(tool, args, attempt)
             if self.simulate_latency:
                 lo, hi = LATENCY.get(tool, (0.1, 0.2))

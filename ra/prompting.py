@@ -9,7 +9,7 @@ from dataclasses import dataclass, field
 
 from . import config
 from .evaluation import final_answer_section, format_evidence
-from .llm import LLM, parse_json
+from .llm import LLM, list_field, parse_json
 
 BASE_SYSTEM = (
     "You are a careful research assistant. Answer using the numbered sources provided; cite them inline as [S1], "
@@ -152,7 +152,7 @@ def ape_generate_candidates(llm: LLM, n: int = 5) -> list[str]:
     demos = "\n\n".join(f"Question: {ex['q']}\nSources:\n{ex['sources']}\nExpert answer: {ex['a']}" for ex in FEW_SHOT_EXAMPLES[:2])
     data, _ = llm.chat_json(APE_META.format(demos=demos, n=n), default={}, temperature=0.9, max_tokens=900,
                             purpose="t1_ape_generate")
-    cands = [c for c in (data.get("instructions") or []) if isinstance(c, str) and len(c) > 20][:n]
+    cands = [c for c in list_field(data, "instructions") if isinstance(c, str) and len(c) > 20][:n]
     return cands
 
 

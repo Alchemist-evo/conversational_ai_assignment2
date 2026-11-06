@@ -43,7 +43,7 @@ md(r"""
 ### 0.1 Tools & libraries
 | Purpose | Library / model | Role (black-box or from scratch) |
 |---|---|---|
-| LLM inference | Two free-tier providers through their OpenAI-compatible endpoints (`openai` SDK). **Generator: Google gemini-3.1-flash-lite.** **Judge: openai/gpt-oss-120b on Groq**, a different model family, which reduces self-preference bias. Fallbacks are listed in `ra/config.py` (`MIXED_MODEL_ROLES`); the table at the end shows which model served each call | API only. All prompting, agents, memory, synthesis and evaluation logic is ours |
+| LLM inference | OpenAI-compatible endpoints through the `openai` SDK (`LLM_BACKEND=hybrid`). **Generator: Qwen2.5-14B-Instruct (Q4_K_M GGUF, bartowski build) run locally in LM Studio with the llama.cpp Vulkan runtime on an Intel Arc A770 16 GB GPU** (16K context, ~25 tokens/s, no rate limits). **Judge: Google gemini-3.5-flash-lite** for every judge call (a different model family from the generator, which reduces self-preference bias; one judge for all scores, so they are comparable). The 10K+ token lost-in-the-middle test uses gemini-3.1-flash-lite (1M context). Task 7 tiers: Small = local Qwen2.5-14B, MoE-Mid = gemini-3.1-flash-lite, Dense = openai/gpt-oss-120b on Groq. Fallbacks are listed in `ra/config.py` (`HYBRID_MODEL_ROLES`); the table at the end shows which model served each call | API / local server only. All prompting, agents, memory, synthesis and evaluation logic is ours |
 | Token counting | `tiktoken` (`o200k_base`, the GPT-4o tokenizer) | Counting only |
 | Lexical retrieval | `rank-bm25` (BM25Okapi) | Allowed black box |
 | Dense retrieval | `sentence-transformers/all-MiniLM-L6-v2` + `faiss-cpu` (IndexFlatIP) | Allowed black box |
@@ -55,7 +55,7 @@ md(r"""
 **No agent framework is used** (no LangChain or LlamaIndex agents). The ReAct loop, memory, decomposition, refinement, HyDE/CRAG, context engineering, conflict resolution, citation, verification, calibration, RAG Triad, Self-Instruct, DPO/PEFT analysis, security and cost engineering are all implemented in the `ra/` package. Each module is written out below with `%%writefile`, so this notebook is self-contained.
 
 ### 0.2 Reproducibility
-* **Seed = 42** for Python, NumPy, torch, data sampling, and simulated tool latency/failures. Gemini's OpenAI-compatible endpoint does not accept a `seed` parameter, so LLM reproducibility comes from temperature 0 plus the response cache below.
+* **Seed = 42** for Python, NumPy, torch, data sampling, and simulated tool latency/failures. `seed=42` is also sent to the local model and to Groq; Gemini's OpenAI-compatible endpoint does not accept a `seed` parameter. LLM reproducibility therefore comes from temperature 0 plus the response cache below. Prompts contain no wall-clock values, so a re-run builds byte-identical prompts and replays every call from the cache.
 * **LLM response cache.** Every LLM call is cached in SQLite, keyed on (model, messages, temperature, max_tokens, json-mode, seed). The cache stores the *original* latency and token usage. Re-running the notebook replays identical outputs and reports the latencies that were measured live.
 * **Role-based model selection with fallback.** If a free-tier daily limit is exhausted, the next model in the role's list is used. Every call logs which model served it (see the usage table at the end).
 * All hyper-parameters live in `ra/config.py` and are printed below.

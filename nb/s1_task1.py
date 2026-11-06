@@ -28,7 +28,7 @@ md(r"""
 * **APE for research**: the LLM is shown expert demonstrations and **proposes 5 candidate instructions**. Each candidate is scored on a **separate APE-dev set** (4 questions never used in the test set) with the same correctness judge. The best instruction is then used on the 20 test questions.
 
 ### 1.2 Metrics (criteria fixed *before* running any technique and applied identically to all five)
-* **Reasoning correctness.** An LLM judge (gpt-oss-120b on Groq, a different and larger model family than the Gemini generator) marks each reference key fact as covered or not, and flags contradictions and acknowledged uncertainty. A response is **correct** if:
+* **Reasoning correctness.** An LLM judge (gemini-3.5-flash-lite, a different model family from the local Qwen2.5-14B generator) marks each reference key fact as covered or not, and flags contradictions and acknowledged uncertainty. A response is **correct** if:
   * *simple:* it contains the gold short answer (normalised string match, or judged equivalent) and does not contradict it;
   * *medium/complex:* it covers ≥ 60 % of key facts with no contradiction;
   * *ambiguous:* as for medium/complex, **and** it explicitly acknowledges the conflicting evidence or multiple interpretations.

@@ -11,7 +11,7 @@ import re
 import numpy as np
 
 from . import config
-from .llm import LLM
+from .llm import LLM, item_value, list_field
 
 SEED_TASKS = [  # written manually for this assignment
     {"instruction": "Classify the type of evidence a study abstract provides.", "is_classification": True,
@@ -77,7 +77,7 @@ def generate_instructions(llm: LLM, target: int = 50, per_call: int = 8, seed: i
         data, _ = llm.chat_json(GEN_PROMPT.format(n=per_call, examples=ex), default={}, temperature=0.9,
                                 seed=seed + calls, max_tokens=700, purpose="t5_si_generate")
         calls += 1
-        for ins in data.get("instructions") or []:
+        for ins in list_field(data, "instructions"):
             if isinstance(ins, str) and ins.strip():
                 pool.append({"instruction": ins.strip(), "origin": f"call{calls}"})
     return pool[:target]
@@ -91,7 +91,7 @@ def classify_instructions(llm: LLM, items: list[dict], batch: int = 10) -> None:
             "Is each task a CLASSIFICATION task (the output is one label from a small finite set, e.g. "
             "'agree/conflict/unrelated', 'RCT/cohort/...')? Answer Yes or No for each.\n\n" + listing +
             "\n\nReturn JSON: {\"labels\": [\"Yes\"|\"No\", ...]}", default={}, max_tokens=200, purpose="t5_si_classify")
-        labels = data.get("labels") or []
+        labels = [item_value(x) for x in list_field(data, "labels")]
         for j, x in enumerate(chunk):
             lab = str(labels[j]).strip().lower() if j < len(labels) else "no"
             x["is_classification"] = lab.startswith("y")
@@ -153,7 +153,7 @@ def llm_quality(llm: LLM, items: list[dict], batch: int = 8) -> None:
             "Rate each instruction-tuning example 1-5 (5 = clear, useful research task with a correct, high-quality "
             "output; 3 = usable but flawed; 1 = wrong, vague or useless).\n\n" + listing +
             "\n\nReturn JSON: {\"scores\": [int, ...]}", default={}, role="judge", max_tokens=150, purpose="t5_si_quality")
-        sc = data.get("scores") or []
+        sc = [item_value(x) for x in list_field(data, "scores")]
         for j, x in enumerate(chunk):
             try:
                 x["quality"] = int(sc[j])

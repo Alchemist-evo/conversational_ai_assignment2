@@ -12,7 +12,7 @@ import time
 
 from . import config
 from .evaluation import fact_coverage, redundancy
-from .llm import LLM
+from .llm import LLM, list_field, truthy
 from .retrieval import Hit, MultiSourceRetriever
 
 DECOMP_PROMPT = """Decompose the research question into sub-queries for a search engine.
@@ -35,7 +35,7 @@ Return JSON: {{"gaps": ["..."], "new_sub_queries": ["..."], "done": false}}"""
 
 def decompose(llm: LLM, question: str) -> tuple[list[str], dict]:
     data, r = llm.chat_json(DECOMP_PROMPT.format(q=question), default={}, max_tokens=450, purpose="t3_decompose")
-    subs = [s.strip() for s in (data.get("sub_queries") or []) if isinstance(s, str) and len(s.strip()) > 3][:4]
+    subs = [s.strip() for s in list_field(data, "sub_queries") if isinstance(s, str) and len(s.strip()) > 3][:4]
     if len(subs) < 2:  # degrade gracefully: the question itself + a counter-evidence query
         subs = [question, f"{question} evidence limitations criticism"][: max(2, len(subs))]
     return subs, {"reasoning": data.get("reasoning", ""), "input_tokens": r.input_tokens,
@@ -53,8 +53,8 @@ def refine(llm: LLM, question: str, done_queries: list[str], hits: list[Hit]) ->
             break
     data, r = llm.chat_json(REFINE_PROMPT.format(q=question, done=done_queries, notes="\n".join(notes)), default={},
                             max_tokens=300, purpose="t3_refine")
-    new = [s for s in (data.get("new_sub_queries") or []) if isinstance(s, str) and s.strip() and s not in done_queries][:2]
-    return new, bool(data.get("done", False)), {"gaps": data.get("gaps", []), "input_tokens": r.input_tokens,
+    new = [s for s in list_field(data, "new_sub_queries") if isinstance(s, str) and s.strip() and s not in done_queries][:2]
+    return new, truthy(data.get("done", False)), {"gaps": data.get("gaps", []), "input_tokens": r.input_tokens,
                                                  "output_tokens": r.output_tokens, "latency_s": r.latency_s}
 
 

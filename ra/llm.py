@@ -33,6 +33,21 @@ except Exception:
     pass
 
 
+class LocalOutputCorrupt(Exception):
+    """The local model produced garbage (e.g. only '?' characters) - a GPU/runtime fault, not a real answer."""
+
+
+def _looks_corrupt(text: str) -> bool:
+    """Garbage from a faulted GPU backend: mostly '?' / U+FFFD, or one character repeated (e.g. 'GGGGGGGG...')."""
+    t = text.strip()
+    if not t:
+        return False  # an empty answer is handled by the callers' defaults
+    if sum(ch in "?�" for ch in t) / len(t) > 0.5:
+        return True
+    # 40+ identical characters in a row (markdown rules such as ---- or ==== are allowed)
+    return re.search(r"([^\s\-=_*#.|~])\1{39,}", t) is not None
+
+
 @dataclass
 class LLMResponse:
     text: str
@@ -60,6 +75,44 @@ class CallRecord:
 
 
 _THINK_RE = re.compile(r"<think>.*?</think>", re.S)
+
+
+def as_list(v: Any) -> list:
+    """Judges sometimes return a scalar where a list was asked for (e.g. {"supports": true} for a single pair)."""
+    if v is None:
+        return []
+    return list(v) if isinstance(v, (list, tuple)) else [v]
+
+
+_VALUE_KEYS = ("correct", "is_correct", "supported", "supports", "support", "label", "verdict", "value", "answer",
+               "score", "rating")
+
+
+def item_value(v: Any) -> Any:
+    """Judges sometimes return items as objects, e.g. {"claim": 1, "correct": true}: take the value field."""
+    if isinstance(v, dict):
+        for k in _VALUE_KEYS:
+            if k in v:
+                return v[k]
+        return next((x for x in v.values() if isinstance(x, (bool, int, float))), None)
+    return v
+
+
+def truthy(v: Any) -> bool:
+    """bool() of a JSON value, but "false"/"no"/"0" strings count as False and {"correct": false} items are read."""
+    v = item_value(v)
+    if isinstance(v, str):
+        return v.strip().lower() in ("true", "yes", "y", "1", "supported", "correct")
+    return bool(v)
+
+
+def list_field(data: Any, key: str) -> list:
+    """The list the caller asked for under `key`, whether the model returned {"key": [...]}, a bare list (kept by
+    chat_json under "_list"), or a single scalar."""
+    if isinstance(data, dict):
+        v = data.get(key)
+        return as_list(v if v is not None else data.get("_list"))
+    return as_list(data)
 
 
 def parse_json(text: str, default: Any = None) -> Any:
@@ -277,6 +330,13 @@ class LLM:
 
         if self.backend == "mock":
             return self._mock(messages, candidates[0], json_mode, purpose, role)
+        if os.environ.get("LLM_CACHE_ONLY") == "1":  # replay audit: log the miss, answer with the mock model
+            import traceback
+            with open(os.environ.get("LLM_MISS_LOG", "cache_misses.log"), "a", encoding="utf-8") as f:
+                f.write(json.dumps({"role": role, "purpose": purpose, "model": candidates[0],
+                                    "stack": traceback.format_stack(limit=6)[:-1], "messages": messages},
+                                   ensure_ascii=False) + "\n")
+            return self._mock(messages, candidates[0], json_mode, purpose, role)
 
         if not self.clients:
             raise RuntimeError(
@@ -328,6 +388,10 @@ class LLM:
                     }
                     text = completion.choices[0].message.content or ""
                     text = _THINK_RE.sub("", text).strip()
+                    if provider == "local" and _looks_corrupt(text):
+                        # GPU backends (e.g. Vulkan on Intel Arc) can get into a corrupted state and emit "?????".
+                        # Never cache that; retry, and stop with a clear message if it persists.
+                        raise LocalOutputCorrupt(f"local model returned corrupted text: {text[:40]!r}")
                     usage = completion.usage
                     resp = LLMResponse(
                         text=text,
@@ -347,6 +411,13 @@ class LLM:
                     return resp
                 except Exception as e:  # noqa: BLE001 - classify provider errors
                     last_err = e
+                    if isinstance(e, LocalOutputCorrupt):
+                        if attempt < 2:
+                            time.sleep(5)
+                            continue
+                        raise RuntimeError("The local model keeps returning corrupted text. Reload it (LM Studio: "
+                                           "eject + load, or `lms unload --all; lms load <model>`) and re-run; "
+                                           "everything already answered is cached.") from e
                     status = getattr(e, "status_code", None)
                     msg = (str(e) + " " + json.dumps(getattr(e, "body", None) or "", default=str)).lower()
                     if status == 429:
@@ -379,7 +450,15 @@ class LLM:
                     if status in (404,) or "model_not_found" in msg or "decommissioned" in msg:
                         break
                     if status is None and provider == "local":
+                        if not config.LOCAL_FALLBACK:  # keep the generator consistent: fail loudly instead
+                            raise RuntimeError(f"Local LLM server unreachable or timed out ({e}); LOCAL_FALLBACK=0, so "
+                                               "no cloud fallback. Start/reload the local model and re-run.") from e
                         break  # local server stopped or timed out: fall back to the next model instead of retrying
+                    if status is not None and provider == "local" and not config.LOCAL_FALLBACK:
+                        if status >= 500 and attempt < 3:
+                            time.sleep(3 * (attempt + 1))
+                            continue
+                        raise RuntimeError(f"Local LLM error {status}: {e}; LOCAL_FALLBACK=0, so no cloud fallback.") from e
                     if status is None or status >= 500:
                         time.sleep(2 * (attempt + 1))
                         continue
@@ -390,9 +469,14 @@ class LLM:
         resp = self.chat(messages, json_mode=True, **kw)
         data = parse_json(resp.text, default)
         if isinstance(default, dict) and not isinstance(data, dict):
-            # The caller expects an object but the model answered with prose (the parser then found an inner array)
-            # or a bare list: use the first object in the list if there is one, else the caller's default.
-            data = next((x for x in data if isinstance(x, dict)), default) if isinstance(data, list) else default
+            # The caller expects an object but the model answered with a list. A one-element list holding an object
+            # is that object ([{"labels": [...]}]); any other list is kept under "_list" so list_field() can read a
+            # bare answer such as [true, false] or [{"claim": 1, "correct": true}, ...]. Anything else -> default.
+            if isinstance(data, list):
+                first = next((x for x in data if isinstance(x, dict)), {})
+                data = first if len(data) == 1 and first else {**default, **first, "_list": data}
+            else:
+                data = default
         return data, resp
 
     # --------------------------------------------------------------- tracking
@@ -400,6 +484,10 @@ class LLM:
         self.calls.append(
             CallRecord(resp.purpose, role, resp.model, resp.input_tokens, resp.output_tokens, resp.latency_s, resp.cached)
         )
+        if os.environ.get("LLM_TRACE"):  # optional debugging trace: one JSON line per call
+            with open(os.environ["LLM_TRACE"], "a", encoding="utf-8") as f:
+                f.write(json.dumps({"purpose": resp.purpose, "role": role, "model": resp.model, "cached": resp.cached,
+                                    "text": resp.text[:400]}, ensure_ascii=False) + "\n")
 
     def usage_since(self, start_index: int) -> dict:
         calls = self.calls[start_index:]

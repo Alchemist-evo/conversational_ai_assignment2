@@ -15,13 +15,13 @@
 ### How to run
 ```bash
 pip install -r requirements.txt
-cp .env.example .env            # then set LLM_BACKEND=gemini and GEMINI_API_KEY=... (or a Groq key)
+cp .env.example .env            # then set LLM_BACKEND (hybrid for a local GPU) and GEMINI_API_KEY / GROQ_API_KEY
 python build_notebook.py        # (re)assemble the notebook from nb/ + ra/
 python -m nbconvert --to notebook --execute --inplace Assignment2_PS1_ResearchAssistant.ipynb --ExecutePreprocessor.timeout=-1
 ```
 * Every LLM call is cached in `cache/llm_cache.sqlite`. A second run replays the cache in a few minutes and reproduces the same numbers.
 * On a **free tier** (Gemini or Groq), daily request/token limits may be reached part-way through. The client then falls back to the next model in the role's list (`ra/config.py`). Re-running the next day refills any calls served by fallback models from the preferred model, because the cache prefers it.
-* **Local GPU (e.g. Intel Arc A770, 16 GB):** set `LLM_BACKEND=hybrid`. The generator then runs on a local model served by LM Studio, Ollama or llama.cpp (any OpenAI-compatible server, `LOCAL_BASE_URL`), with no rate limits. The judge stays on Groq and the long-context test on Gemini. If the local server is not running, calls fall back to the cloud models. `LLM_BACKEND=local` runs everything locally with no API keys.
+* **Local GPU (e.g. Intel Arc A770, 16 GB):** set `LLM_BACKEND=hybrid`. The generator then runs on a local model served by LM Studio, Ollama or llama.cpp (any OpenAI-compatible server, `LOCAL_BASE_URL`), with no rate limits. Every judge call goes to Gemini 3.5 Flash-Lite (one judge, different model family), the long-context test to Gemini 3.1 Flash-Lite and the Task 7 dense tier to gpt-oss-120b on Groq. If the local server is not running, calls fall back to the cloud models (set `LOCAL_FALLBACK=0` to stop instead, which keeps the generator consistent). `LLM_BACKEND=local` runs everything locally with no API keys.
   1. Install [LM Studio](https://lmstudio.ai) and select the Vulkan runtime (supports Intel Arc).
   2. Download e.g. `Qwen2.5-14B-Instruct` (Q4_K_M, ~9 GB) or `Qwen2.5-7B-Instruct`. Load it with a context length of at least 16384.
   3. Developer tab → Start Server (port 1234). Then run the notebook. `LOCAL_MODEL=auto` picks the loaded model.

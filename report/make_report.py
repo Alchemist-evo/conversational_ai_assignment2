@@ -29,7 +29,7 @@ def img(name: str, caption: str, width: int = 100) -> str:
 
 
 def md_to_html(md: str) -> str:
-    out = subprocess.run(["pandoc", "-f", "markdown", "-t", "html"], input=md.encode("utf-8"), capture_output=True, check=True)
+    out = subprocess.run(["pandoc", "-f", "gfm", "-t", "html"], input=md.encode("utf-8"), capture_output=True, check=True)
     return out.stdout.decode("utf-8")
 
 
@@ -72,6 +72,8 @@ def main():
         {"Metric": "Cost per research query (GPT-4o pricing)", "Value": f"${t6.get('cost_per_complex_query', float('nan')):.4f} complex · ${nq.get('cost_per_query_$', float('nan')):.4f} simple"},
         {"Metric": "Latency P50 / P95 (complex)", "Value": f"{t6.get('latency', {}).get('P50', float('nan')):.1f}s / {t6.get('latency', {}).get('P95', float('nan')):.1f}s"},
         {"Metric": "RAG Triad (CR / G / AR)", "Value": " / ".join(f"{v:.2f}" for v in t4.get("triad", {}).values())},
+        {"Metric": "Judge vs human (Cohen's κ)", "Value": (f"{t4['kappa']['unweighted']:.2f} unweighted · {t4['kappa']['quadratic']:.2f} quadratic "
+                                                          f"({t4['kappa']['n']} human-labelled items)") if "kappa" in t4 else "n/a"},
     ]
     html = f"""<!DOCTYPE html><html><head><meta charset="utf-8"><title>Final Report – AIMLCZG521 Assignment 2 PS1</title>
 <style>
@@ -88,7 +90,7 @@ figure {{ margin: 8px 0 14px; text-align: center; page-break-inside: avoid; }} f
 <h1>End-to-End Research Assistant with Multi-Source Synthesis and Alignment Analysis</h1>
 <p><b>AIMLCZG521 Conversational AI — Assignment 2, Problem Statement 1 · Final Report</b><br>
 Team: Prajwal Shetty K P (2025AE05434) · Poornima Prakash Patil (2025AE05411) · Prasanth C (2025AE05388) · Jay Kumar Patel (2025AE05473) <i>— contribution areas as listed in the notebook</i></p>
-<div class="box"><b>Summary.</b> We built a research assistant that decomposes questions, calls academic, encyclopedia and news sources in parallel through a ReAct agent with six safety mechanisms, fuses evidence with credibility-weighted RRF and cross-encoder re-ranking, resolves conflicting claims by source credibility, writes cited syntheses, verifies and self-corrects its claims, attaches calibrated confidence, and records a full audit trail. It was evaluated on 10 complex held-out questions and 50 held-out Natural Questions with an LLM judge and a 1–5 rubric. The generator is Google gemini-3.1-flash-lite and the judge is gpt-oss-120b on Groq (both free tiers). Costs are reported at GPT-4o prices, as the brief requires.</div>
+<div class="box"><b>Summary.</b> We built a research assistant that decomposes questions, calls academic, encyclopedia and news sources in parallel through a ReAct agent with six safety mechanisms, fuses evidence with credibility-weighted RRF and cross-encoder re-ranking, resolves conflicting claims by source credibility, writes cited syntheses, verifies and self-corrects its claims, attaches calibrated confidence, and records a full audit trail. It was evaluated on 10 complex held-out questions and 50 held-out Natural Questions with an LLM judge and a 1–5 rubric. The generator is Qwen2.5-14B-Instruct (Q4_K_M) running locally in LM Studio on an Intel Arc A770 GPU; every judge call uses Google gemini-3.5-flash-lite, a different model family. The lost-in-the-middle test uses gemini-3.1-flash-lite and the dense routing tier gpt-oss-120b on Groq. Costs are reported at GPT-4o prices, as the brief requires.</div>
 <h2>1. Headline results</h2>{table(headline)}
 <h2>2. Architecture & workflow</h2>{img('fig0_1_pipeline', 'Figure 1 – Pipeline: Research Question → Decomposition → Multi-Source Function Calling → Evidence → Conflict Resolution → Synthesis → Citation → Memory Update', 92)}
 {img('fig6_6_architecture', 'Figure 2 – Production architecture', 88)}
@@ -114,7 +116,7 @@ Team: Prajwal Shetty K P (2025AE05434) · Poornima Prakash Patil (2025AE05411) �
 {img('fig7_dashboard', 'Figure 25 – Model comparison dashboard', 100)}{sec('<!--T7_RECOMMENDATION-->')}{sec('<!--T7_INFERENCE-->')}
 <h2>11. Conclusion, limitations and future work</h2>{sec('<!--CONCLUSION-->')}
 <h2>12. References</h2>
-<p>Kwiatkowski et al. (2019) Natural Questions, TACL · Wei et al. (2022) CoT · Yao et al. (2023) ToT; ReAct · Zhou et al. (2023) APE · Cormack et al. (2009) RRF · Reimers &amp; Gurevych (2019) SBERT · Johnson et al. (2019) FAISS · Liu et al. (2023) Lost in the Middle · Gao et al. (2023) HyDE · Yan et al. (2024) CRAG · Wang et al. (2023) Self-Instruct · Rafailov et al. (2023) DPO · Hu et al. (2022) LoRA · Dettmers et al. (2023) QLoRA · Shao et al. (2024) GRPO · Bai et al. (2022) Constitutional AI · Chen et al. (2024) SPIN · Lightman et al. (2023) PRM · Guo et al. (2017) Calibration · Zheng et al. (2023) LLM-as-a-Judge · Google Gemini API documentation (Nov 2026) · AIMLCZG521 course sessions 4–12. The full list is in the notebook.</p>
+<p>Kwiatkowski et al. (2019) Natural Questions, TACL · Wei et al. (2022) CoT · Yao et al. (2023) ToT; ReAct · Zhou et al. (2023) APE · Cormack et al. (2009) RRF · Reimers &amp; Gurevych (2019) SBERT · Johnson et al. (2019) FAISS · Liu et al. (2023) Lost in the Middle · Gao et al. (2023) HyDE · Yan et al. (2024) CRAG · Wang et al. (2023) Self-Instruct · Rafailov et al. (2023) DPO · Hu et al. (2022) LoRA · Dettmers et al. (2023) QLoRA · Shao et al. (2024) GRPO · Bai et al. (2022) Constitutional AI · Chen et al. (2024) SPIN · Lightman et al. (2023) PRM · Guo et al. (2017) Calibration · Zheng et al. (2023) LLM-as-a-Judge · Qwen Team (2024) Qwen2.5 · Google Gemini and Groq API documentation (Nov 2026) · AIMLCZG521 course sessions 4–12. The full list is in the notebook.</p>
 </body></html>"""
     out = ROOT / "report" / "Final_Report.html"
     out.write_text(html, encoding="utf-8")
